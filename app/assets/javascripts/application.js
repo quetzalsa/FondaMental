@@ -98,6 +98,7 @@ function timeUpdate() {
 
 //Play and Pause
 function play() {
+        pButton.className = "play";
     // start music
     if (music.paused) {
         music.play();
