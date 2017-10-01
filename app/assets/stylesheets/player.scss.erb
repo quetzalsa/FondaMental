@@ -1,38 +1,55 @@
 // Place all the styles related to the Player controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-$play: asset-path("play.png");
-$pause: asset-path("pause.png");
+
 
 body {
-    background-color: black;
+    background-color: rgb(40, 40, 40);
 }
 
-/* Absolute Center */
-.abs-center{
-	margin: auto;
-	position: fixed;
-	top:0; right:0; bottom:0; left:0;
+
+
+.repro {
+
+
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 1fr 50px 1fr;
+
+    grid-template-areas: ". . ."
+                         ". player ."
+                         ". . . ";
+
+    align-content: center;
+    justify-content: center;
 }
+
+
 /*Container for audio player*/
 #audioplayer{
-	width: 100%;
+  grid-area: player;
+	width: 300px;
 	height: 50px;
-	margin: auto;
-	margin-top: 50px;
-/*	border: solid;*/
+  display: grid;
+  height: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "timeline button";
+  align-content: center;
 }
 /* Play/Pause Button */
 #pButton{
     display: block;
 	height:60px;
-
 	width: 60px;
 	border: none;
 	background-size: 50% 50%;
 	background-repeat: no-repeat;
 	background-position: center;
 	outline:none;
+  grid-area: button;
 }
 
 /*
@@ -64,13 +81,6 @@ iframe {
 
 
 
-
-
-.repro {
-    width: 40%;
-    margin: auto;
-}
-
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
@@ -90,12 +100,13 @@ iframe {
 }
 
 #timeline{
-	width: 70%;
+
 	height: 3px;
 	background: rgba(172, 172, 172, 0.3);
 	margin-top: 20px;
     margin-bottom: 20px;
-	float: left;
+
+  grid-area: timeline;
 /*	border-radius: 15px;*/
 
 }
