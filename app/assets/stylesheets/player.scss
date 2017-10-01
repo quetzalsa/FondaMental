@@ -1,7 +1,8 @@
 // Place all the styles related to the Player controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+$play: asset-path("play.png");
+$pause: asset-path("pause.png");
 
 body {
     background-color: black;
@@ -51,7 +52,7 @@ iframe {
 
 /*Classes for play/pause button background*/
 .play{
-    background: url('play.png') ;
+    background: url($play) ;
     position: relative;
     top: -8px;
 }
@@ -76,7 +77,7 @@ iframe {
   }
 }
 .pause{
-    background: url('pause.png') ;
+    background: url($pause) ;
     position: relative;
     top: -8px;
     animation: fa-spin 2s infinite linear;
