@@ -20,3 +20,33 @@
 	 grid-template-columns: 1fr;
 	 grid-template-rows: 1fr;
  }
+
+.grid2 {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+  grid-template-areas:
+  "cuatro tres"
+  "dos uno";
+}
+
+ .item1 {
+   background-color: green;
+   grid-area: uno;
+ }
+
+ .item2 {
+   background-color: blue;
+   grid-area: dos;
+ }
+
+ .item3 {
+   background-color: black;
+   grid-area: tres;
+ }
+
+ .item4 {
+   background-color: pink;
+   grid-area: cuatro;
+ }
