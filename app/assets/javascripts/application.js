@@ -13,7 +13,7 @@
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
-
+pButton.className = "play";
 document.addEventListener("DOMContentLoaded", function(event) {
 
 var music = document.getElementById('music'); // id for audio element
@@ -98,7 +98,7 @@ function timeUpdate() {
 
 //Play and Pause
 function play() {
-        pButton.className = "play";
+
     // start music
     if (music.paused) {
         music.play();
