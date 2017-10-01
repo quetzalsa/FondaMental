@@ -53,7 +53,7 @@ iframe {
 /*Classes for play/pause button background*/
 .play{
     background-color: rgba(171, 139, 97, 0);
-    background-image: asset-path("play.png");
+    background-image: url(<%= asset_path 'play.png' %>);
     position: relative;
     top: -8px;
 }
@@ -79,7 +79,7 @@ iframe {
 }
 .pause{
     background-color: rgba(171, 139, 97, 0);
-    background-image: asset-path("pause.png");
+    background-image: url(<%= asset_path 'pause.png' %>);
     position: relative;
     top: -8px;
     animation: fa-spin 2s infinite linear;
