@@ -124,8 +124,15 @@ function getPosition(el) {
     return el.getBoundingClientRect().left;
 }
 
+
+
 /* DOMContentLoaded*/
 });
+
+
+
+
+
 
 
 //function audioPlayer(){
