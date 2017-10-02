@@ -129,25 +129,3 @@ function getPosition(el) {
 
 /* DOMContentLoaded*/
 });
-
-
-
-
-
-
-
-//function audioPlayer(){
-//            var currentSong = 0;
-//            $("#music")[0].src = $("#playlist li a")[0];
-//            $("#music")[0].play();
-//            $("#playlist li a").click(function(e){
-//               e.preventDefault();
-//               $("#music")[0].src = this;
-//               $("#music")[0].play();
-//
-//            });
-//
-//
-//                $("#audioPlayer")[0].play();
-//            });
-//        }

@@ -9,16 +9,48 @@
   </head>
 
   <body>
-    <div class="grid-master">
-      <%= yield %>
-    </div>
+    <div class="pagina">
+      <nav>
 
-    <div class="grid2">
-      <div class="item1">uno</div>
-      <div class="item2">dos</div>
-      <div class="item3">tres</div>
-      <div class="item4">cuatro</div>
-    </div>
+          <!-- <img src="/images/fonda_blanco.png" alt="logo" class="logonav"> -->
+          <%= image_tag("fonda_blanco.png", class: "logonav") %>
 
+          <div class="repro">
+            <audio id="music" preload="true" autoplay >
+              <source src="/audios/1.mp3">
+              <source src="4.ogg">
+            </audio>
+
+              <!--Audio Player Interface-->
+              <div id="audioplayer">
+                <div id="timeline">
+                  <div id="playhead"></div>
+                </div>
+                <button id="pButton" class="pause"></button>
+              </div>
+              </div>
+
+              <ul class="menu">
+                <li><%= link_to "Fonda Mental", fonda_mental_path %></li>
+                <li><%= link_to "Sobre Nosotros", fonda_mental_path %></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Media</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+        </nav>
+
+
+        <%= yield %>
+
+
+      <div class="footer">
+          <div class="socialnet">
+            <i class="sim1 fa fa-soundcloud fa-2x" aria-hidden="true"></i>
+            <i class="sim2 fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+            <i class="sim3 fa fa-instagram fa-2x" aria-hidden="true"></i>
+          </div>
+      </div>
+    </div>
   </body>
 </html>

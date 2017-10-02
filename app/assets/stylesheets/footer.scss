@@ -1,0 +1,49 @@
+.socialnet {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  ". . uno dos tres . .";
+  align-items: center;
+
+}
+
+.sim1 {
+  grid-area: uno;
+}
+
+.sim2 {
+  grid-area: dos;
+}
+
+.sim3 {
+  grid-area: tres;
+}
+
+
+
+i {
+  color: rgb(189, 189, 189);
+
+}
+
+
+
+
+.main_content {
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+
+  grid-area: main_content;
+}
+
+.footer {
+  background-color: rgb(50, 50, 50);
+  grid-area: footer;
+  height: 80px;
+  width: 100%;
+  text-align: center;
+}

@@ -4,37 +4,19 @@
 
 
 body {
-    background-color: rgb(40, 40, 40);
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(41, 41, 41);
 }
 
 
 
-.repro {
-
-
-    display: grid;
-    height: 100vh;
-    width: 100%;
-    grid-template-columns: auto 30% auto;
-    grid-template-rows: auto 30px auto;
-
-    grid-template-areas: ". . ."
-                         ". player ."
-                         ". . . ";
-
-    align-content: center;
-    justify-content: center;
-}
-
-
-/*Container for audio player*/
 #audioplayer{
   grid-area: player;
   self-align: center;
 
 	width: 100%;
-	height: 30px;
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -72,7 +54,7 @@ iframe {
 /*Classes for play/pause button background*/
 .play{
     background-color: rgba(171, 139, 97, 0);
-    background-image: url(<%= asset_path 'play.png' %>);
+    background-image: url(<%= asset_path "play.png" %>);
     position: relative;
     top: -8px;
 }
@@ -93,7 +75,7 @@ iframe {
 }
 .pause{
     background-color: rgba(171, 139, 97, 0);
-    background-image: url(<%= asset_path 'pause.png' %>);
+    background-image: url(<%= asset_path "pause.png" %>);
     position: relative;
     top: -8px;
     animation: fa-spin 2s infinite linear;
