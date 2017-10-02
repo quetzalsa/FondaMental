@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+ */
+/* line 1, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/mastergrid.scss */
+.grid-master {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* line 8, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/mastergrid.scss */
+.grid2 {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+  grid-template-areas: "cuatro tres" "dos uno";
+}
+
+/* line 18, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/mastergrid.scss */
+.item1 {
+  background-color: green;
+  grid-area: uno;
+}
+
+/* line 23, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/mastergrid.scss */
+.item2 {
+  background-color: blue;
+  grid-area: dos;
+}
+
+/* line 28, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/mastergrid.scss */
+.item3 {
+  background-color: black;
+  grid-area: tres;
+}
+
+/* line 33, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/mastergrid.scss */
+.item4 {
+  background-color: pink;
+  grid-area: cuatro;
+}
+
+/* line 6, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+body {
+  background-color: #282828;
+  margin: 0;
+}
+
+/* line 13, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+.repro {
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  grid-template-columns: auto 30% auto;
+  grid-template-rows: auto 30px auto;
+  grid-template-areas: ". . ." ". player ." ". . . ";
+  align-content: center;
+  justify-content: center;
+}
+
+/*Container for audio player*/
+/* line 32, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+#audioplayer {
+  grid-area: player;
+  self-align: center;
+  width: 100%;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "timeline button";
+  align-content: center;
+}
+
+/* Play/Pause Button */
+/* line 45, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+#pButton {
+  display: block;
+  height: 60px;
+  width: 60px;
+  border: none;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  outline: none;
+  grid-area: button;
+}
+
+/*
+iframe {
+    height: 70px;
+    width: 20%;
+    margin: auto;
+}
+*/
+/*
+.cloud {
+    text-align: center;
+}
+*/
+/*Classes for play/pause button background*/
+/* line 73, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+.play {
+  background-color: rgba(171, 139, 97, 0);
+  background-image: url(/assets/play-50bd0d8edf70fd722b514669d037b42fbecda153c101ac00d1dc47b5fe9bac26.png);
+  position: relative;
+  top: -8px;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+/* line 94, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+.pause {
+  background-color: rgba(171, 139, 97, 0);
+  background-image: url(/assets/pause-f9710cbd4928689083169a41b68064e4253795fb898075c8782c9877938c7bae.png);
+  position: relative;
+  top: -8px;
+  animation: fa-spin 2s infinite linear;
+}
+
+/* line 102, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+#timeline {
+  height: 3px;
+  background: rgba(172, 172, 172, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-area: timeline;
+  /*	border-radius: 15px;*/
+}
+
+/*Grabable Playhead*/
+/* line 114, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/player.scss.erb */
+#playhead {
+  cursor: pointer;
+  width: 3px;
+  height: 25px;
+  margin-top: -11px;
+  margin-right: -14px;
+  background: #f0f0f0;
+}
