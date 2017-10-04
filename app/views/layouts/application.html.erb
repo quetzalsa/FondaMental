@@ -17,7 +17,12 @@
           <%= image_tag("fonda_blanco.png", class: "logonav") %>
 
           <div class="repro">
-            <audio id="music" preload="true" autoplay >
+            <audio id="music" preload="true"  >
+              <source src="/audios/2-1.mp3">
+              <source src="4.ogg">
+            </audio>
+              
+              <audio id="music1" preload="true"  >
               <source src="/audios/1.mp3">
               <source src="4.ogg">
             </audio>
@@ -27,25 +32,24 @@
                 <div id="timeline">
                   <div id="playhead"></div>
                 </div>
-                <button id="pButton" class="pause"></button>
+                <button id="pButton" class="play"></button>
               </div>
               </div>
 
               <div class="menu">
                 <%= link_to "Fonda Mental", fonda_mental_path %>
                 <%= link_to "Sobre Nosotros", fonda_mental_path %>
-                <a href="">Eventos</a>
+                <%= link_to "Eventos", fonda_mental_path %>
                 <div class="media">
                    <button class="dropdown">
                        Media
                    </button>
                    <div id="dropi" class="dropdown_content">
-                       <a href="">Fotos</a>
-                       <a href="">Video</a>
+                       <%= link_to "Fotos", fonda_mental_path %>
+                       <%= link_to "videos", fonda_mental_path %>
                    </div>
                 </div>
-                <a href="">Shop</a>
-                <a href="">Blog</a>
+                <%= link_to "Blog", fonda_mental_path %>
               </div>
         </nav>
 

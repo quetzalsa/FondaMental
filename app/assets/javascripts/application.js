@@ -14,8 +14,7 @@
 //= require turbolinks
 //= require_tree .
 
-var dropdownContent = document.getElementsByClassName('dropdown_content').style;
-if  ()
+
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -99,9 +98,11 @@ function timeUpdate() {
     }
 }
 
+
+    
 //Play and Pause
 function play() {
-
+    var a = document.getElementsByTagName('audio');
     // start music
     if (music.paused) {
         music.play();
