@@ -24,7 +24,7 @@
               
               <audio id="music1" preload="true"  >
               <source src="/audios/1.mp3">
-              <source src="4.ogg">
+              <source src="">
             </audio>
 
               <!--Audio Player Interface-->
@@ -38,18 +38,18 @@
 
               <div class="menu">
                 <%= link_to "Fonda Mental", fonda_mental_path %>
-                <%= link_to "Sobre Nosotros", fonda_mental_path %>
-                <%= link_to "Eventos", fonda_mental_path %>
+                <%= link_to "Sobre Nosotros", sobre_nosotros_path %>
+                <%= link_to "Eventos", eventos_path %>
                 <div class="media">
                    <button class="dropdown">
                        Media
                    </button>
                    <div id="dropi" class="dropdown_content">
-                       <%= link_to "Fotos", fonda_mental_path %>
-                       <%= link_to "videos", fonda_mental_path %>
+                       <%= link_to "Fotos", fotos_path %>
+                       <%= link_to "videos", videos_path %>
                    </div>
                 </div>
-                <%= link_to "Blog", fonda_mental_path %>
+                <%= link_to "Blog", blog_path %>
               </div>
         </nav>
 

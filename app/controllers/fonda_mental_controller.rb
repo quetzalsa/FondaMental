@@ -1,19 +1,20 @@
 class FondaMentalController < ApplicationController
-  def fonda_mental
+    
+  def blog
   end
-
-  def sobre_nosotros
-  end
-
+    
   def eventos
   end
-
-  def media
+    
+  def fonda_mental
+  end
+    
+  def sobre_nosotros
+  end
+    
+  def fotos
   end
 
-  def shop
-  end
-
-  def blog
+  def videos
   end
 end
