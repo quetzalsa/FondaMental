@@ -14,6 +14,8 @@
 //= require turbolinks
 //= require_tree .
 
+var dropdownContent = document.getElementsByClassName('dropdown_content').style;
+if  ()
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
