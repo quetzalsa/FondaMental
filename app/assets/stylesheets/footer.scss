@@ -13,21 +13,29 @@
 
 .sim1 {
   grid-area: uno;
+  :hover {
+    color:#E9E9E9;
+  }
 }
 
 .sim2 {
   grid-area: dos;
+  :hover {
+    color:#E9E9E9;
+  }
 }
 
 .sim3 {
   grid-area: tres;
+  :hover {
+    color:#E9E9E9;
+  }
 }
 
 
 
 i {
   color: rgb(189, 189, 189);
-
 }
 
 

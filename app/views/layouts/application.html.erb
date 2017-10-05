@@ -77,9 +77,15 @@
 
        <div class="footer">
           <div class="socialnet">
-            <i class="sim1 fa fa-soundcloud fa-2x" aria-hidden="true"></i>
-            <i class="sim2 fa fa-facebook-official fa-2x" aria-hidden="true"></i>
-            <i class="sim3 fa fa-instagram fa-2x" aria-hidden="true"></i>
+            <%= link_to 'https://soundcloud.com/fonda_mental', :class => 'sim1', :target => '_blanc' do %>
+              <i class="sim1 fa fa-soundcloud fa-2x" aria-hidden="true"></i>
+              <% end %> 
+            <%= link_to 'https://www.facebook.com/fondamental.chile/', :class => 'sim2', :target => '_blanc' do %>
+              <i class="sim2 fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+              <% end %> 
+            <%= link_to 'https://www.facebook.com/', :class => 'sim3', :target => '_blanc' do %>
+              <i class="sim3 fa fa-instagram fa-2x" aria-hidden="true"></i>
+              <% end %> 
           </div> 
       </div>
     </div>
