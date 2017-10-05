@@ -7,14 +7,20 @@
     <link rel="icon" type="image/png" href="<%= asset_path 'fondatitulo.png' %>">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application',
+    'https://fonts.googleapis.com/css?family=Work+Sans',
+     media: 'all', 'data-turbolinks-track' => true %>
+    
+    
+    
   </head>
 
   <body>
     <div class="pagina">
       <nav>
 
+          <%= link_to image_tag("fonda_blanco.png", class: "logonav"), root_path %>
           
-          <%= image_tag("fonda_blanco.png", class: "logonav") %>
 
           <div class="repro">
             <audio id="music" preload="true"  >
@@ -38,7 +44,6 @@
 
               <div class="menu">
                 <%= link_to "Fonda Mental", fonda_mental_path %>
-                <%= link_to "Sobre Nosotros", sobre_nosotros_path %>
                 <%= link_to "Eventos", eventos_path %>
                 <div class="media">
                    <button class="dropdown">
