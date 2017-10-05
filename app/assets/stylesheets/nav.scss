@@ -79,11 +79,13 @@
 
   .itemen {
     display: none;
+    border-bottom: 1px solid rgb(136, 136, 136);
   }
 
   .menu a {
     height: 100px;
     display: none;
+    
     width: 100%;
     padding-top: 60px;
     font-family: helvetica;
