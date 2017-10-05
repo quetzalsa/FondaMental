@@ -18,3 +18,27 @@
 @import "footer";
 @import "font-awesome";
 @import "fonda_mental";
+
+#myBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #555;
+    color: white; 
+    cursor: pointer; 
+    padding: 5px 15px; 
+    height: 40px;
+    border-radius: 10px; 
+}
+
+#myBtn:hover {
+    background-color: #3B3B3B;
+}
+
+body {
+    transition: 1s;
+}

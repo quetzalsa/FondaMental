@@ -17,9 +17,13 @@
 
   <body>
     <div class="pagina">
+       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+</button> 
       <nav>
-
-          <%= link_to image_tag("fonda_blanco.png", class: "logonav"), root_path %>
+          <div id="logonav">
+             <%= link_to image_tag("fonda_blanco.png", class: "logonav"), root_path %>
+          </div>
+         
           
 
           <div class="repro">
@@ -43,9 +47,10 @@
               </div>
 
               
-                <div class="menu">
-                <%= link_to "Fonda Mental", fonda_mental_path %>
-                <%= link_to "Eventos", eventos_path %>
+                <div class="menu" id="myTopnav">
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+                <%= link_to "Fonda Mental", fonda_mental_path, class: "itemen" %>
+                <%= link_to "Eventos", eventos_path, class: "itemen" %>
                 <div class="media">
                    <button class="dropdown">
                        Media
@@ -55,7 +60,8 @@
                        <%= link_to "videos", videos_path %>
                    </div>
                 </div>
-                <%= link_to "Blog", blog_path %>
+                <%= link_to "Blog", blog_path, class: "itemen" %>
+                
               </div>
               
               

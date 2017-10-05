@@ -1,5 +1,18 @@
 
-#logo_fonda {
+
+@media (max-width: 960px) {
+    #logo_fonda {
+    background-image: url(<%= asset_path "fonda_blanco.png" %>);
+    height: 50vh;
+    
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+}
+
+@media (min-width: 961px) {
+    #logo_fonda {
     background-image: url(<%= asset_path "fonda_blanco.png" %>);
     height: 100vh;
     
@@ -7,6 +20,8 @@
     background-repeat: no-repeat;
     background-size: 60%;
 }
+}
+
 
 #fonda_mental1 {
     width: 60%;
