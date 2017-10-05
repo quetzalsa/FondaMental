@@ -51,7 +51,7 @@
     grid-area: menu;
     align-content: center;
     justify-content: center;
-      overflow: scroll;
+    overflow: scroll;
   }
 
   .menu a {
@@ -128,10 +128,10 @@
 
   .pagina {
     display: grid;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     grid-template-columns: auto 70% auto;
-    grid-template-rows: 80px 1fr 80px;
+    grid-template-rows: 80px auto 80px;
     grid-template-areas:
     "navbar navbar navbar"
     ". main_content ."
@@ -164,6 +164,7 @@
 
   }
 
+
   .menu {
     width: 70%;
     margin-right: 10px;
@@ -174,7 +175,7 @@
     grid-template-rows: 80px;
     align-content: center;
     justify-content: center;
-
+    transition: top 0.3s;
   }
 
   .menu a {

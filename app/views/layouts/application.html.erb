@@ -42,7 +42,8 @@
               </div>
               </div>
 
-              <div class="menu">
+              
+                <div class="menu">
                 <%= link_to "Fonda Mental", fonda_mental_path %>
                 <%= link_to "Eventos", eventos_path %>
                 <div class="media">
@@ -56,18 +57,22 @@
                 </div>
                 <%= link_to "Blog", blog_path %>
               </div>
+              
+              
         </nav>
 
+        <div class="main_content">
+         <%= yield %>
+        </div>
+        
 
-        <%= yield %>
 
-
-      <div class="footer">
+       <div class="footer">
           <div class="socialnet">
             <i class="sim1 fa fa-soundcloud fa-2x" aria-hidden="true"></i>
             <i class="sim2 fa fa-facebook-official fa-2x" aria-hidden="true"></i>
             <i class="sim3 fa fa-instagram fa-2x" aria-hidden="true"></i>
-          </div>
+          </div> 
       </div>
     </div>
   </body>

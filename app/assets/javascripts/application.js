@@ -16,6 +16,8 @@
 
 
 
+
+
 document.addEventListener("DOMContentLoaded", function(event) {
 
 var music = document.getElementById('music'); // id for audio element
