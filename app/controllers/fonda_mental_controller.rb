@@ -12,9 +12,6 @@ class FondaMentalController < ApplicationController
   def sobre_nosotros
   end
     
-  def fotos
-  end
-
-  def videos
+  def media
   end
 end
