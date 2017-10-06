@@ -6,6 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'lightbox2-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

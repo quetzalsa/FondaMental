@@ -12,7 +12,11 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require lightbox
+//= require jquery2
+//= require jquery_ujs
 //= require_tree .
+
 
 
 function myFunction() {
