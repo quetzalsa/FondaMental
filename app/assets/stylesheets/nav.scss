@@ -61,9 +61,9 @@
   
   .menu a.icon {
     display: block;
-    font-size: 6em;
-    padding-top: 50px;
-    padding-bottom: 40px;
+    font-size: 5em;
+    height: 100%;
+    padding: 50px 0px;
   }
 
   
@@ -73,6 +73,7 @@
   }
   .menu.responsive a {
     height: 50px;
+    
     display: block;
     text-align: center;
   }
