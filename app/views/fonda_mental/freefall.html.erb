@@ -3,13 +3,34 @@
 
     <div id="imafreefall">
     </div>
-
+    <div class="gal_tit">
+            <h1>FREE FALL</h1>
+    </div>
     <div class="galeria">
 
+        
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info fa-2x" aria-hidden="true"></i>
+</button>
+            <div class="panel">
+            <p>Nos sumergimos en una caída libre. La mesa del DJ era una cabina de avión, maniquís colgaban del techo y los fondamentalistas bajaron directamente de las estrellas hasta la tierra y de la tierra hasta los bajos fondos de nuestra fiesta.</p>
+            <h3>16/07/2017</h3>
+            <h3>Club Greta, Bellavista, Santiago</h3>
+            <h3>Line Up</h3>
+            <ul>
+                <li>Alejandro Paz – Santiago/Chile</li>
+                <li>Jean Madry – Paris/Francia</li>
+                <li>Inerte – Paris/Francia</li>
+            </ul>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            
+            </div>
+        </div>
+        
+
     <iframe src="https://www.youtube.com/embed/wl5nO5kLk6M?rel=0" frameborder="0" allowfullscreen></iframe>
-    <div class="gal_tit">
-        <h1>Free Fall</h1>
-    </div>
+    
     <%= link_to image_tag("free_fall/min/free_fall_min01.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall01.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
     <%= link_to image_tag("free_fall/min/free_fall_min02.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall02.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
     <%= link_to image_tag("free_fall/min/free_fall_min03.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall03.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
@@ -29,12 +50,5 @@
 </div>
 </div>
 
-<script>
-    lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'showImageNumberLabel': false
-    'albumLabel': "%1 de %2"
-  })
-</script>
+
 

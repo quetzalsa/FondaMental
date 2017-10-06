@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application',
-    'https://fonts.googleapis.com/css?family=Work+Sans|Lato',
+    'https://fonts.googleapis.com/css?family=Work+Sans|Lato|Abril+Fatface|Gravitas+One|Hind',
      media: 'all', 'data-turbolinks-track' => true %>
     
     
@@ -91,6 +91,13 @@
     </div>
      
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    
+    <script>
+    lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'showImageNumberLabel': false
+    'albumLabel': "%1 de %2"
+  })
+</script>
   </body>
 </html>

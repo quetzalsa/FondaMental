@@ -9,8 +9,8 @@ Rails.application.routes.draw do
   get "/eventos" => "fonda_mental#eventos"
   get "/blog" => "fonda_mental#blog"
   get "/sobre_nosotros" => "fonda_mental#sobre_nosotros"
-  get "/media/freefall" => "fonda_mental#freefall"
-  get "/media/la_cour" => "fonda_mental#la_cour"
+  get "/galeria/freefall" => "fonda_mental#freefall"
+  get "/galeria/la_cour" => "fonda_mental#la_cour"
 
 
  
