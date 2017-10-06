@@ -1,11 +1,4 @@
-<script>
-    lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'showImageNumberLabel': false
-    'albumLabel': "%1 de %2"
-  })
-</script>
+
 <div class="main_content">
 
     <div id="imafreefall">
@@ -14,10 +7,10 @@
     <div class="galeria">
 
     <iframe src="https://www.youtube.com/embed/wl5nO5kLk6M?rel=0" frameborder="0" allowfullscreen></iframe>
-    <%= link_to image_tag("free_fall/min/free_fall_min01.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall01.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
     <div class="gal_tit">
         <h1>Free Fall</h1>
     </div>
+    <%= link_to image_tag("free_fall/min/free_fall_min01.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall01.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
     <%= link_to image_tag("free_fall/min/free_fall_min02.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall02.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
     <%= link_to image_tag("free_fall/min/free_fall_min03.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall03.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
     <%= link_to image_tag("free_fall/min/free_fall_min04.jpg" , class: "galeria_foto"), image_path("free_fall/free_fall04.jpg"), "data-lightbox" => "freefall",  class: "galeria_foto" %>
@@ -35,4 +28,13 @@
     
 </div>
 </div>
+
+<script>
+    lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true,
+    'showImageNumberLabel': false
+    'albumLabel': "%1 de %2"
+  })
+</script>
 

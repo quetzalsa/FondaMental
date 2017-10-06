@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   get "/fotos" => "fonda_mental#fotos"
-  get "/media" => "fonda_mental#media"
+  get "/galeria" => "fonda_mental#media"
   get "/videos" => "fonda_mental#videos"
   get "/historia" => "fonda_mental#fonda_mental"
   root "player#player"
@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   get "/blog" => "fonda_mental#blog"
   get "/sobre_nosotros" => "fonda_mental#sobre_nosotros"
   get "/media/freefall" => "fonda_mental#freefall"
+  get "/media/la_cour" => "fonda_mental#la_cour"
+
 
  
 

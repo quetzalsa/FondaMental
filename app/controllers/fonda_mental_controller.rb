@@ -14,4 +14,10 @@ class FondaMentalController < ApplicationController
     
   def media
   end
+
+  def la_cour
+  end 
+
+  def freefall
+  end
 end
