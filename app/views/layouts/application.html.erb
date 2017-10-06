@@ -49,8 +49,8 @@
               
                 <div class="menu" id="myTopnav">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars " aria-hidden="true"></i></a>
-                <%= link_to "Historia", historia_path, class: "itemen" %>
-                <%= link_to "Eventos", eventos_path, class: "itemen" %>
+                <%= link_to "Historia", historia_path, class: ["itemen", cp(historia_path)] %>
+                <%= link_to "Eventos", eventos_path, class: ["itemen", cp(eventos_path)] %>
 
                 <!-- <div class="media">
                    <button class="dropdown">
@@ -61,8 +61,8 @@
                        <%= link_to "videos", videos_path %>
                    </div>
                 </div> -->
-                <%= link_to "Media", media_path, class: "itemen" %>
-                <%= link_to "Blog", blog_path, class: "itemen" %>
+                <%= link_to "Media", media_path, class: ["itemen", cp(media_path)] %>
+                <%= link_to "Blog", blog_path, class: ["itemen", cp(blog_path)] %>
                 
               </div>
               
