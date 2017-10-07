@@ -18,6 +18,7 @@
 //= require_tree .
 
 
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -32,7 +33,6 @@ for (i = 0; i < acc.length; i++) {
     } 
   }
 }
- 
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
