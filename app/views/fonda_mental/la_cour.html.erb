@@ -3,12 +3,37 @@
     <div id="imalacour">
     </div>
 
-    <div class="galeria">
-
-    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
-    <div class="gal_tit">
+    <div class="gal_tit_lacour">
         <h1>La Cour Des Miracles</h1>
     </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info fa-2x" aria-hidden="true"></i>
+            </button>
+            <div class="panel">
+            <p>Niños de la bohemia, vagabundos felices, pregoneros de la calle, lanzadores de cuchillos, poetas frívolos, trovadores insaciables, tragafuegos sin miedo.
+            En cada ciudad existen rincones perdidos, pasillos olvidados, callejones oscuros… una especie de zona franca, un espacio liberado de la influencia social con códigos y reglas propias. <br>
+            Un enclave maravilloso donde viven personas consideradas indeseables a los ojos del mundo y que, sin embargo, crean de la nada, arte, belleza y amor sin límites. 
+            Este lugar se llama la «Corte de los Milagros».</p>
+            <h3>18/08/2017</h3>
+            <h3>Barabajo, Santiago</h3>
+            <h3>Line Up</h3>
+            <ul>
+                <li>Mer Esnal</li>
+                <li>Oscar Campbell B2B DJ Sarti</li>
+                <li>Valentina B2B Polifonik</li>
+                <li>Deniroster</li>
+            </ul>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            
+            </div>
+        </div>
+
+    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
+    
     <%= link_to image_tag("la_cour/min/la_cour_min08.jpg" , class: "galeria_foto"), image_path("la_cour/la_cour08.jpg"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
     <%= link_to image_tag("la_cour/min/la_cour_min02.jpg" , class: "galeria_foto"), image_path("la_cour/la_cour02.jpg"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
     <%= link_to image_tag("la_cour/min/la_cour_min03.jpg" , class: "galeria_foto"), image_path("la_cour/la_cour03.jpg"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
@@ -24,3 +49,20 @@
     
 </div>
 </div>
+
+<script>
+    var acc = document.getElementsByClassNam("accordion";
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+    }
+    }
+</script>

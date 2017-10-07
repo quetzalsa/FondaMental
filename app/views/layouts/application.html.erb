@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'application',
-    'https://fonts.googleapis.com/css?family=Work+Sans|Lato|Abril+Fatface|Gravitas+One|Hind',
+    'https://fonts.googleapis.com/css?family=Work+Sans|Lato|Abril+Fatface|Gravitas+One|Hind|Rubik+Mono+One',
      media: 'all', 'data-turbolinks-track' => true %>
     
     
@@ -52,15 +52,7 @@
                 <%= link_to "Historia", historia_path, class: ["itemen", cp(historia_path)] %>
                 <%= link_to "Calendario", eventos_path, class: ["itemen", cp(eventos_path)] %>
 
-                <!-- <div class="media">
-                   <button class="dropdown">
-                       Media
-                   </button>
-                   <div id="dropi" class="dropdown_content">
-                       <%= link_to "Fotos", fotos_path %>
-                       <%= link_to "videos", videos_path %>
-                   </div>
-                </div> -->
+                
                 <%= link_to "Galeria", galeria_path, class: ["itemen", cp(galeria_path)] %>
                 <%= link_to "Blog", blog_path, class: ["itemen", cp(blog_path)] %>
                 
@@ -91,6 +83,9 @@
     </div>
      
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+   
+    
     <script>
     lightbox.option({
     'resizeDuration': 200,
@@ -98,6 +93,8 @@
     'showImageNumberLabel': false
     'albumLabel': "%1 de %2"
   })
+
 </script>
+
   </body>
 </html>

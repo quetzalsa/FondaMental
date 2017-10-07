@@ -11,7 +11,7 @@
         
         <div class="info">
             <button class="accordion"><i class="fa fa-info fa-2x" aria-hidden="true"></i>
-</button>
+            </button>
             <div class="panel">
             <p>Nos sumergimos en una caída libre. La mesa del DJ era una cabina de avión, maniquís colgaban del techo y los fondamentalistas bajaron directamente de las estrellas hasta la tierra y de la tierra hasta los bajos fondos de nuestra fiesta.</p>
             <h3>16/07/2017</h3>
@@ -55,19 +55,16 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    }
-} </script>
+  acc[i].onclick = function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  }
+}
+ </script>
 
 
