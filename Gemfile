@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'lightbox2-rails'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
