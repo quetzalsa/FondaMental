@@ -55,7 +55,7 @@
     grid-area: menu;
     align-content: center;
     justify-content: center;
-    overflow: scroll;
+    overflow: auto;
   }
 
   
@@ -71,13 +71,15 @@
     padding:0px 0px 10px 0px;
   }
 
+  .menu.responsive .icon {
+    height: 100px;
+  }
+
   .menu.resposive .icon {
     height: 1000px;
   }
 
-  .responsive .menuitems {
-    margin-top: 50px;
-  }
+  
 
   .menu.responsive a {
     height: 50px;
@@ -191,13 +193,12 @@
     margin-top: 17px;
     width: 200px;
     grid-area: repro;
-
   }
 
 
   .menu {
-    width: 70%;
-    margin-right: 10px;
+    width: 60%;
+    margin-right: 90px;
     grid-area: menu;
     display: grid;
     height: 80px;
@@ -214,7 +215,7 @@
 
   .menuitems a  {
     display: block;
-    height: 100%;
+    height: 53px;
     font-family: 'Lato', sans-serif;
     color: rgb(187, 187, 187);
     text-decoration: none;
