@@ -10,9 +10,6 @@
     <%= stylesheet_link_tag 'application',
     'https://fonts.googleapis.com/css?family=Work+Sans|Lato|Abril+Fatface|Gravitas+One|Hind|Rubik+Mono+One',
      media: 'all', 'data-turbolinks-track' => true %>
-    
-    
-    
   </head>
 
   <body>
@@ -50,7 +47,7 @@
                 <div class="menu" id="myTopnav">
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars " aria-hidden="true"></i></a>
                 <div class="menuitems">
-                  <%= link_to "Historia", historia_path, class: ["itemen", cp(historia_path)] %>
+                  <%= link_to "Historia", historia_path, class: ["itemen", cp(historia_path)] %> 
                   <%= link_to "Calendario", eventos_path, class: ["itemen", cp(eventos_path)] %>
                   <%= link_to "Galeria", galeria_path, class: ["itemen", cp(galeria_path)] %>
                   <%= link_to "Blog", blog_path, class: ["itemen", cp(blog_path)] %>
@@ -68,13 +65,13 @@
 
        <div class="footer">
           <div class="socialnet">
-            <%= link_to 'https://soundcloud.com/fonda_mental', :class => 'sim1', :target => '_blanc' do %>
+            <%= link_to 'https://soundcloud.com/fonda_mental', class: ["sim1", "animated", "fadeInUp"], :target => '_blanc' do %>
               <i class="sim1 fa fa-soundcloud fa-2x" aria-hidden="true"></i>
               <% end %> 
-            <%= link_to 'https://www.facebook.com/fondamental.chile/', :class => 'sim2', :target => '_blanc' do %>
+            <%= link_to 'https://www.facebook.com/fondamental.chile/', class: ["sim2", "animated", "fadeInUp"], :target => '_blanc' do %>
               <i class="sim2 fa fa-facebook-official fa-2x" aria-hidden="true"></i>
               <% end %> 
-            <%= link_to 'https://www.instagram.com/fonda_mental/', :class => 'sim3', :target => '_blanc' do %>
+            <%= link_to 'https://www.instagram.com/fonda_mental/', class: ["sim3", "animated", "fadeInUp"], :target => '_blanc' do %>
               <i class="sim3 fa fa-instagram fa-2x" aria-hidden="true"></i>
               <% end %> 
           </div> 

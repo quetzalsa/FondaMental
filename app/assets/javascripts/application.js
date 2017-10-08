@@ -20,11 +20,18 @@
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "menu") {
-        x.className += " responsive";
+        x.className += "responsive";
     } else {
         x.className = "menu";
     }
 } 
+
+
+
+ 
+
+
+
 
 document.addEventListener("turbolinks:load", function() {
 
