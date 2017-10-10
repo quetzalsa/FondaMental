@@ -14,15 +14,25 @@
 
     button.accordion {
         background-color: rgb(43, 43, 43);
-        color: #444;
+        color: #dc2626; 
         cursor: pointer;
         padding: 18px;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 30px;
         width: 100%;
         text-align: left;
         border: none;
         outline: none;
         transition: 0.4s;
     }
+
+    #arrow {
+        float: right;
+    }
+
+   button.accordion i {
+       color: #dc2626;
+   }
 
     button.accordion.active, button.accordion:hover {
         background-color: #ccc;
@@ -263,6 +273,7 @@
         
     }
 }
+
 
 .galeria img {
     width: 100%;
