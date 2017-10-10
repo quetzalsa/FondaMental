@@ -113,7 +113,7 @@ document.addEventListener("turbolinks:load", function() {
 
         var fromBottomTimeline = new TimelineMax();
         var fromBottomFrom = TweenMax.from([anim5, anim6], 1, {
-            y: 300
+            y: 400
         });
         var fromBottomTo = TweenMax.to([anim5, anim6], 1, {
             y: 0
@@ -124,7 +124,7 @@ document.addEventListener("turbolinks:load", function() {
          
         new ScrollMagic.Scene({
                 triggerElement: "#trig3",
-                offset: 400
+                offset: 200
             })
             .setTween(fromBottomTimeline)
             .duration(400)
