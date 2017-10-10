@@ -146,7 +146,8 @@ document.addEventListener("turbolinks:load", function() {
             .add(fromBottomTo);
          
         new ScrollMagic.Scene({
-                triggerElement: ".galeria_princ"
+                triggerElement: ".galeria_princ",
+                offset: 100
             })
             .setTween(fromBottomTimeline)
             .duration(400)
