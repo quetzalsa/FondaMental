@@ -53,57 +53,113 @@ document.addEventListener("turbolinks:load", function() {
                 .addTo(controller);
 
     // galeria princ
-   
-    var controller = new ScrollMagic.Controller();
-    
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig1'
-        })
-        .setClassToggle('#anim1', 'fadeInUp')
-        .addTo(controller);
 
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig1'
-        })
-        .setClassToggle('#anim2', 'fadeInUp')
-        .addTo(controller);
+        var anim8 = document.getElementsByClassName('anim8');        
+        var anim7 = document.getElementsByClassName('anim7'); 
+        var anim6 = document.getElementsByClassName('anim6');        
+        var anim5 = document.getElementsByClassName('anim5');
+        var anim4 = document.getElementsByClassName('anim4');
+        var anim3 = document.getElementById('anim3');
+        var anim2 = document.getElementById('anim2');
+        var anim1 = document.getElementById('anim1');
+
+        //uno
+
+        var fromBottomTimeline = new TimelineMax();
+        var fromBottomFrom = TweenMax.from([anim4, anim3], 1, {
+            y: 300
+        });
+        var fromBottomTo = TweenMax.to([anim4, anim3], 1, {
+            y: 0
+        });
+        fromBottomTimeline
+            .add(fromBottomFrom)
+            .add(fromBottomTo);
+         
+        new ScrollMagic.Scene({
+                triggerElement: "#trig2",
+                offset: 200
+            })
+            .setTween(fromBottomTimeline)
+            .duration(400)
+            .reverse(false)
+            //.addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+
+        //dos
+
+        var fromBottomTimeline = new TimelineMax();
+        var fromBottomFrom = TweenMax.from([anim2, anim1], 1, {
+            y: 300
+        });
+        var fromBottomTo = TweenMax.to([anim2, anim1], 1, {
+            y: 0
+        });
+        fromBottomTimeline
+            .add(fromBottomFrom)
+            .add(fromBottomTo);
+         
+        new ScrollMagic.Scene({
+                triggerElement: "#trig1",
+                offset: 200
+            })
+            .setTween(fromBottomTimeline)
+            .duration(400)
+            .reverse(false)
+            //.addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+
+        //tres
+
+        var fromBottomTimeline = new TimelineMax();
+        var fromBottomFrom = TweenMax.from([anim5, anim6], 1, {
+            y: 300
+        });
+        var fromBottomTo = TweenMax.to([anim5, anim6], 1, {
+            y: 0
+        });
+        fromBottomTimeline
+            .add(fromBottomFrom)
+            .add(fromBottomTo);
+         
+        new ScrollMagic.Scene({
+                triggerElement: "#trig3",
+                offset: 200
+            })
+            .setTween(fromBottomTimeline)
+            .duration(400)
+            .reverse(false)
+            //.addIndicators() // add indicators (requires plugin)
+            .addTo(controller);
+
+        //cuatro
+
+        var fromBottomTimeline = new TimelineMax();
+        var fromBottomFrom = TweenMax.from([anim7, anim8], 1, {
+            y: 300
+        });
+        var fromBottomTo = TweenMax.to([anim7, anim8], 1, {
+            y: 0
+        });
+        fromBottomTimeline
+            .add(fromBottomFrom)
+            .add(fromBottomTo);
+         
+        new ScrollMagic.Scene({
+                triggerElement: ".galeria_princ"
+            })
+            .setTween(fromBottomTimeline)
+            .duration(400)
+            .reverse(false)
+            //.addIndicators() // add indicators (requires plugin)
+            .addTo(controller);    
+
         
+            
 
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig2'
-        })
-        .setClassToggle('#anim3', 'fadeInUp')
-        .addTo(controller);
 
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig2'
-        })
-        .setClassToggle('.anim4', 'fadeInUp')
-        .addTo(controller);
 
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig3'
-        })
-        .setClassToggle('.anim5', 'fadeInUp')
-        .addTo(controller);
 
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig3'
-        })
-        .setClassToggle('.anim6', 'fadeInUp')
-        .addTo(controller);
-
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig2'
-        })
-        .setClassToggle('.anim4', 'fadeInUp')
-        .addTo(controller);
-
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trig2'
-        })
-        .setClassToggle('.anim4', 'fadeInUp')
-        .addTo(controller);
 
     var acc = document.getElementsByClassName("accordion");
     var i;
