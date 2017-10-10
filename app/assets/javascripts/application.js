@@ -24,11 +24,35 @@ document.addEventListener("turbolinks:load", function() {
 
     var controller = new ScrollMagic.Controller();
     
-        var ourScene = new ScrollMagic.Scene({
-            triggerElement: '#trigger'
+        var ourScenedos = new ScrollMagic.Scene({
+            triggerElement: '#footer',
+            triggerHook: 'onEnter',
+            offset: 20
         })
         .setClassToggle('.sim1', 'fadeInUp')
         .addTo(controller);
+
+        var controller = new ScrollMagic.Controller();
+        
+            var ourScenedos = new ScrollMagic.Scene({
+                triggerElement: '#footer',
+                triggerHook: 'onEnter',
+                offset: 20
+            })
+            .setClassToggle('.sim2', 'fadeInUp')
+            .addTo(controller);
+
+            var controller = new ScrollMagic.Controller();
+            
+                var ourScenedos = new ScrollMagic.Scene({
+                    triggerElement: '#footer',
+                    triggerHook: 'onEnter',
+                    offset: 20
+                })
+                .setClassToggle('.sim3', 'fadeInUp')
+                .addTo(controller);
+
+    // galeria princ
    
     var controller = new ScrollMagic.Controller();
     
