@@ -113,7 +113,7 @@ document.addEventListener("turbolinks:load", function() {
 
         var fromBottomTimeline = new TimelineMax();
         var fromBottomFrom = TweenMax.from([anim5, anim6], 1, {
-            y: 400
+            y: 600
         });
         var fromBottomTo = TweenMax.to([anim5, anim6], 1, {
             y: 0
