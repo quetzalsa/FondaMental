@@ -18,21 +18,73 @@
 //= require_tree .
 
 
-
-
-
- 
-
-
-
-
 document.addEventListener("turbolinks:load", function() {
 
-   
+    // footer
+
+    var controller = new ScrollMagic.Controller();
     
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trigger'
+        })
+        .setClassToggle('.sim1', 'fadeInUp')
+        .addTo(controller);
+   
+    var controller = new ScrollMagic.Controller();
+    
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig1'
+        })
+        .setClassToggle('#anim1', 'fadeInUp')
+        .addTo(controller);
+
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig1'
+        })
+        .setClassToggle('#anim2', 'fadeInUp')
+        .addTo(controller);
+        
+
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig2'
+        })
+        .setClassToggle('#anim3', 'fadeInUp')
+        .addTo(controller);
+
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig2'
+        })
+        .setClassToggle('.anim4', 'fadeInUp')
+        .addTo(controller);
+
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig3'
+        })
+        .setClassToggle('.anim5', 'fadeInUp')
+        .addTo(controller);
+
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig3'
+        })
+        .setClassToggle('.anim6', 'fadeInUp')
+        .addTo(controller);
+
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig2'
+        })
+        .setClassToggle('.anim4', 'fadeInUp')
+        .addTo(controller);
+
+        var ourScene = new ScrollMagic.Scene({
+            triggerElement: '#trig2'
+        })
+        .setClassToggle('.anim4', 'fadeInUp')
+        .addTo(controller);
 
     var acc = document.getElementsByClassName("accordion");
     var i;
+
+
     
     for (i = 0; i < acc.length; i++) {
       acc[i].onclick = function() {
