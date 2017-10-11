@@ -113,7 +113,7 @@ document.addEventListener("turbolinks:load", function() {
 
         var fromBottomTimeline = new TimelineMax();
         var fromBottomFrom = TweenMax.from([anim5, anim6], 1, {
-            y: 600
+            y: 500
         });
         var fromBottomTo = TweenMax.to([anim5, anim6], 1, {
             y: 0
@@ -136,7 +136,7 @@ document.addEventListener("turbolinks:load", function() {
 
         var fromBottomTimeline = new TimelineMax();
         var fromBottomFrom = TweenMax.from([anim7, anim8], 1, {
-            y: 300
+            y: 600
         });
         var fromBottomTo = TweenMax.to([anim7, anim8], 1, {
             y: 0
@@ -150,7 +150,7 @@ document.addEventListener("turbolinks:load", function() {
                 offset: 100
             })
             .setTween(fromBottomTimeline)
-            .duration(400)
+            .duration(600)
             .reverse(false)
             //.addIndicators() // add indicators (requires plugin)
             .addTo(controller);    
