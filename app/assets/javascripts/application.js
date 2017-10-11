@@ -12,9 +12,9 @@
 //
 //= require jquery2
 //= require jquery_ujs
-//= require lightbox
 //= require rails-ujs
 //= require turbolinks
+//= require lightbox
 //= require_tree .
 
 
