@@ -1,6 +1,24 @@
 
 document.addEventListener("turbolinks:load", function() {
 
+
+    $( document ).ready(function() {
+        
+          // hide spinner
+          $(".cargando").hide();
+        
+        
+          // show spinner on AJAX start
+          $(document).ajaxStart(function(){
+            $(".cargando").show();
+          });
+        
+          // hide cargando on AJAX stop
+          $(document).ajaxStop(function(){
+            $(".cargando").hide();
+          });
+        
+        });
 // footer
 
 var controller = new ScrollMagic.Controller();
