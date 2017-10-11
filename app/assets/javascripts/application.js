@@ -12,14 +12,14 @@
 //
 //= require jquery2
 //= require jquery_ujs
-//= require lightbox
 //= require turbolinks
+//= require lightbox
 //= require_tree .
 
 
 document.addEventListener("turbolinks:load", function() {
 
-    
+   
 
 
     var acc = document.getElementsByClassName("accordion");
