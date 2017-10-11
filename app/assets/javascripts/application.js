@@ -124,7 +124,7 @@ document.addEventListener("turbolinks:load", function() {
          
         new ScrollMagic.Scene({
                 triggerElement: "#trig3",
-                offset: 200
+                offset: 300
             })
             .setTween(fromBottomTimeline)
             .duration(400)
