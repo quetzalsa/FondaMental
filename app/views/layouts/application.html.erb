@@ -18,7 +18,7 @@
   </div>
   
     <div class="pagina">
-       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+       <button  id="myBtn" title="Go to top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
 </button> 
       <nav>
           <div id="logonav">
@@ -93,13 +93,14 @@
     <script>
 
     
+     
       // player
  
         
 document.addEventListener("DOMContentLoaded", function(event) {
     
 
-    
+   
     var music = document.getElementById('music'); // id for audio element
     var duration; // Duration of audio clip
     var pButton = document.getElementById('pButton'); // play button
@@ -114,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     // timeupdate event listener
     music.addEventListener("timeupdate", timeUpdate, false);
-    
+     music.currentTime = 0;
     // makes timeline clickable
     timeline.addEventListener("click", function(event) {
         moveplayhead(event);
@@ -214,8 +215,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     /* DOMContentLoaded*/
     });
-
-
     </script>
       
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
