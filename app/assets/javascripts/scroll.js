@@ -23,7 +23,7 @@ document.addEventListener("turbolinks:load", function() {
       });
        
 // footer
-
+    
 var controller = new ScrollMagic.Controller();
 
     var ourScenedos = new ScrollMagic.Scene({
@@ -65,6 +65,8 @@ var controller = new ScrollMagic.Controller();
     var anim2 = document.getElementById('anim2');
     var anim1 = document.getElementById('anim1');
 
+
+    if ($( window ).width() >= 960) {
     //footer sim
     var fromBottomTimeline = new TimelineMax();
     var fromBottomFrom = TweenMax.from([anim4, anim3], 1, {
@@ -188,5 +190,6 @@ var controller = new ScrollMagic.Controller();
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
 
-
+    }
     })
+
