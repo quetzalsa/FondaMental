@@ -1,0 +1,7 @@
+/* line 1, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/mastergrid.scss */
+.grid-master {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}

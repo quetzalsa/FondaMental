@@ -1,0 +1,224 @@
+@media (max-width: 960px) {
+  /* line 3, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .repro {
+    width: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 9, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .pagina {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "navbar" "main_content" "footer";
+  }
+
+  /* line 21, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  nav {
+    background-color: #070707;
+    grid-area: navbar;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "logo" "menu";
+    justify-items: center;
+    align-content: center;
+  }
+
+  /* line 34, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  #logonav {
+    text-align: center;
+  }
+
+  /* line 38, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .logonav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0em;
+    box-sizing: border-box;
+    width: 70%;
+    grid-area: logo;
+  }
+
+  /* line 47, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .repro {
+    display: none;
+  }
+
+  /* line 51, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menu {
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    grid-area: menu;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  /* line 62, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menu .icon {
+    display: block;
+    font-size: 5em;
+    padding-bottom: 35px;
+  }
+
+  /* line 69, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .responsive .itemen {
+    display: block;
+  }
+
+  /* line 73, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menuitems a {
+    display: block;
+    height: 53px;
+    font-family: 'Lato', sans-serif;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 28px;
+  }
+
+  /* line 84, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menuitems a:hover {
+    background-color: #555555;
+    color: #E6E6E6;
+  }
+
+  /* line 89, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .itemen {
+    display: none;
+    border-bottom: 1px solid #888888;
+    width: 100vw;
+  }
+
+  /* line 95, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .responsive .itemen {
+    display: block;
+  }
+
+  /* line 99, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menu a {
+    height: 100px;
+    display: none;
+    width: 100%;
+    padding: 60px 0px;
+    font-family: helvetica;
+    font-size: 1.5em;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /* line 111, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menu .menuitems a {
+    height: 100%;
+    padding: 20px 0px;
+    font-family: helvetica;
+  }
+}
+@media (min-width: 961px) {
+  /* line 122, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .repro {
+    width: 300px;
+    padding-left: 100px;
+  }
+
+  /* line 127, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .pagina {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: auto 70% auto;
+    grid-template-rows: 80px auto 80px;
+    grid-template-areas: "navbar navbar navbar" ". main_content ." "footer footer footer";
+  }
+
+  /* line 139, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  nav {
+    background-color: #1b1b1b;
+    grid-area: navbar;
+    display: grid;
+    height: 80px;
+    grid-template-columns: 1fr 1fr 4fr;
+    grid-row: 80px;
+    grid-template-areas: "logo repro menu";
+    justify-items: center;
+    align-content: center;
+  }
+
+  /* line 152, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .logonav {
+    padding-top: 0.8em;
+    width: 100px;
+    grid-area: logo;
+  }
+
+  /* line 158, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .repro {
+    margin-top: 17px;
+    width: 200px;
+    grid-area: repro;
+  }
+
+  /* line 165, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menu {
+    width: 60%;
+    margin-right: 90px;
+    grid-area: menu;
+    display: grid;
+    height: 80px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px;
+    align-content: center;
+    justify-content: center;
+    transition: top 0.3s;
+  }
+
+  /* line 178, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menu .icon {
+    display: none;
+  }
+
+  /* line 182, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menuitems a {
+    display: block;
+    height: 53px;
+    font-family: 'Lato', sans-serif;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 28px;
+  }
+
+  /* line 192, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .menuitems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px;
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* line 201, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+  .media {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    background-color: #323232;
+  }
+}
+/* line 213, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+.current {
+  background-color: #555555;
+  color: #E6E6E6;
+}
+
+/* line 218, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/nav.scss */
+.menu a:hover {
+  background-color: #555555;
+  color: #E6E6E6;
+}
