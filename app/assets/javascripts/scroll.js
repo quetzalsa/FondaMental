@@ -1,4 +1,12 @@
 
+
+
+
+
+
+
+
+
 document.addEventListener("turbolinks:load", function() {
 
     $(".cargando").hide();
