@@ -48,10 +48,12 @@ document.addEventListener("turbolinks:load", function() {
     $(document).ready(function() {
         $("#myBtn").click(function(event) {
             event.preventDefault();
-            $("html, body").animate({ scrollTop: 0 }, "slow");
+            $("html, body").stop(true, false).animate({ scrollTop: 0 },500);
             return false;
         });
-    
+        $(window).bind("mousewheel", function() {
+            $("html, body").stop();
+        });
     });
   })
 
