@@ -1,0 +1,199 @@
+@media (max-width: 960px) {
+  /* line 4, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #logo_fonda {
+    background-image: url(/assets/fonda_blanco-151481bf0306358e4ee00b748e90c5b54549d1ed8ca3f40a3c3244837067b7c6.png);
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+
+  /* line 12, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    color: #d4d4d4;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 20, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 h1 {
+    text-align: center;
+  }
+  /* line 23, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 p {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    font-size: 1em;
+  }
+  /* line 29, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 ul li {
+    font-size: 1em;
+  }
+
+  /* line 34, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #d4d4d4;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 42, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 h1 {
+    text-align: center;
+  }
+  /* line 45, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 p {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    font-size: 1em;
+  }
+  /* line 51, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 ul li {
+    font-size: 1em;
+  }
+
+  /* line 56, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #d4d4d4;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 64, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 h1 {
+    text-align: center;
+  }
+  /* line 67, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 p {
+    width: 100%;
+    text-align: left;
+    margin: auto;
+    font-size: 1em;
+  }
+  /* line 73, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 ul li {
+    font-size: 1em;
+  }
+}
+@media (min-width: 961px) {
+  /* line 80, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #logo_fonda {
+    background-image: url(/assets/fonda_blanco-151481bf0306358e4ee00b748e90c5b54549d1ed8ca3f40a3c3244837067b7c6.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+  }
+
+  /* line 88, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    color: #d4d4d4;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 96, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 h1 {
+    text-align: center;
+  }
+  /* line 99, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 p {
+    width: 100%;
+    text-align: justify;
+    margin: auto;
+    font-size: 1em;
+  }
+  /* line 105, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental1 ul li {
+    font-size: 1em;
+  }
+
+  /* line 110, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #d4d4d4;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 118, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 h1 {
+    text-align: center;
+  }
+  /* line 121, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 p {
+    width: 100%;
+    text-align: justify;
+    margin: auto;
+    font-size: 1em;
+  }
+  /* line 127, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental2 ul li {
+    font-size: 1em;
+  }
+
+  /* line 132, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 {
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    color: #d4d4d4;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 140, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 h1 {
+    text-align: center;
+  }
+  /* line 143, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 p {
+    width: 100%;
+    text-align: justify;
+    margin: auto;
+    font-size: 1em;
+  }
+  /* line 149, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+  #fonda_mental3 ul li {
+    font-size: 1em;
+  }
+}
+/* line 156, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+#imagen1 {
+  background-image: url(/assets/sobre1-9a5697def102225a26784171e3bddc7730fd83dfea7c0c8fe68f2776d94e9e09.jpg);
+  height: 400px;
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 165, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+#imagen2 {
+  background-image: url(/assets/sobrenosotros-777ff72256ca12600ab18ca45619f41f8f473f7dd306c6fcc41bf7dd7d77358d.jpg);
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* line 174, /Volumes/1T/fonda_mental/pagina/player/music_player/app/assets/stylesheets/fonda_mental.scss.erb */
+#imagen3 {
+  background-image: url(/assets/sobre2-b458bccb18a9325b2a5af3dcd64cb2f83b886bd3713f01237ca4ba980e94af3b.jpg);
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
