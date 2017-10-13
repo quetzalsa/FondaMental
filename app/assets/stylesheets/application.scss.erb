@@ -22,10 +22,34 @@
 @import "media";
 @import "lightbox";
 
-
 @font-face {
-    font-family: 'fondamental';
-    src: url(<%= asset_path "fonts/fondamental.ttf" %>);
+  font-family: 'fondamental';
+  src: url('<%= asset_path "fonts/fondamental.woff2" %>') format('woff2'),
+       url('<%= asset_path "fonts/fondamental.woff" %>') format('woff'),
+       url('<%= asset_path "fonts/fondamental.ttf" %>') format('truetype');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(41, 41, 41);
+  -webkit-animation-name: fondo;
+  -webkit-animation-duration: 60s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;  
+
+  animation-name: fondo;
+  animation-duration: 60s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fondo {
+    0%   {background-color: rgb(41, 41, 41);}
+    25%  {background-color: #300000;}
+    50%  {background-color: #0e2e03;}
+    75%  {background-color: #070138;}
+    100% {background-color: rgb(41, 41, 41);}
 }
 
 .cargando {

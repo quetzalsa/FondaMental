@@ -198,12 +198,12 @@
     justify-content: center;
   }
 
-
-    .media {
-        position: relative;
-        display: inline-block;
-        height: 80px;
-        background-color: rgb(50, 50, 50);
+  
+  .media {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    background-color: rgb(50, 50, 50);
     }
     
 
@@ -211,14 +211,16 @@
   
 }
 
-.current {
-  background-color: rgb(85, 85, 85);
-  color: #E6E6E6;
-}
 
 .menu a:hover {
   background-color: rgb(85, 85, 85);
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.current {
+  background-color: rgb(179, 179, 179);
+  color: rgb(133, 23, 23) !important;
+
 }
 
 
