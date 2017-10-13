@@ -181,12 +181,13 @@
 
   .menuitems a  {
     display: block;
-    height: 53px;
-    font-family: 'Lato', sans-serif;
-    color: rgb(187, 187, 187);
+    
+    font-family: 'fondamental';
+    font-size: 40px;
+    color: rgb(219, 219, 219);
     text-decoration: none;
     text-align: center;
-    padding-top: 28px;
+    padding-top: 15px;
   }
 
   .menuitems {
@@ -217,7 +218,7 @@
 
 .menu a:hover {
   background-color: rgb(85, 85, 85);
-  color: #E6E6E6;
+  color: rgb(255, 255, 255);
 }
 
 
