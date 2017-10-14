@@ -51,9 +51,9 @@ document.addEventListener("turbolinks:load", function() {
     $(window).scroll(function() {
         var height = $(window).scrollTop();
         if (height > 80) {
-            $('#botonside').fadeIn(700);
+            $('#botonside').fadeIn();
         } else {
-            $('#botonside').fadeOut(500);
+            $('#botonside').hide();
         }
     });
 
