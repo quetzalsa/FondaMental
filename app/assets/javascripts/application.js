@@ -45,6 +45,22 @@ document.addEventListener("turbolinks:load", function() {
             $('#myBtn').fadeOut();
         }
     });
+
+    //Side boton
+
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 80) {
+            $('#botonside').fadeIn(700);
+        } else {
+            $('#botonside').fadeOut(500);
+        }
+    });
+
+   
+
+    //topscroll
+
     $(document).ready(function() {
         $("#myBtn").click(function(event) {
             event.preventDefault();

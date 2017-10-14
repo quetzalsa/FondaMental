@@ -1,0 +1,51 @@
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#botonside {
+    color: #851717;
+    font-family: 'fondamental';
+    font-size: 50px !important;
+    position: fixed;
+    display:none;
+    top: 40px;
+    left:60px;
+    transition: 0.5s;
+    &:hover {
+        color:black;
+    }
+}
+
+.galeriaside {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.closebtn {
+    color: white;
+    text-decoration: none;
+}
