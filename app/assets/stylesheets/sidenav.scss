@@ -21,19 +21,32 @@
     margin-left: 50px;
 }
 
+@media (min-width: 960px) {
 #botonside {
     color: #851717;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 10px 5px 40px;
+    width: 9%;
     font-family: 'fondamental';
     font-size: 50px !important;
     position: fixed;
     // display:none;
-    top: 40px;
-    left:60px;
+    top: 80px;
+    left:0px;
     transition: 0.5s;
     &:hover {
         color:black;
+        background-color: rgb(134, 134, 134);
     }
 }
+}
+
+@media (max-width: 960px) {
+    #botonside {
+        display: none;
+    }
+}
+
 
 .galeriaside {
     width: 90%;
@@ -46,6 +59,8 @@
     align-content: center;
     z-index: 999;
 }
+
+
 
 .closebtn {
     color: white;
