@@ -48,14 +48,14 @@ document.addEventListener("turbolinks:load", function() {
 
     //Side boton
 
-    $(window).scroll(function() {
-        var height = $(window).scrollTop();
-        if (height > 80) {
-            $('#botonside').fadeIn();
-        } else {
-            $('#botonside').hide();
-        }
-    });
+    // $(window).scroll(function() {
+    //     var height = $(window).scrollTop();
+    //     if (height > 80) {
+    //         $('#botonside').fadeIn();
+    //     } else {
+    //         $('#botonside').hide();
+    //     }
+    // });
 
    
 

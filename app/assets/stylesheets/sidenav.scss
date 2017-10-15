@@ -10,6 +10,7 @@
     transition: 0.5s;
     padding-top: 60px;
     text-align:center;
+    z-index: 999;
 }
 
 .sidenav .closebtn {
@@ -25,7 +26,7 @@
     font-family: 'fondamental';
     font-size: 50px !important;
     position: fixed;
-    display:none;
+    // display:none;
     top: 40px;
     left:60px;
     transition: 0.5s;
@@ -43,6 +44,7 @@
     grid-gap: 50px;
     justify-content: center;
     align-content: center;
+    z-index: 999;
 }
 
 .closebtn {

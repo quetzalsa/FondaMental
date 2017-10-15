@@ -24,7 +24,8 @@ document.addEventListener("turbolinks:load", function() {
         $(".cargando").hide();
       });
 
-    
+
+
        
 // footer
     
@@ -196,6 +197,33 @@ var controller = new ScrollMagic.Controller();
         .reverse(false)
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
+
+
+
+        // scroll gal
+var botongali = document.getElementById('botonside');
+var fromBottomTimelinea = new TimelineMax();
+var fromBottomFrom = TweenMax.from(botongali, 1, {
+    x: -300,
+    opacity:0
+});
+var fromBottomTo = TweenMax.to(botongali, 1, {
+    x: 0,
+    opacity:1
+});
+fromBottomTimeline
+    .add(fromBottomFrom)
+    .add(fromBottomTo);
+ 
+new ScrollMagic.Scene({
+        triggerElement: ".imafreefall",
+        offset: 30
+    })
+    .setTween(fromBottomTimeline)
+    .duration(100)
+    //.reverse(false)
+    //.addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
 
     }
     })
