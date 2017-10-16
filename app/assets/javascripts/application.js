@@ -19,6 +19,8 @@
 
 document.addEventListener("turbolinks:load", function() {
 
+    
+
    
 
 
@@ -70,6 +72,9 @@ document.addEventListener("turbolinks:load", function() {
         $(window).bind("mousewheel", function() {
             $("html, body").stop();
         });
+
+
+        
     });
   })
 

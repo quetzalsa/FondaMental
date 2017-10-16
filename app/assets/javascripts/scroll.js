@@ -8,7 +8,9 @@ function responsiveMenu() {
       }
     } 
 
-
+    
+      
+     
 
 document.addEventListener("turbolinks:load", function() {
 
@@ -200,31 +202,39 @@ var controller = new ScrollMagic.Controller();
 
 
 
-        // scroll gal
-var botongali = document.getElementById('botonside');
-var fromBottomTimelinea = new TimelineMax();
-var fromBottomFrom = TweenMax.from(botongali, 1, {
-    x: -300,
-    opacity:0
-});
-var fromBottomTo = TweenMax.to(botongali, 1, {
-    x: 0,
-    opacity:1
-});
-fromBottomTimeline
+          // scroll gal
+    var botongali = document.getElementById('botonside');
+    var fromBottomTimelinea = new TimelineMax();
+    var fromBottomFrom = TweenMax.from(botongali, 1, {
+        x: -300,
+        opacity:0
+    });
+    var fromBottomTo = TweenMax.to(botongali, 1, {
+        x: 0,
+        opacity:1
+    });
+    fromBottomTimelinea
     .add(fromBottomFrom)
     .add(fromBottomTo);
- 
-new ScrollMagic.Scene({
+    
+    new ScrollMagic.Scene({
         triggerElement: ".imafreefall",
         offset: 30
     })
-    .setTween(fromBottomTimeline)
+    .setTween(fromBottomTimelinea)
     .duration(100)
     //.reverse(false)
     //.addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
-    }
-    })
 
+    }
+    
+    
+    
+})
+
+
+
+
+   
