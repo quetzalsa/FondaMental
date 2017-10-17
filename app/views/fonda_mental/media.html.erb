@@ -4,35 +4,52 @@
 
     <div class="imagen_evento anim8" id="trig3">
         <h1>Free Fall</h1>
-        <%= link_to image_tag("free_fall/min/free_fall_min14.jpg" , class: "galerynav", "data-method" => "post"), galeria_freefall_path %>
+        <%= link_to cl_image_tag("freefall/free_fall_min14.jpg", class: "galerynav") , galeria_freefall_path %>
+        
     </div>
     <div class="imagen_evento anim7">
         <h1>La Cour Des Miracles</h1>
-        <%= link_to image_tag("la_cour/min/la_cour_min08.jpg" , class: "galerynav"), galeria_la_cour_path %>
+        <%= link_to cl_image_tag("lacourdesmiracles/la_cour_des_miracles_min12.jpg" , class: "galerynav"), galeria_la_cour_path %>
     </div>
     <div class="imagen_evento animated anim6" id="trig2">
-        <h1>Technorama</h1>
-        <%= link_to image_tag("la_cour/min/la_cour_min06.jpg" , class: "galerynav"), root_path %>
+        <h1>Physical</h1>
+        <%= link_to cl_image_tag("physical/physical_min03.jpg" , class: "galerynav"), root_path %>
     </div>
     <div class="imagen_evento animated anim5">
-        <h1>Free Fall</h1>
-        <%= link_to image_tag("la_cour/min/la_cour_min02.jpg" , class: "galerynav"), root_path %>
+        <h1>Technorama</h1>
+        <%= link_to cl_image_tag("technorama/technorama_min04.jpg" , class: "galerynav"), root_path %>
     </div>
     <div class="imagen_evento animated anim4" id="trig1">
-        <h1>Free Fall</h1>
-        <%= link_to image_tag("la_cour/min/la_cour_min09.jpg" , class: "galerynav"), root_path %>
+        <h1>Femmes Fatales</h1>
+        <%= link_to cl_image_tag("femmesfatales/femmes_falates_min01.jpg" , class: "galerynav"), root_path %>
     </div>
     <div class="imagen_evento animated" id="anim3">
-        <h1>Free Fall</h1>
-        <%= link_to image_tag("la_cour/min/la_cour_min01.jpg" , class: "galerynav"), root_path %>
+        <h1>Red Light</h1>
+        <%= link_to cl_image_tag("redlight/red_light_min13" , class: "galerynav"), root_path %>
     </div>
     <div class="imagen_evento animated" id="anim2">
-        <h1>Free Fall</h1>
-        <%= link_to image_tag("la_cour/min/la_cour_min04.jpg" , class: "galerynav"), root_path %>
+        <h1>Les Annes Folles</h1>
+        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min11.jpg" , class: "galerynav"), root_path %>
     </div>
     <div class="imagen_evento animated" id="anim1">
-        <h1>Free Fall</h1>
-        <%= link_to image_tag("la_cour/min/la_cour_min11.jpg" , class: "galerynav"), root_path %>
+        <h1>Camino Marginal</h1>
+        <%= link_to cl_image_tag("caminomarginal/camino_marginal13.jpg" , class: "galerynav"), root_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Libera Musica</h1>
+        <%= link_to cl_image_tag("liberamusica/libera_musica_min06.jpg" , class: "galerynav"), root_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>In The Woods for Love</h1>
+        <%= link_to cl_image_tag("inthewoodsforlove/in_the_woods_for_love_min06.jpg" , class: "galerynav"), root_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Flower Power</h1>
+        <%= link_to cl_image_tag("flowerpower/flower_power_min12.jpg" , class: "galerynav"), root_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Síntomas Dieziocheros</h1>
+        <%= link_to cl_image_tag("sintomasdieziocheros/sintomas_dieziocheros_min02.jpg" , class: "galerynav"), root_path %>
     </div>
 </div>
 
