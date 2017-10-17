@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: quetzalss
+  api_key: '654548539666648'
+  api_secret: 1BtgjpKyHfck8WIyHn4gdrw0tGw
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: quetzalss
+  api_key: '654548539666648'
+  api_secret: 1BtgjpKyHfck8WIyHn4gdrw0tGw
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: quetzalss
+  api_key: '654548539666648'
+  api_secret: 1BtgjpKyHfck8WIyHn4gdrw0tGw
+  enhance_image_tag: true
+  static_image_support: false
