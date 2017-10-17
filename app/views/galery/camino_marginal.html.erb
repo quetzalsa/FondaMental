@@ -1,0 +1,149 @@
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+
+    <div class="imagen_evento anim8" id="trig3">
+        <h1>Free Fall</h1>
+        <%= link_to cl_image_tag("freefall/free_fall_min14.jpg", class: "galerynav") , galeria_free_fall_path %>
+        
+    </div>
+    <div class="imagen_evento anim7">
+        <h1>La Cour Des Miracles</h1>
+        <%= link_to cl_image_tag("lacourdesmiracles/la_cour_des_miracles_min12.jpg" , class: "galerynav"), galeria_la_cour_des_miracles_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Physical</h1>
+        <%= link_to cl_image_tag("physical/physical_min03.jpg" , class: "galerynav"), galeria_physical_path %>
+    </div>
+    <div class="imagen_evento animated anim5">
+        <h1>Technorama</h1>
+        <%= link_to cl_image_tag("technorama/technorama_min04.jpg" , class: "galerynav"), galeria_technorama_path %>
+    </div>
+    <div class="imagen_evento animated">
+        <h1>Femmes Fatales</h1>
+        <%= link_to cl_image_tag("femmesfatales/femmes_falates_min01.jpg" , class: "galerynav"), galeria_femmes_fatales_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Red Light</h1>
+        <%= link_to cl_image_tag("redlight/red_light_min13" , class: "galerynav"), galeria_red_light_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Les Annes Folles</h1>
+        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min11.jpg" , class: "galerynav"), galeria_les_annes_folles_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Camino Marginal</h1>
+        <%= link_to cl_image_tag("caminomarginal/camino_marginal13.jpg" , class: "galerynav"), galeria_camino_marginal_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Libera Musica</h1>
+        <%= link_to cl_image_tag("liberamusica/libera_musica_min06.jpg" , class: "galerynav"), galeria_libera_musica_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>In The Woods for Love</h1>
+        <%= link_to cl_image_tag("inthewoodsforlove/in_the_woods_for_love_min06.jpg" , class: "galerynav"), galeria_in_the_woods_for_love_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Flower Power</h1>
+        <%= link_to cl_image_tag("flowerpower/flower_power_min12.jpg" , class: "galerynav"), galeria_flower_power_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Síntomas Dieziocheros</h1>
+        <%= link_to cl_image_tag("sintomasdieziocheros/sintomas_dieziocheros_min02.jpg" , class: "galerynav"), galeria_sintomas_dieziocheros_path %>
+    </div>
+</div>
+</div>
+
+<span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span>
+
+    <div id="imacamino">
+    </div>
+
+    <div class="gal_tit_dos">
+        <h1>Camino <br> Marginal</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/camino_marginal" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Camino Marginal fue la primera fiesta electrónica realizada en el bar La Konsulta. El
+                lugar habla por sí mismo: deshecho, sucio, antiguo y oscuro. Una apología a la temática
+                de esta fiesta escondida en la noche santiaguina</p>
+            <h3>14/05/2016</h3>
+            <h3>Cenicero Club, Santiago Centro</h3>
+            <h3>Line Up</h3>
+            <ul>
+                <li>Square Neck - Bretaña/Francia</li>
+                <li>Kamila Govorcin - Santiago/Chile</li>
+                <li>Pato Salinas - Santiago/Chile</li>
+                <li>Kenny - Santiago/Chile</li>
+                <li>Mañungo - Santiago/Chile</li>
+            </ul>
+            <h3>Sonido: Funktion One</h3>
+            </div>
+            </div>
+        </div>
+
+    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min01" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal01"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min02" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal02"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min03" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal03"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min04" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal04"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min05" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal05"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min06" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal06"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min07" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal07"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min08" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal08"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min09" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal09"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min10" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal10"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min11" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal11"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min12" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal12"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min13" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal13"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min14" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal14"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min15" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal15"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min16" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal16"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min17" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal17"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min19" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal19"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min18" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal18"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min19" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal19"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min20" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal20"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min21" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal21"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min22" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal22"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    
+    
+
+    
+    
+</div>
+</div>
+
+<script>
+    function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+

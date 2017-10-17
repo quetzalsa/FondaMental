@@ -45,12 +45,18 @@
 
     .info .panel {
         padding: 0 18px;
+        margin-top: 0px;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
-        text-align: justify;
-        width: 80%;
+        text-align: center;
+        width: 100%;
         color: #d4d4d4;
+    }
+
+    .textopanel {
+        margin: auto;
+        width: 80%;
     }
 
     
@@ -102,7 +108,7 @@
     
 
      #imalacour {
-        background-image: url(<%= asset_path "la_cour/la_cour04.jpg" %>);
+        background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508265989/lacourdesmiracles/la_cour_des_miracles01.jpg");
         height: 60vh;
         background-attachment: fixed;
         background-position: bottom;
@@ -110,7 +116,63 @@
         background-size: cover;
     }
 
-    .gal_tit_freefall {
+    #imaphysical {
+        background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256929/physical/physical09.jpg");
+        height: 60vh;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+     #imatechnorama {
+        background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256868/technorama/technorama18.jpg");
+        height: 60vh;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #imafemmes {
+        background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256584/femmesfatales/femmes_falates02.jpg");
+        height: 60vh;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #imaredlight {
+        background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256568/redlight/red_light07.jpg");
+        height: 60vh;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #imalesannes {
+        background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256461/lesannesfolles/les_annes_folles10.jpg");
+        height: 60vh;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #imacamino {
+        background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508271834/caminomarginal/camino_marginal11.jpg");
+        height: 60vh;
+        background-attachment: fixed;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+
+    .gal_tit {
         height: 30vh;
         background-color: black;
         margin-top: -65px;
@@ -119,13 +181,13 @@
             font-family: 'Rubik Mono One', sans-serif;
             font-size: 6em;
             color: #cccccc;
-            padding: 60px 0px;
+            padding: 80px 0px;
             text-align: center;
             
         }
     }
 
-    .gal_tit_lacour {
+    .gal_tit_dos {
         height: 30vh;
         background-color: black;
         margin-top: -65px;
@@ -134,7 +196,7 @@
             font-family: 'Rubik Mono One', sans-serif;
             font-size: 5em;
             color: #cccccc;
-            padding: 3px 0px;
+            padding: 15px 0px;
             text-align: center;
             
         }
@@ -301,6 +363,10 @@
     width: 100%;
     position: relative;
     bottom: 0;
+}
+
+.afiche {
+    width: 100%;
 }
 
 .imagen_evento {

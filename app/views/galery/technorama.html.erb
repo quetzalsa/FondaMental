@@ -1,0 +1,151 @@
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+
+    <div class="imagen_evento anim8" id="trig3">
+        <h1>Free Fall</h1>
+        <%= link_to cl_image_tag("freefall/free_fall_min14.jpg", class: "galerynav") , galeria_free_fall_path %>
+        
+    </div>
+    <div class="imagen_evento anim7">
+        <h1>La Cour Des Miracles</h1>
+        <%= link_to cl_image_tag("lacourdesmiracles/la_cour_des_miracles_min12.jpg" , class: "galerynav"), galeria_la_cour_des_miracles_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Physical</h1>
+        <%= link_to cl_image_tag("physical/physical_min03.jpg" , class: "galerynav"), galeria_physical_path %>
+    </div>
+    <div class="imagen_evento animated anim5">
+        <h1>Technorama</h1>
+        <%= link_to cl_image_tag("technorama/technorama_min04.jpg" , class: "galerynav"), galeria_technorama_path %>
+    </div>
+    <div class="imagen_evento animated">
+        <h1>Femmes Fatales</h1>
+        <%= link_to cl_image_tag("femmesfatales/femmes_falates_min01.jpg" , class: "galerynav"), galeria_femmes_fatales_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Red Light</h1>
+        <%= link_to cl_image_tag("redlight/red_light_min13" , class: "galerynav"), galeria_red_light_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Les Annes Folles</h1>
+        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min11.jpg" , class: "galerynav"), galeria_les_annes_folles_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Camino Marginal</h1>
+        <%= link_to cl_image_tag("caminomarginal/camino_marginal13.jpg" , class: "galerynav"), galeria_camino_marginal_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Libera Musica</h1>
+        <%= link_to cl_image_tag("liberamusica/libera_musica_min06.jpg" , class: "galerynav"), galeria_libera_musica_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>In The Woods for Love</h1>
+        <%= link_to cl_image_tag("inthewoodsforlove/in_the_woods_for_love_min06.jpg" , class: "galerynav"), galeria_in_the_woods_for_love_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Flower Power</h1>
+        <%= link_to cl_image_tag("flowerpower/flower_power_min12.jpg" , class: "galerynav"), galeria_flower_power_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Síntomas Dieziocheros</h1>
+        <%= link_to cl_image_tag("sintomasdieziocheros/sintomas_dieziocheros_min02.jpg" , class: "galerynav"), galeria_sintomas_dieziocheros_path %>
+    </div>
+</div>
+</div>
+
+<span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span>
+
+    <div id="imatechnorama">
+    </div>
+
+    <div class="gal_tit">
+        <h1>Technorama</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/technorama" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Volvimos a uno de nuestros lugares favoritos para inaugurar la temporada 2017. La idea
+                era un viaje en nave espacial hacia una technogalaxia. La nave estaba piloteada por tres
+                DJ’s astronautas</p>
+            <h3>10/03/2017</h3>
+            <h3>Casa Catedral, Barrio Brasil, Santiago</h3>
+            <h3>Line Up</h3>
+            <ul>
+                <li>Marie Coiffure - Paris/France</li>
+                <li>Inti Kunza - Santiago/Chile</li>
+                <li>Claudio Arditti - Santiago/Chile</li>
+            </ul>
+            <h3>Sonido: Funktion One</h3>
+            </div>
+            </div>
+        </div>
+
+    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <%= link_to cl_image_tag("technorama/technorama_min01" , class: "galeria_foto"), cl_image_path("technorama/technorama01"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min02" , class: "galeria_foto"), cl_image_path("technorama/technorama02"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min03" , class: "galeria_foto"), cl_image_path("technorama/technorama03"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min04" , class: "galeria_foto"), cl_image_path("technorama/technorama04"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min05" , class: "galeria_foto"), cl_image_path("technorama/technorama05"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min06" , class: "galeria_foto"), cl_image_path("technorama/technorama06"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min07" , class: "galeria_foto"), cl_image_path("technorama/technorama07"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min08" , class: "galeria_foto"), cl_image_path("technorama/technorama08"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min09" , class: "galeria_foto"), cl_image_path("technorama/technorama09"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min10" , class: "galeria_foto"), cl_image_path("technorama/technorama10"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min11" , class: "galeria_foto"), cl_image_path("technorama/technorama11"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min12" , class: "galeria_foto"), cl_image_path("technorama/technorama12"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min13" , class: "galeria_foto"), cl_image_path("technorama/technorama13"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min14" , class: "galeria_foto"), cl_image_path("technorama/technorama14"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min15" , class: "galeria_foto"), cl_image_path("technorama/technorama15"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min16" , class: "galeria_foto"), cl_image_path("technorama/technorama16"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min17" , class: "galeria_foto"), cl_image_path("technorama/technorama17"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min19" , class: "galeria_foto"), cl_image_path("technorama/technorama19"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min18" , class: "galeria_foto"), cl_image_path("technorama/technorama18"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min19" , class: "galeria_foto"), cl_image_path("technorama/technorama19"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min20" , class: "galeria_foto"), cl_image_path("technorama/technorama20"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min21" , class: "galeria_foto"), cl_image_path("technorama/technorama21"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min22" , class: "galeria_foto"), cl_image_path("technorama/technorama22"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min23" , class: "galeria_foto"), cl_image_path("technorama/technorama23"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min24" , class: "galeria_foto"), cl_image_path("technorama/technorama24"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min25" , class: "galeria_foto"), cl_image_path("technorama/technorama25"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("technorama/technorama_min26" , class: "galeria_foto"), cl_image_path("technorama/technorama26"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    
+    
+
+    
+    
+</div>
+</div>
+
+<script>
+    function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
