@@ -1,5 +1,5 @@
 class GaleryController < ApplicationController
-  def sintomas_dieziocheros
+  def sintomas_dieciocheros
   end
 
   def el_llamado_del_desierto

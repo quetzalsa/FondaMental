@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
-  get "/galeria/sintomas_dieziocheros" => 'galery/sintomas_dieziocheros'
+  get '/galeria/sintomas_dieciocheros' => 'galery#sintomas_dieciocheros'
 
-  get 'galeria/el_llamado_del_desierto' => 'galery/el_llamado_del_desierto'
+  get '/galeria/el_llamado_del_desierto' => 'galery#el_llamado_del_desierto'
  
   get '/galeria/flower_power' => 'galery#flower_power'
 
@@ -37,8 +37,7 @@ Rails.application.routes.draw do
   get "/eventos" => "fonda_mental#eventos"
   get "/blog" => "fonda_mental#blog"
   get "/sobre_nosotros" => "fonda_mental#sobre_nosotros"
-  get "/galeria/freefall" => "fonda_mental#freefall"
-  get "/galeria/la_cour" => "fonda_mental#la_cour"
+
 
 
  

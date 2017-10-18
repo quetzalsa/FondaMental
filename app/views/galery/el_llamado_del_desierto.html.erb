@@ -1,2 +1,145 @@
-<h1>Galery#el_llamado_del_desierto</h1>
-<p>Find me in app/views/galery/el_llamado_del_desierto.html.erb</p>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+
+    <div class="imagen_evento anim8" id="trig3">
+        <h1>Free Fall</h1>
+        <%= link_to cl_image_tag("freefall/free_fall_min14.jpg", class: "galerynav") , galeria_free_fall_path %>
+        
+    </div>
+    <div class="imagen_evento anim7">
+        <h1>La Cour Des Miracles</h1>
+        <%= link_to cl_image_tag("lacourdesmiracles/la_cour_des_miracles_min12.jpg" , class: "galerynav"), galeria_la_cour_des_miracles_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Physical</h1>
+        <%= link_to cl_image_tag("physical/physical_min03.jpg" , class: "galerynav"), galeria_physical_path %>
+    </div>
+    <div class="imagen_evento animated anim5">
+        <h1>Technorama</h1>
+        <%= link_to cl_image_tag("technorama/technorama_min04.jpg" , class: "galerynav"), galeria_technorama_path %>
+    </div>
+    <div class="imagen_evento animated">
+        <h1>Femmes Fatales</h1>
+        <%= link_to cl_image_tag("femmesfatales/femmes_falates_min01.jpg" , class: "galerynav"), galeria_femmes_fatales_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Red Light</h1>
+        <%= link_to cl_image_tag("redlight/red_light_min13" , class: "galerynav"), galeria_red_light_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Les Annes Folles</h1>
+        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min11.jpg" , class: "galerynav"), galeria_les_annes_folles_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Camino Marginal</h1>
+        <%= link_to cl_image_tag("caminomarginal/camino_marginal13.jpg" , class: "galerynav"), galeria_camino_marginal_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Libera Musica</h1>
+        <%= link_to cl_image_tag("liberamusica/libera_musica_min06.jpg" , class: "galerynav"), galeria_libera_musica_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>In The Woods for Love</h1>
+        <%= link_to cl_image_tag("inthewoodsforlove/in_the_woods_for_love_min06.jpg" , class: "galerynav"), galeria_in_the_woods_for_love_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Flower Power</h1>
+        <%= link_to cl_image_tag("flowerpower/flower_power_min12.jpg" , class: "galerynav"), galeria_flower_power_path %>
+    </div>
+    <div class="imagen_evento">
+        <h1>Síntomas Dieziocheros</h1>
+        <%= link_to cl_image_tag("sintomasdieziocheros/sintomas_dieziocheros_min02.jpg" , class: "galerynav"), galeria_sintomas_dieciocheros_path %>
+    </div>
+</div>
+</div>
+
+<span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span>
+
+    <div id="imallamado">
+    </div>
+
+    <div class="gal_tit_dos">
+        <h1>El Llamado<br>del Desierto</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/el_llamado_del_desierto" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Primer mini festival realizado en el desierto (Punta de Choros). Contó con la
+            colaboración de sus habitantes agrupados en la defensa de causas ambientales. El
+            resultado fue disfrutar de una fiesta de más de 15 horas de música en medio del desierto
+            florido. Además, el after fue un paseo en la Reserva Marítima con avistamiento de
+            delfines y pingüinos</p>
+            <h3>19/11/2016</h3>
+            <h3>Bodega Teatro Caupolicán, Santiago Centro</h3>
+            <h3>Line Up</h3>
+            <ul>
+                <li>Sirene - Buenos Aires/Argentina</li>
+                <li>Lisa Cropp - Hamburgo/Alemania</li>
+                <li>Umho - Santiago/Chile</li>
+                <li>PMH - Paris/Francia</li>
+            </ul>
+            <h3>Sonido: Funktion One</h3>
+            </div>
+            </div>
+        </div>
+
+    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min01" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto01"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min02" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto02"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min03" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto03"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min04" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto04"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min05" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto05"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min06" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto06"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min07" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto07"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min08" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto08"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min09" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto09"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min10" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto10"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min11" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto11"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min12" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto12"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min13" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto13"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min14" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto14"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min15" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto15"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min16" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto16"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min17" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto17"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("elllamadodeldesierto/el_llamado_del_desierto_min18" , class: "galeria_foto"), cl_image_path("elllamadodeldesierto/el_llamado_del_desierto18"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    
+    
+
+    
+    
+</div>
+</div>
+
+<script>
+    function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
