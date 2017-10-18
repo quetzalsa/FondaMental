@@ -32,7 +32,7 @@ Rails.application.routes.draw do
   get "/galeria" => "fonda_mental#media"
   get "/videos" => "fonda_mental#videos"
   get "/historia" => "fonda_mental#fonda_mental"
-  root "player#player"
+  root "home#home"
   get 'fonda_mental/sobre_nosotros'
   get "/eventos" => "fonda_mental#eventos"
   get "/blog" => "fonda_mental#blog"

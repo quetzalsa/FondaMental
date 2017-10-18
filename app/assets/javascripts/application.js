@@ -15,13 +15,15 @@
 //= require turbolinks
 //= require lightbox.min
 //= require_tree .
-
+function videoback() {
+    document.getElementById('videointro').style.display = 'none';
+    music.play();
+}
 
 document.addEventListener("turbolinks:load", function() {
 
     
-
-   
+    
 
 
     var acc = document.getElementsByClassName("accordion");
