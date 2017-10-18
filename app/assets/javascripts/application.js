@@ -16,8 +16,15 @@
 //= require lightbox.min
 //= require_tree .
 function videoback() {
-    document.getElementById('videointro').style.display = 'none';
+    //document.getElementById('videointro').style.display = 'none';
     music.play();
+    //$('#myBtn').fadeIn();
+    $('#videointro').fadeOut();
+}
+
+
+function logoback() {
+    $('#buttonback').fadeIn(4000);
 }
 
 document.addEventListener("turbolinks:load", function() {

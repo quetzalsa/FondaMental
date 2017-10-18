@@ -31,9 +31,17 @@
     height: 50%;
     position: fixed;
     background: transparent;
+    display: none;
     border: 0;
     z-index: 150;
+    transition: 0.5s;
+    &:hover {
+        opacity: 0.5;
+        cursor:pointer;
+    }
   }
+
+
 
   .logoback {
       width: 100%;
