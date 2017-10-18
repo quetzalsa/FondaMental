@@ -22,15 +22,14 @@ function videoback() {
     $('#videointro').fadeOut();
 }
 
+// $(document).on('turbolinks:load', function(event) {
+//     $('#buttonback').fadeIn(6000).delay(3000);
+//   });
 
-function logoback() {
-    $('#buttonback').fadeIn(4000);
-}
+
+
 
 document.addEventListener("turbolinks:load", function() {
-
-    
-    
 
 
     var acc = document.getElementsByClassName("accordion");

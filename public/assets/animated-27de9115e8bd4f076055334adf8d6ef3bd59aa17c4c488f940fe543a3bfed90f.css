@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.5.2
@@ -7,21 +5,23 @@
  *
  * Copyright (c) 2017 Daniel Eden
  */
-
+/* line 12, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }
 
-
+/* line 18, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .animated.infinite {
   animation-iteration-count: infinite;
 }
 
+/* line 22, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .animated.hinge {
   animation-duration: 2s;
 }
 
+/* line 26, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .animated.flipOutX,
 .animated.flipOutY,
 .animated.bounceIn,
@@ -31,25 +31,22 @@
 
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0,0,0);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
   }
-
   40%, 43% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transform: translate3d(0, -30px, 0);
   }
-
   70% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
     transform: translate3d(0, -15px, 0);
   }
-
   90% {
-    transform: translate3d(0,-4px,0);
+    transform: translate3d(0, -4px, 0);
   }
 }
-
+/* line 54, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounce {
   animation-name: bounce;
   transform-origin: center bottom;
@@ -59,32 +56,28 @@
   from, 50%, to {
     opacity: 1;
   }
-
   25%, 75% {
     opacity: 0;
   }
 }
-
+/* line 69, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .flash {
   animation-name: flash;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @keyframes pulse {
   from {
     transform: scale3d(1, 1, 1);
   }
-
   50% {
     transform: scale3d(1.05, 1.05, 1.05);
   }
-
   to {
     transform: scale3d(1, 1, 1);
   }
 }
-
+/* line 89, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .pulse {
   animation-name: pulse;
 }
@@ -93,32 +86,26 @@
   from {
     transform: scale3d(1, 1, 1);
   }
-
   30% {
     transform: scale3d(1.25, 0.75, 1);
   }
-
   40% {
     transform: scale3d(0.75, 1.25, 1);
   }
-
   50% {
     transform: scale3d(1.15, 0.85, 1);
   }
-
   65% {
-    transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
-
   75% {
-    transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
-
   to {
     transform: scale3d(1, 1, 1);
   }
 }
-
+/* line 123, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rubberBand {
   animation-name: rubberBand;
 }
@@ -127,16 +114,14 @@
   from, to {
     transform: translate3d(0, 0, 0);
   }
-
   10%, 30%, 50%, 70%, 90% {
     transform: translate3d(-10px, 0, 0);
   }
-
   20%, 40%, 60%, 80% {
     transform: translate3d(10px, 0, 0);
   }
 }
-
+/* line 141, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .shake {
   animation-name: shake;
 }
@@ -145,28 +130,23 @@
   0% {
     transform: translateX(0);
   }
-
   6.5% {
     transform: translateX(-6px) rotateY(-9deg);
   }
-
   18.5% {
     transform: translateX(5px) rotateY(7deg);
   }
-
   31.5% {
     transform: translateX(-3px) rotateY(-5deg);
   }
-
   43.5% {
     transform: translateX(2px) rotateY(3deg);
   }
-
   50% {
     transform: translateX(0);
   }
 }
-
+/* line 171, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .headShake {
   animation-timing-function: ease-in-out;
   animation-name: headShake;
@@ -176,24 +156,20 @@
   20% {
     transform: rotate3d(0, 0, 1, 15deg);
   }
-
   40% {
     transform: rotate3d(0, 0, 1, -10deg);
   }
-
   60% {
     transform: rotate3d(0, 0, 1, 5deg);
   }
-
   80% {
     transform: rotate3d(0, 0, 1, -5deg);
   }
-
   to {
     transform: rotate3d(0, 0, 1, 0deg);
   }
 }
-
+/* line 198, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .swing {
   transform-origin: top center;
   animation-name: swing;
@@ -203,60 +179,49 @@
   from {
     transform: scale3d(1, 1, 1);
   }
-
   10%, 20% {
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-
   30%, 50%, 70%, 90% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-
   40%, 60%, 80% {
     transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
-
   to {
     transform: scale3d(1, 1, 1);
   }
 }
-
+/* line 225, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .tada {
   animation-name: tada;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @keyframes wobble {
   from {
     transform: none;
   }
-
   15% {
     transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
   }
-
   30% {
     transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
   }
-
   45% {
     transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
   }
-
   60% {
     transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
   }
-
   75% {
     transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
   }
-
   to {
     transform: none;
   }
 }
-
+/* line 261, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .wobble {
   animation-name: wobble;
 }
@@ -265,36 +230,29 @@
   from, 11.1%, to {
     transform: none;
   }
-
   22.2% {
     transform: skewX(-12.5deg) skewY(-12.5deg);
   }
-
   33.3% {
     transform: skewX(6.25deg) skewY(6.25deg);
   }
-
   44.4% {
     transform: skewX(-3.125deg) skewY(-3.125deg);
   }
-
   55.5% {
     transform: skewX(1.5625deg) skewY(1.5625deg);
   }
-
   66.6% {
     transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
-
   77.7% {
     transform: skewX(0.390625deg) skewY(0.390625deg);
   }
-
   88.8% {
     transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
   }
 }
-
+/* line 299, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .jello {
   animation-name: jello;
   transform-origin: center;
@@ -302,185 +260,157 @@
 
 @keyframes bounceIn {
   from, 20%, 40%, 60%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   0% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
-
   20% {
     transform: scale3d(1.1, 1.1, 1.1);
   }
-
   40% {
-    transform: scale3d(.9, .9, .9);
+    transform: scale3d(0.9, 0.9, 0.9);
   }
-
   60% {
     opacity: 1;
     transform: scale3d(1.03, 1.03, 1.03);
   }
-
   80% {
-    transform: scale3d(.97, .97, .97);
+    transform: scale3d(0.97, 0.97, 0.97);
   }
-
   to {
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
 }
-
+/* line 337, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceIn {
   animation-name: bounceIn;
 }
 
 @keyframes bounceInDown {
   from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   0% {
     opacity: 0;
     transform: translate3d(0, -3000px, 0);
   }
-
   60% {
     opacity: 1;
     transform: translate3d(0, 25px, 0);
   }
-
   75% {
     transform: translate3d(0, -10px, 0);
   }
-
   90% {
     transform: translate3d(0, 5px, 0);
   }
-
   to {
     transform: none;
   }
 }
-
+/* line 369, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceInDown {
   animation-name: bounceInDown;
 }
 
 @keyframes bounceInLeft {
   from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   0% {
     opacity: 0;
     transform: translate3d(-3000px, 0, 0);
   }
-
   60% {
     opacity: 1;
     transform: translate3d(25px, 0, 0);
   }
-
   75% {
     transform: translate3d(-10px, 0, 0);
   }
-
   90% {
     transform: translate3d(5px, 0, 0);
   }
-
   to {
     transform: none;
   }
 }
-
+/* line 401, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceInLeft {
   animation-name: bounceInLeft;
 }
 
 @keyframes bounceInRight {
   from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   from {
     opacity: 0;
     transform: translate3d(3000px, 0, 0);
   }
-
   60% {
     opacity: 1;
     transform: translate3d(-25px, 0, 0);
   }
-
   75% {
     transform: translate3d(10px, 0, 0);
   }
-
   90% {
     transform: translate3d(-5px, 0, 0);
   }
-
   to {
     transform: none;
   }
 }
-
+/* line 433, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceInRight {
   animation-name: bounceInRight;
 }
 
 @keyframes bounceInUp {
   from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   from {
     opacity: 0;
     transform: translate3d(0, 3000px, 0);
   }
-
   60% {
     opacity: 1;
     transform: translate3d(0, -20px, 0);
   }
-
   75% {
     transform: translate3d(0, 10px, 0);
   }
-
   90% {
     transform: translate3d(0, -5px, 0);
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
 }
-
+/* line 465, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceInUp {
   animation-name: bounceInUp;
 }
 
 @keyframes bounceOut {
   20% {
-    transform: scale3d(.9, .9, .9);
+    transform: scale3d(0.9, 0.9, 0.9);
   }
-
   50%, 55% {
     opacity: 1;
     transform: scale3d(1.1, 1.1, 1.1);
   }
-
   to {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
 }
-
+/* line 485, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceOut {
   animation-name: bounceOut;
 }
@@ -489,18 +419,16 @@
   20% {
     transform: translate3d(0, 10px, 0);
   }
-
   40%, 45% {
     opacity: 1;
     transform: translate3d(0, -20px, 0);
   }
-
   to {
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
 }
-
+/* line 505, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceOutDown {
   animation-name: bounceOutDown;
 }
@@ -510,13 +438,12 @@
     opacity: 1;
     transform: translate3d(20px, 0, 0);
   }
-
   to {
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
 }
-
+/* line 521, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceOutLeft {
   animation-name: bounceOutLeft;
 }
@@ -526,13 +453,12 @@
     opacity: 1;
     transform: translate3d(-20px, 0, 0);
   }
-
   to {
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
 }
-
+/* line 537, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceOutRight {
   animation-name: bounceOutRight;
 }
@@ -541,18 +467,16 @@
   20% {
     transform: translate3d(0, -10px, 0);
   }
-
   40%, 45% {
     opacity: 1;
     transform: translate3d(0, 20px, 0);
   }
-
   to {
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
 }
-
+/* line 557, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .bounceOutUp {
   animation-name: bounceOutUp;
 }
@@ -561,12 +485,11 @@
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
 }
-
+/* line 571, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeIn {
   animation-name: fadeIn;
 }
@@ -576,13 +499,12 @@
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 587, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInDown {
   animation-name: fadeInDown;
 }
@@ -592,13 +514,12 @@
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 603, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInDownBig {
   animation-name: fadeInDownBig;
 }
@@ -608,13 +529,12 @@
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 619, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInLeft {
   animation-name: fadeInLeft;
 }
@@ -624,13 +544,12 @@
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 635, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInLeftBig {
   animation-name: fadeInLeftBig;
 }
@@ -640,13 +559,12 @@
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 651, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInRight {
   animation-name: fadeInRight;
 }
@@ -656,13 +574,12 @@
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 667, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInRightBig {
   animation-name: fadeInRightBig;
 }
@@ -672,13 +589,12 @@
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 683, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInUp {
   animation-name: fadeInUp;
 }
@@ -688,13 +604,12 @@
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 699, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeInUpBig {
   animation-name: fadeInUpBig;
 }
@@ -703,12 +618,11 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
   }
 }
-
+/* line 713, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOut {
   animation-name: fadeOut;
 }
@@ -717,13 +631,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
 }
-
+/* line 728, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutDown {
   animation-name: fadeOutDown;
 }
@@ -732,13 +645,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
 }
-
+/* line 743, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutDownBig {
   animation-name: fadeOutDownBig;
 }
@@ -747,13 +659,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
 }
-
+/* line 758, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutLeft {
   animation-name: fadeOutLeft;
 }
@@ -762,13 +673,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
 }
-
+/* line 773, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutLeftBig {
   animation-name: fadeOutLeftBig;
 }
@@ -777,13 +687,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
 }
-
+/* line 788, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutRight {
   animation-name: fadeOutRight;
 }
@@ -792,13 +701,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
 }
-
+/* line 803, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutRightBig {
   animation-name: fadeOutRightBig;
 }
@@ -807,13 +715,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
 }
-
+/* line 818, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutUp {
   animation-name: fadeOutUp;
 }
@@ -822,13 +729,12 @@
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
 }
-
+/* line 833, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .fadeOutUpBig {
   animation-name: fadeOutUpBig;
 }
@@ -838,28 +744,24 @@
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
     animation-timing-function: ease-out;
   }
-
   40% {
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
     animation-timing-function: ease-out;
   }
-
   50% {
     transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
     animation-timing-function: ease-in;
   }
-
   80% {
-    transform: perspective(400px) scale3d(.95, .95, .95);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95);
     animation-timing-function: ease-in;
   }
-
   to {
     transform: perspective(400px);
     animation-timing-function: ease-in;
   }
 }
-
+/* line 864, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .animated.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
@@ -872,26 +774,22 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
-
   40% {
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     animation-timing-function: ease-in;
   }
-
   60% {
     transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
     opacity: 1;
   }
-
   80% {
     transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
   }
-
   to {
     transform: perspective(400px);
   }
 }
-
+/* line 896, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .flipInX {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
@@ -904,26 +802,22 @@
     animation-timing-function: ease-in;
     opacity: 0;
   }
-
   40% {
     transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
     animation-timing-function: ease-in;
   }
-
   60% {
     transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
     opacity: 1;
   }
-
   80% {
     transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
   }
-
   to {
     transform: perspective(400px);
   }
 }
-
+/* line 928, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .flipInY {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
@@ -934,18 +828,16 @@
   from {
     transform: perspective(400px);
   }
-
   30% {
     transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
     opacity: 1;
   }
-
   to {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
 }
-
+/* line 950, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .flipOutX {
   animation-name: flipOutX;
   -webkit-backface-visibility: visible !important;
@@ -956,18 +848,16 @@
   from {
     transform: perspective(400px);
   }
-
   30% {
     transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
     opacity: 1;
   }
-
   to {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
   }
 }
-
+/* line 972, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .flipOutY {
   -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
@@ -979,23 +869,20 @@
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
-
   60% {
     transform: skewX(20deg);
     opacity: 1;
   }
-
   80% {
     transform: skewX(-5deg);
     opacity: 1;
   }
-
   to {
     transform: none;
     opacity: 1;
   }
 }
-
+/* line 1000, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .lightSpeedIn {
   animation-name: lightSpeedIn;
   animation-timing-function: ease-out;
@@ -1005,13 +892,12 @@
   from {
     opacity: 1;
   }
-
   to {
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0;
   }
 }
-
+/* line 1016, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .lightSpeedOut {
   animation-name: lightSpeedOut;
   animation-timing-function: ease-in;
@@ -1023,14 +909,13 @@
     transform: rotate3d(0, 0, 1, -200deg);
     opacity: 0;
   }
-
   to {
     transform-origin: center;
     transform: none;
     opacity: 1;
   }
 }
-
+/* line 1035, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateIn {
   animation-name: rotateIn;
 }
@@ -1041,14 +926,13 @@
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
-
   to {
     transform-origin: left bottom;
     transform: none;
     opacity: 1;
   }
 }
-
+/* line 1053, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateInDownLeft {
   animation-name: rotateInDownLeft;
 }
@@ -1059,14 +943,13 @@
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
-
   to {
     transform-origin: right bottom;
     transform: none;
     opacity: 1;
   }
 }
-
+/* line 1071, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateInDownRight {
   animation-name: rotateInDownRight;
 }
@@ -1077,14 +960,13 @@
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
-
   to {
     transform-origin: left bottom;
     transform: none;
     opacity: 1;
   }
 }
-
+/* line 1089, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateInUpLeft {
   animation-name: rotateInUpLeft;
 }
@@ -1095,14 +977,13 @@
     transform: rotate3d(0, 0, 1, -90deg);
     opacity: 0;
   }
-
   to {
     transform-origin: right bottom;
     transform: none;
     opacity: 1;
   }
 }
-
+/* line 1107, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateInUpRight {
   animation-name: rotateInUpRight;
 }
@@ -1112,14 +993,13 @@
     transform-origin: center;
     opacity: 1;
   }
-
   to {
     transform-origin: center;
     transform: rotate3d(0, 0, 1, 200deg);
     opacity: 0;
   }
 }
-
+/* line 1124, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateOut {
   animation-name: rotateOut;
 }
@@ -1129,14 +1009,13 @@
     transform-origin: left bottom;
     opacity: 1;
   }
-
   to {
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
 }
-
+/* line 1141, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateOutDownLeft {
   animation-name: rotateOutDownLeft;
 }
@@ -1146,14 +1025,13 @@
     transform-origin: right bottom;
     opacity: 1;
   }
-
   to {
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
 }
-
+/* line 1158, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateOutDownRight {
   animation-name: rotateOutDownRight;
 }
@@ -1163,14 +1041,13 @@
     transform-origin: left bottom;
     opacity: 1;
   }
-
   to {
     transform-origin: left bottom;
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
 }
-
+/* line 1175, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateOutUpLeft {
   animation-name: rotateOutUpLeft;
 }
@@ -1180,14 +1057,13 @@
     transform-origin: right bottom;
     opacity: 1;
   }
-
   to {
     transform-origin: right bottom;
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
   }
 }
-
+/* line 1192, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rotateOutUpRight {
   animation-name: rotateOutUpRight;
 }
@@ -1197,26 +1073,23 @@
     transform-origin: top left;
     animation-timing-function: ease-in-out;
   }
-
   20%, 60% {
     transform: rotate3d(0, 0, 1, 80deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
   }
-
   40%, 80% {
     transform: rotate3d(0, 0, 1, 60deg);
     transform-origin: top left;
     animation-timing-function: ease-in-out;
     opacity: 1;
   }
-
   to {
     transform: translate3d(0, 700px, 0);
     opacity: 0;
   }
 }
-
+/* line 1221, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .hinge {
   animation-name: hinge;
 }
@@ -1227,56 +1100,49 @@
     transform: scale(0.1) rotate(30deg);
     transform-origin: center bottom;
   }
-
   50% {
     transform: rotate(-10deg);
   }
-
   70% {
     transform: rotate(3deg);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
   }
 }
-
+/* line 1246, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .jackInTheBox {
   animation-name: jackInTheBox;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @keyframes rollIn {
   from {
     opacity: 0;
     transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
   }
-
   to {
     opacity: 1;
     transform: none;
   }
 }
-
+/* line 1264, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rollIn {
   animation-name: rollIn;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
-
 @keyframes rollOut {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
     transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
   }
 }
-
+/* line 1281, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .rollOut {
   animation-name: rollOut;
 }
@@ -1284,14 +1150,13 @@
 @keyframes zoomIn {
   from {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
-
   50% {
     opacity: 1;
   }
 }
-
+/* line 1296, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomIn {
   animation-name: zoomIn;
 }
@@ -1299,17 +1164,16 @@
 @keyframes zoomInDown {
   from {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
+/* line 1314, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomInDown {
   animation-name: zoomInDown;
 }
@@ -1317,17 +1181,16 @@
 @keyframes zoomInLeft {
   from {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(-1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
+/* line 1332, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomInLeft {
   animation-name: zoomInLeft;
 }
@@ -1335,17 +1198,16 @@
 @keyframes zoomInRight {
   from {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
+/* line 1350, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomInRight {
   animation-name: zoomInRight;
 }
@@ -1353,17 +1215,16 @@
 @keyframes zoomInUp {
   from {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   60% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
+/* line 1368, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomInUp {
   animation-name: zoomInUp;
 }
@@ -1372,17 +1233,15 @@
   from {
     opacity: 1;
   }
-
   50% {
     opacity: 0;
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(0.3, 0.3, 0.3);
   }
-
   to {
     opacity: 0;
   }
 }
-
+/* line 1387, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomOut {
   animation-name: zoomOut;
 }
@@ -1390,18 +1249,17 @@
 @keyframes zoomOutDown {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   to {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
     transform-origin: center bottom;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
+/* line 1406, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomOutDown {
   animation-name: zoomOutDown;
 }
@@ -1409,16 +1267,15 @@
 @keyframes zoomOutLeft {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(42px, 0, 0);
   }
-
   to {
     opacity: 0;
-    transform: scale(.1) translate3d(-2000px, 0, 0);
+    transform: scale(0.1) translate3d(-2000px, 0, 0);
     transform-origin: left center;
   }
 }
-
+/* line 1423, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomOutLeft {
   animation-name: zoomOutLeft;
 }
@@ -1426,16 +1283,15 @@
 @keyframes zoomOutRight {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(-42px, 0, 0);
   }
-
   to {
     opacity: 0;
-    transform: scale(.1) translate3d(2000px, 0, 0);
+    transform: scale(0.1) translate3d(2000px, 0, 0);
     transform-origin: right center;
   }
 }
-
+/* line 1440, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomOutRight {
   animation-name: zoomOutRight;
 }
@@ -1443,18 +1299,17 @@
 @keyframes zoomOutUp {
   40% {
     opacity: 1;
-    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
-    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
   }
-
   to {
     opacity: 0;
-    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -2000px, 0);
     transform-origin: center bottom;
-    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 }
-
+/* line 1459, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .zoomOutUp {
   animation-name: zoomOutUp;
 }
@@ -1464,12 +1319,11 @@
     transform: translate3d(0, -100%, 0);
     visibility: visible;
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
 }
-
+/* line 1474, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideInDown {
   animation-name: slideInDown;
 }
@@ -1479,12 +1333,11 @@
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
 }
-
+/* line 1489, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideInLeft {
   animation-name: slideInLeft;
 }
@@ -1494,12 +1347,11 @@
     transform: translate3d(100%, 0, 0);
     visibility: visible;
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
 }
-
+/* line 1504, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideInRight {
   animation-name: slideInRight;
 }
@@ -1509,12 +1361,11 @@
     transform: translate3d(0, 100%, 0);
     visibility: visible;
   }
-
   to {
     transform: translate3d(0, 0, 0);
   }
 }
-
+/* line 1519, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideInUp {
   animation-name: slideInUp;
 }
@@ -1523,13 +1374,12 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-
   to {
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
   }
 }
-
+/* line 1534, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideOutDown {
   animation-name: slideOutDown;
 }
@@ -1538,13 +1388,12 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-
   to {
     visibility: hidden;
     transform: translate3d(-100%, 0, 0);
   }
 }
-
+/* line 1549, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideOutLeft {
   animation-name: slideOutLeft;
 }
@@ -1553,13 +1402,12 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-
   to {
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
   }
 }
-
+/* line 1564, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideOutRight {
   animation-name: slideOutRight;
 }
@@ -1568,13 +1416,12 @@
   from {
     transform: translate3d(0, 0, 0);
   }
-
   to {
     visibility: hidden;
     transform: translate3d(0, -100%, 0);
   }
 }
-
+/* line 1579, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/animated.scss */
 .slideOutUp {
   animation-name: slideOutUp;
 }
