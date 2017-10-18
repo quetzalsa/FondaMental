@@ -15,12 +15,25 @@
 //= require turbolinks
 //= require lightbox.min
 //= require_tree .
+
+
 function videoback() {
     //document.getElementById('videointro').style.display = 'none';
     music.play();
     //$('#myBtn').fadeIn();
     $('#videointro').fadeOut();
+    document.getElementById('videointro').style.display = "none";
 }
+
+document.getElementById("logonav").onclick = function() {hide()};
+function hide() {
+    document.getElementById('videointro').style.display = "none";
+}
+
+    
+    
+
+
 
 // $(document).on('turbolinks:load', function(event) {
 //     $('#buttonback').fadeIn(6000).delay(3000);
