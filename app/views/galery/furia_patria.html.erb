@@ -1,2 +1,106 @@
-<h1>Galery#furia_patria</h1>
-<p>Find me in app/views/galery/furia_patria.html.erb</p>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+<span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span>
+
+    <div id="imafuria">
+    </div>
+
+    <div class="gal_tit_dos">
+        <h1>Furia Patria</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/fura_patria" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Fue la celebración de nuestros dos años de vida y, junto a las fiestas de septiembre,
+                quisimos hacer una fonda tradicional: banderas, sombreros, chinchineros y escándalo. En
+                esta fonda el techno era el folclore nacional e hicimos un B2B entre Lisa Cropp y un
+                chinchinero en vivo</p>
+            <h3>08/09/2017</h3>
+            <h3>Club Greta</h3>
+            <h3>Line Up</h3>
+            <ul>
+                <li>Álvaro Blanco – Valencia/España</li>
+                <li>Paula Burgos – Pto Varas/Chile</li>
+                <li>Lisa Cropp – Hamburgo/Alemania</li>
+                <li>Lorenzacio Clap – Paris/Francia</li>
+                <li>Jean Madry – Paris/Francia</li>
+            </ul>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+
+    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
+    
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min01" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria01"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min02" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria02"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min03" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria03"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min04" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria04"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min05" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria05"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min06" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria06"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min07" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria07"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min08" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria08"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min09" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria09"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min10" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria10"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min11" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria11"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min12" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria12"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min13" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria13"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min14" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria14"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min15" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria15"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min16" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria16"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min17" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria17"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min18" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria18"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min19" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria19"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min20" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria20"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min21" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria21"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min22" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria22"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min23" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria23"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min24" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria24"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min25" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria25"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min26" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria26"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min27" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria27"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <%= link_to cl_image_tag("furiapatria/furia_patria_min28" , class: "galeria_foto"), cl_image_path("furiapatria/furia_patria28"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    
+
+    
+    
+</div>
+</div>
+
+<script>
+    function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
