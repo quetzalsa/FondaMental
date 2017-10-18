@@ -46,8 +46,10 @@
     <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
     
     <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min01" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles01"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min02" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles02"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    <div class="dosvert">
+         <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min02" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles02"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
     <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min03" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles03"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
+    </div>
     <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min04" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles04"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
     <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min05" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles05"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
     <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min06" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles06"), "data-lightbox" => "lacour",  class: "galeria_foto" %>
