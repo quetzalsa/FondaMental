@@ -5,16 +5,13 @@
   }
 
 #videointro {
+
+  
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    display: grid;
-    grid-template-columns: 100vh;
-    grid-template-rows: 100vw;
-    justify-items: center;
-    align-items: center;
     overflow: hidden;
     z-index: 100;
   }
@@ -32,7 +29,11 @@
     margin: auto;
     width: 50%;
     height: 50%;
-    position: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
     background: transparent;
     border: 0;
     z-index: 150;
