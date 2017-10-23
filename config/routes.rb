@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'home' => 'home#princ'
+
   get '/galeria/sintomas_dieciocheros' => 'galery#sintomas_dieciocheros'
 
   get '/galeria/el_llamado_del_desierto' => 'galery#el_llamado_del_desierto'
