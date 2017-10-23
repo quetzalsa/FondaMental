@@ -3,14 +3,38 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .proxevent {
     width: 100%;
+    font-family: 'Work Sans', sans-serif;
     h1 {
-        font-family: 'Chelsea Market', sans-serif;
+        font-family: 'alpenkreuzer', sans-serif;
         font-size: 70px;
-        
+        background: #e7e7e7;
+        color: rgb(42, 42, 42);
         text-align: center;
+        margin: 0px;
+        padding: 3vh 0px;
 
     }
 }
 .aficheprinc {
     width: 100%;
+}
+.textoevnthome {
+    width: 80%;
+    margin: auto;
+    #fechaprox {
+        font-size: 100px;
+        text-align: center;
+        margin: 20px 0px;
+    }
+    #dondeprox {
+        text-align: center;
+        font-size: 60px;
+        margin: 20px 0px;
+    }
+    .line_up {
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        font-size: 30px;
+    }
 }

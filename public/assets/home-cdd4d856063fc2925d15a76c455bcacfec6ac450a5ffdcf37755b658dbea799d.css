@@ -1,0 +1,45 @@
+/* line 4, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.proxevent {
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+}
+/* line 7, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.proxevent h1 {
+  font-family: 'alpenkreuzer', sans-serif;
+  font-size: 70px;
+  background: #e7e7e7;
+  color: #2a2a2a;
+  text-align: center;
+  margin: 0px;
+  padding: 3vh 0px;
+}
+
+/* line 18, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.aficheprinc {
+  width: 100%;
+}
+
+/* line 21, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome {
+  width: 80%;
+  margin: auto;
+}
+/* line 24, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome #fechaprox {
+  font-size: 100px;
+  text-align: center;
+  margin: 20px 0px;
+}
+/* line 29, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome #dondeprox {
+  text-align: center;
+  font-size: 60px;
+  margin: 20px 0px;
+}
+/* line 34, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome .line_up {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  font-size: 30px;
+}
