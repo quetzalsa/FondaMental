@@ -27,6 +27,7 @@
         font-size: 100px;
         text-align: center;
         margin: 20px 0px;
+        font-family: 'Changa One', cursive;
     }
     #dondeprox {
         text-align: center;
@@ -43,5 +44,20 @@
         p {
             margin: 5px 0px;
         }
+    }
+}
+
+hr {
+    width: 60%;
+    background: transparent;
+}
+
+.homecloud {
+    padding-top: 100px;
+    text-align: center;
+    iframe {
+        width: 70%;
+        margin: auto;
+        margin-top: 15px;
     }
 }
