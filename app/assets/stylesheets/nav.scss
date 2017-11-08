@@ -183,7 +183,6 @@
 
   .menuitems a  {
     display: block;
-    
     font-family: 'fondamental';
     font-size: 40px;
     color: rgb(207, 207, 207);
@@ -191,27 +190,68 @@
     text-align: center;
     transition: 0.5s;
     padding-top: 15px;
+    box-sizing: border-box;
   }
+
+  .dropbtn {
+    display: block;
+    font-family: 'fondamental';
+    font-size: 40px;
+    color: rgb(207, 207, 207);
+    background-color: #1B1B1B;
+    border: 0;
+    height: 80px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+    z-index: -20;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .drop-content {
+    display: none;
+    position: absolute;
+    background-color: #1B1B1B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    z-index: 1;
+  }
+
+  .drop-content a {
+    color: rgb(207, 207, 207);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown:hover .drop-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: rgb(85, 85, 85);
+    color: rgb(0, 0, 0);
+}
 
   .menuitems {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr;
     grid-template-rows: 80px;
     align-content: center;
     justify-content: center;
   }
 
-  
   .media {
     position: relative;
     display: inline-block;
     height: 80px;
     background-color: rgb(50, 50, 50);
     }
-    
-
-    
-  
 }
 
 
@@ -221,10 +261,10 @@
 }
 
 .current {
-  
   color: rgb(133, 23, 23) !important;
-
 }
+
+
 
 
 

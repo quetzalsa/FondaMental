@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get '/records/concepto' => 'records#concepto'
+
+  get '/records/djs' => 'records#djs'
+
+  get '/fonda_mental/historia' => 'fonda#historia'
+
+  get '/fonda_mental/quienes_somos' => 'fonda#quienes_somos'
+
   get 'home' => 'home#princ'
 
   get '/galeria/sintomas_dieciocheros' => 'galery#sintomas_dieciocheros'
@@ -33,7 +41,7 @@ Rails.application.routes.draw do
   get "/fotos" => "fonda_mental#fotos"
   get "/galeria" => "fonda_mental#media"
   get "/videos" => "fonda_mental#videos"
-  get "/historia" => "fonda_mental#fonda_mental"
+  
   root "home#home"
   get 'fonda_mental/sobre_nosotros'
   get "/eventos" => "fonda_mental#eventos"

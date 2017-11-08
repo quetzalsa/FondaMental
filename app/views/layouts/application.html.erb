@@ -185,10 +185,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 <div class="menu" id="myTopnav">
                 <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()"><i class="fa fa-bars " aria-hidden="true"></i></a>
                 <div class="menuitems">
-                  <%= link_to "Historia", historia_path, class: ["itemen", cp(historia_path)] %> 
+                  <div class="dropdown">
+                      <button class="dropbtn fond <%= cpa(fonda_mental_historia_path) %> <%= cpa(fonda_mental_quienes_somos_path) %>">Fonda Mental</button>
+                      <div class="drop-content">
+                        <%= link_to "Historia", fonda_mental_historia_path, class: ["itemen", cp(fonda_mental_historia_path)] %> 
+                        <%= link_to "Quienes Somos", fonda_mental_quienes_somos_path, class: ["itemen", cp(fonda_mental_quienes_somos_path)] %> 
+                      </div>
+                  </div>
                   <%= link_to "Programa", eventos_path, class: ["itemen", cp(eventos_path)] %>
                   <%= link_to "Galeria", galeria_path, class: ["itemen", cp(galeria_path)] %>
-                  <%= link_to "Blog", blog_path, class: ["itemen", cp(blog_path)] %>
+                  <div class="dropdown">
+                      <button class="dropbtn <%= cpa(records_concepto_path) %> <%= cpa(records_djs_path) %>">Records</button>
+                      <div class="drop-content">
+                        <%= link_to "Concepto", records_concepto_path, class: ["itemen", cp(records_concepto_path)] %>
+                        <%= link_to "Dj's", records_djs_path, class: ["itemen", cp(records_djs_path)] %>
+                      </div>
+                  </div>
                 </div>
               </div>
               
