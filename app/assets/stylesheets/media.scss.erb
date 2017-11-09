@@ -8,7 +8,17 @@
         display: grid;
         grid-gap: 1em;
         justify-items: center;
+        text-align: center;
     }
+
+    #info {
+        font-family: 'Work Sans', sans-serif;
+        display: block;
+        display: grid;
+        grid-gap: 1em;
+        justify-items: center;
+    }
+
 
     
 
@@ -25,6 +35,25 @@
         outline: none;
         transition: 0.4s;
     }
+    span {
+        color: #58e5da; 
+        font-size:40px;
+    }
+
+    button#accordion {
+        background: transparent;
+        color: #f2d989; 
+        cursor: pointer;
+        padding: 18px;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 45px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
 
     #arrow {
         float: right;
@@ -37,6 +66,10 @@
 
     button.accordion.active, button.accordion:hover {
         
+    }
+
+    button#accordion.active, button#accordion:hover {
+        color: #e2e2e2; 
     }
 
     button.accordion.active i, button.accordion:hover i {
@@ -104,8 +137,6 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-
-    
 
      #imalacour {
         background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508265989/lacourdesmiracles/la_cour_des_miracles01.jpg");
@@ -288,6 +319,16 @@
         justify-items: center;
     }
 
+    #info {
+        font-family: 'Work Sans', sans-serif;
+        grid-column: 1;
+        width:100%;
+        grid-row: 1;
+        display: grid;
+        grid-gap: 1em;
+        justify-items: center;
+    }
+
     
 
     button.accordion {
@@ -303,6 +344,23 @@
         border: none;
         outline: none;
         transition: 0.4s;
+    }
+
+    button#accordion {
+        background-color: rgba(20, 20, 20, 1);
+        color: #7adcc9; 
+        cursor: pointer;
+        padding: 18px;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 30px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+    }
+button#accordion.active, button#accordion:hover {
+        color: #e2e2e2; 
     }
 
     #arrow {

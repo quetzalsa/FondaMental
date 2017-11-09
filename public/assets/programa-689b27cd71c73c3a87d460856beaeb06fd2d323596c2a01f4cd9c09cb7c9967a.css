@@ -1,0 +1,30 @@
+/* line 1, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/programa.scss */
+#descripcion {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+  margin: 20px 0px;
+}
+
+/* line 8, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/programa.scss */
+#proxprog {
+  font-size: 100px;
+  text-align: center;
+  margin: 20px 0px;
+  margin-top: 80px;
+  font-family: 'Changa One', cursive;
+}
+
+/* line 16, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/programa.scss */
+#contacto {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 70px;
+  margin: 20px 0px;
+}
+
+/* line 23, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/programa.scss */
+#incluye {
+  font-size: 30px;
+  margin-top: 70px;
+}
