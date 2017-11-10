@@ -35,9 +35,9 @@
         outline: none;
         transition: 0.4s;
     }
-    span {
+    .accordion span {
         color: #58e5da; 
-        font-size:40px;
+        font-size:45px;
     }
 
     button#accordion {
@@ -346,20 +346,35 @@
         transition: 0.4s;
     }
 
+    .accordion span {
+        color: #58e5da; 
+        font-size:30px;
+    }
+
+    .textopanel h3:nth-child(2), {
+         
+        color: #f2d989;
+    }
+
+    .textopanel h3:nth-child(3) {
+        color: #58e5da;
+    }
+
     button#accordion {
-        background-color: rgba(20, 20, 20, 1);
-        color: #7adcc9; 
+        background: transparent;
+        color: #f2d989; 
         cursor: pointer;
         padding: 18px;
         font-family: 'Rubik Mono One', sans-serif;
         font-size: 30px;
         width: 100%;
-        text-align: left;
+        text-align: center;
+        margin-top: 30px;
         border: none;
         outline: none;
         transition: 0.4s;
     }
-button#accordion.active, button#accordion:hover {
+    button#accordion.active, button#accordion:hover {
         color: #e2e2e2; 
     }
 
@@ -384,7 +399,7 @@ button#accordion.active, button#accordion:hover {
     .info .panel {
         padding: 0 18px;
         text-align: left;
-        width: 100%;
+        width: 90%;
         overflow: auto;
         max-height: 0;
         overflow: hidden;
@@ -394,8 +409,10 @@ button#accordion.active, button#accordion:hover {
         
     }
 
+
     .textopanel {
-        width: 90%;
+        
+        text-align:center;
     }
 
     .galeria_princ {
@@ -537,6 +554,28 @@ button#accordion.active, button#accordion:hover {
         img {
             opacity: 0.5;
         }
+    }
+}
+
+@media (min-width: 600px) {
+    .accordion span {
+        color: #58e5da; 
+        font-size:30px;
+    }
+
+    button#accordion {
+        background: transparent;
+        color: #f2d989; 
+        cursor: pointer;
+        padding: 18px;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+        border: none;
+        outline: none;
+        transition: 0.4s;
     }
 }
 

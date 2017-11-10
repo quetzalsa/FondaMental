@@ -13,6 +13,26 @@
     font-family: 'Changa One', cursive;
 }
 
+@media (max-width: 600px) {
+    #proxprog {
+        font-size: 60px;
+        text-align: center;
+        margin: 20px 0px;
+        margin-top: 80px;
+        font-family: 'Changa One', cursive;
+    }
+}
+
+@media (max-width: 370px) {
+    #proxprog {
+        font-size: 50px;
+        text-align: center;
+        margin: 20px 0px;
+        margin-top: 80px;
+        font-family: 'Changa One', cursive;
+    }
+}
+
 #contacto {
     text-align: center;
     font-size: 60px;
@@ -22,8 +42,10 @@
 
 #incluye {
     font-size: 30px;
-    margin-top: 70px;
-    // margin: auto;
-    // width: 60%;
+    margin-top: 70px; 
+}
+
+.info:last-child {
+    padding-bottom: 60px;
 }
 
