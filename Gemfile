@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'swipebox', '~> 1.4', '>= 1.4.1'
 gem 'cloudinary'
 gem 'rename'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'

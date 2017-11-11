@@ -13,7 +13,7 @@
 //= require jquery2
 //= require jquery_ujs
 //= require turbolinks
-//= require lightbox.min
+//= require swipebox
 //= require_tree .
 
 
@@ -30,7 +30,7 @@ function hide() {
     document.getElementById('videointro').style.display = "none";
 }
 
-    
+
     
 
 
@@ -44,6 +44,12 @@ function hide() {
 
 document.addEventListener("turbolinks:load", function() {
 
+    ;( function( $ ) {
+        
+            $( '.swipebox' ).swipebox();
+        
+        } )( jQuery );
+    
 
     var acc = document.getElementsByClassName("accordion");
     var i;
