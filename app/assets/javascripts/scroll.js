@@ -61,16 +61,16 @@ var controller = new ScrollMagic.Controller();
             .setClassToggle('.sim3', 'fadeInUp')
             .addTo(controller);
 
-// galeria princ
+// // galeria princ
 
-    var anim8 = document.getElementsByClassName('anim8');        
-    var anim7 = document.getElementsByClassName('anim7'); 
-    var anim6 = document.getElementsByClassName('anim6');        
-    var anim5 = document.getElementsByClassName('anim5');
-    var anim4 = document.getElementsByClassName('anim4');
-    var anim3 = document.getElementById('anim3');
-    var anim2 = document.getElementById('anim2');
-    var anim1 = document.getElementById('anim1');
+//     var anim8 = document.getElementsByClassName('anim8');        
+//     var anim7 = document.getElementsByClassName('anim7'); 
+//     var anim6 = document.getElementsByClassName('anim6');        
+//     var anim5 = document.getElementsByClassName('anim5');
+//     var anim4 = document.getElementsByClassName('anim4');
+//     var anim3 = document.getElementById('anim3');
+//     var anim2 = document.getElementById('anim2');
+//     var anim1 = document.getElementById('anim1');
     var backcol = document.getElementsByTagName('body');
     var alturaint = $(document).height();
 
@@ -110,28 +110,28 @@ var controller = new ScrollMagic.Controller();
         .addTo(controller);
 
     //footer sim
-    var fromBottomTimeline = new TimelineMax();
-    var fromBottomFrom = TweenMax.from([anim4, anim3], 1, {
-        y: 300,
-        opacity:0
-    });
-    var fromBottomTo = TweenMax.to([anim4, anim3], 1, {
-        y: 0,
-        opacity:1,
-    });
-    fromBottomTimeline
-        .add(fromBottomFrom)
-        .add(fromBottomTo);
+    // var fromBottomTimeline = new TimelineMax();
+    // var fromBottomFrom = TweenMax.from([anim4, anim3], 1, {
+    //     y: 300,
+    //     opacity:0
+    // });
+    // var fromBottomTo = TweenMax.to([anim4, anim3], 1, {
+    //     y: 0,
+    //     opacity:1,
+    // });
+    // fromBottomTimeline
+    //     .add(fromBottomFrom)
+    //     .add(fromBottomTo);
      
-    new ScrollMagic.Scene({
-            triggerElement: "#trig2",
-            offset: 300
-        })
-        .setTween(fromBottomTimeline)
-        .duration(500)
-        .reverse(false)
-        //.addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
+    // new ScrollMagic.Scene({
+    //         triggerElement: "#trig2",
+    //         offset: 300
+    //     })
+    //     .setTween(fromBottomTimeline)
+    //     .duration(500)
+    //     .reverse(false)
+    //     //.addIndicators() // add indicators (requires plugin)
+    //     .addTo(controller);
 
 
     //uno

@@ -1,12 +1,15 @@
 .socialnet {
   text-align: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
   height: 100%;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  ". . uno dos tres . .";
+  ". . uno dos tres . ."
+  ". . . cuatro . . ." ;
   align-items: center;
 
 }
@@ -34,6 +37,19 @@
   }
 }
 
+.contact {
+  grid-area: cuatro;
+  font-family: 'Work Sans', sans-serif;
+  a {
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    &:hover {
+      color:#E9E9E9;
+    }
+  }
+  
+}
+
 
 
 i {
@@ -53,7 +69,7 @@ i {
 .footer {
   background-color: rgb(27, 27, 27);
   grid-area: footer;
-  height: 80px;
+  height: 130px;
   width: 100%;
   text-align: center;
 }

@@ -31,15 +31,6 @@ function hide() {
 }
 
 
-    
-
-
-
-// $(document).on('turbolinks:load', function(event) {
-//     $('#buttonback').fadeIn(6000).delay(3000);
-//   });
-
-
 
 
 document.addEventListener("turbolinks:load", function() {

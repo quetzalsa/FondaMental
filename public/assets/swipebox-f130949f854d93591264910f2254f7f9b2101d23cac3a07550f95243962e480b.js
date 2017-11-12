@@ -1,6 +1,8 @@
+
+
 /*! Swipebox v1.4.4 | Constantin Saguin csag.co | MIT License | github.com/brutaldesign/swipebox */
 
-
+document.addEventListener("turbolinks:load", function() {
 ;( function ( window, document, $, undefined ) {
 
 	$.swipebox = function( elem, options ) {
@@ -953,3 +955,5 @@
 	};
 
 }( window, document, jQuery ) );
+
+})
