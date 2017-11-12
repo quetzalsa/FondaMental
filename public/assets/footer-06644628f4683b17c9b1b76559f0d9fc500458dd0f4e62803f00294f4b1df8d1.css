@@ -1,0 +1,77 @@
+/* line 1, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.socialnet {
+  text-align: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: ". . uno dos tres . ." ". . cuatro cuatro cuatro . .";
+  align-items: center;
+}
+
+/* line 19, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.sim1 {
+  grid-area: uno;
+}
+/* line 21, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.sim1 :hover {
+  color: #E9E9E9;
+}
+
+/* line 26, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.sim2 {
+  grid-area: dos;
+}
+/* line 28, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.sim2 :hover {
+  color: #E9E9E9;
+}
+
+/* line 33, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.sim3 {
+  grid-area: tres;
+}
+/* line 35, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.sim3 :hover {
+  color: #E9E9E9;
+}
+
+/* line 40, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.contact {
+  grid-area: cuatro;
+  font-family: 'Work Sans', sans-serif;
+}
+/* line 43, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.contact a {
+  text-decoration: none;
+  color: #bdbdbd;
+}
+/* line 46, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.contact a:hover {
+  color: #E9E9E9;
+}
+
+/* line 55, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+i {
+  color: #bdbdbd;
+}
+
+/* line 62, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.main_content {
+  background-color: #161616;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  grid-area: main_content;
+  z-index: 0;
+}
+
+/* line 69, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/footer.scss */
+.footer {
+  background-color: #1b1b1b;
+  grid-area: footer;
+  height: 130px;
+  width: 100%;
+  text-align: center;
+}

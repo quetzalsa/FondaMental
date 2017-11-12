@@ -53,6 +53,26 @@
         border: none;
         outline: none;
         transition: 0.4s;
+        i {
+            margin-top: -20px;
+            color: grey; 
+        }
+    }
+
+    .active .fa-angle-down {
+        display: none;
+    }
+
+    #accordion .fa-angle-up {
+        display: none;
+    }
+
+    #accordion.active .fa-angle-up {
+        display: inline;
+    }
+
+    button#accordion:hover i {
+        color: #58e5da; 
     }
 
     #arrow {
@@ -80,10 +100,10 @@
         padding: 0 18px;
         margin-top: 0px;
         max-height: 0;
+        width: 90%;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
         text-align: center;
-        width: 100%;
         color: #d4d4d4;
     }
 
@@ -388,7 +408,28 @@
         border: none;
         outline: none;
         transition: 0.4s;
+        i {
+            margin-top: -20px;
+            color: grey; 
+        }
     }
+
+    .active .fa-angle-down {
+        display: none;
+    }
+
+    #accordion .fa-angle-up {
+        display: none;
+    }
+
+    #accordion.active .fa-angle-up {
+        display: inline;
+    }
+
+    button#accordion:hover i {
+        color: #58e5da; 
+    }
+
     button#accordion.active, button#accordion:hover {
         color: #e2e2e2; 
     }
@@ -426,7 +467,6 @@
 
 
     .textopanel {
-        
         text-align:center;
     }
 
