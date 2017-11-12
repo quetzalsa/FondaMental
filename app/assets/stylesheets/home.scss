@@ -4,6 +4,7 @@
 .proxevent {
     width: 100%;
     font-family: 'Work Sans', sans-serif;
+    color:#D4D4D4;
     h1 {
         font-family: 'alpenkreuzer', sans-serif;
         font-size: 70px;
@@ -12,8 +13,8 @@
         text-align: center;
         margin: 0px;
         padding: 3vh 0px;
-
     }
+
 }
 .aficheprinc {
     width: 100%;
@@ -44,6 +45,15 @@
         font-weight: bold;
         p {
             margin: 5px 0px;
+        }
+    }
+    #contacto {
+        a {
+            text-decoration: none;
+            color:#D4D4D4;
+            &:hover {
+                color:#ffffff;
+            }
         }
     }
 }
