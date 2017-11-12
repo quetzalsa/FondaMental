@@ -1,0 +1,93 @@
+/* line 4, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.proxevent {
+  width: 100%;
+  font-family: 'Work Sans', sans-serif;
+  color: #D4D4D4;
+}
+/* line 8, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.proxevent h1 {
+  font-family: 'alpenkreuzer', sans-serif;
+  font-size: 70px;
+  background: #e7e7e7;
+  color: #2a2a2a;
+  text-align: center;
+  margin: 0px;
+  padding: 3vh 0px;
+}
+
+/* line 19, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.aficheprinc {
+  width: 100%;
+}
+
+/* line 22, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 100px;
+  padding-top: 20px;
+}
+/* line 27, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome #fechaprox {
+  font-size: 100px;
+  text-align: center;
+  margin: 20px 0px;
+  font-family: 'Changa One', cursive;
+}
+/* line 33, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome #dondeprox {
+  text-align: center;
+  font-size: 60px;
+  padding-top: 70px;
+  margin: 20px 0px;
+}
+/* line 39, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome .line_up {
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  padding-top: 70px;
+  font-size: 25px;
+}
+/* line 45, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome .line_up .texto {
+  margin: 50px 0;
+}
+/* line 48, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome .line_up p {
+  margin: 5px 0px;
+}
+/* line 51, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome .line_up h3 {
+  margin: 0 0 40px 0;
+  font-size: 60px;
+}
+/* line 57, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome #contacto a {
+  text-decoration: none;
+  color: #D4D4D4;
+}
+/* line 60, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.textoevnthome #contacto a:hover {
+  color: #ffffff;
+}
+
+/* line 67, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+hr {
+  width: 60%;
+  background: transparent;
+}
+
+/* line 72, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.homecloud {
+  padding-top: 100px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+/* line 76, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/home.scss */
+.homecloud iframe {
+  width: 70%;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 50px;
+}
