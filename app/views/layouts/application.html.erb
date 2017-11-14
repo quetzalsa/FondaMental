@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
             <%= image_tag("fonda_blanco.png", class: ["logoback", "animateduno", "zoomIn"]) %>
             <h2 class="animateduno zoomIn">Electronic Partys in Chile</h2>
-        
+            <button id="playbut" onclick="videoback()">Play</button>
         </div>
         <div id="videocontainer">
             <video preload loop muted autoplay  poster="http://res.cloudinary.com/quetzalss/image/upload/v1508345828/video/videback.png" class="backvid">
@@ -196,9 +196,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
                   <div id="playhead"></div>
                 </div>
                 <% if current_page?('/')%>
-                <button id="pButton" class="pause"></button>
-                <% else %>
                 <button id="pButton" class="play"></button>
+                <% else %>
+                <button id="pButton" class="pause"></button>
                 <% end %>
               </div>
               </div>

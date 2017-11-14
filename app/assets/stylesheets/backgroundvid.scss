@@ -28,6 +28,26 @@
     z-index: 130;
   }
 
+  #playbut {
+    background: transparent;
+    border: rgb(240, 209, 35) 5px solid;
+    color: #D4D4D4;
+    padding: 10px;
+    font-size: 2vmax;
+    transition: 0.5s;
+    
+    &:hover {
+      border: rgb(255, 115, 0) 5px solid;
+      color: yellow;
+      cursor: pointer;
+    }
+  }
+
+  .reproduc {
+    border: rgb(255, 115, 0) 5px solid;
+    color: yellow;
+  }
+
   #buttonback {
     text-align: center;
     font-family: 'Work Sans', sans-serif;
@@ -48,7 +68,7 @@
       font-size: 7vmax;
     }
     h2 {
-      font-size: 3vmax;
+      font-size: 2.5vmax;
       margin-top: 50px;
     }
     
@@ -82,6 +102,10 @@
       object-fit: cover;
       overflow: hidden;
         z-index: 100;
+      }
+
+      #playbut {
+        display: none;
       }
       
     .videointro {

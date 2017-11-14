@@ -17,18 +17,19 @@
 //= require_tree .
 
 
+
 function videoback() {
     //document.getElementById('videointro').style.display = 'none';
-    music.play();
-    //$('#myBtn').fadeIn();
-    $('#videointro').fadeOut();
-    document.getElementById('videointro').style.display = "none";
+    music.play();    
+    $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
+    $( "#playbut" ).css( {"border": "rgb(255, 115, 0) 5px solid", "color": "yellow", "cursor": "auto"} )
+    $('html, body').animate({
+        scrollTop: $("#navegacion").offset().top
+    }, 1000);
+    
 }
 
-document.getElementById("logonav").onclick = function() {hide()};
-function hide() {
-    document.getElementById('videointro').style.display = "none";
-}
+
 
 
 
