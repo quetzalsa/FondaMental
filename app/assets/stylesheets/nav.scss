@@ -11,7 +11,7 @@
     height: 100vh;
     width: 100%;
     grid-template-columns:1fr;
-    grid-template-rows:auto 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr;
     grid-template-areas:
     "videohome"
     "navbar"
@@ -30,9 +30,11 @@
     "menu";
     justify-items: center;
     align-content: center;
+    z-index: 2000;
   }
 
   #logonav {
+    z-index: 2000;
     text-align: center;
   }
 
@@ -206,6 +208,7 @@
     "logo repro menu";
     justify-items: center;
     align-content: center;
+    z-index: 300;
   }
 
   .logonav {
