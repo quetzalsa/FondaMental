@@ -38,7 +38,8 @@
     
     &:hover {
       border: rgb(255, 115, 0) 5px solid;
-      color: yellow;
+      background: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       cursor: pointer;
     }
   }
@@ -111,6 +112,7 @@
     .videointro {
       z-index: 100;
       height: 100vh;
+      background: black;
     }
     .logoback {
       width: 80%;

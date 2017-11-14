@@ -200,8 +200,11 @@
     background-color: rgb(27, 27, 27);
     grid-area: navbar;
     z-index: 300;
+    display: -ms-grid;
     display: grid;
     height: 80px;
+    -ms-grid-columns: 1fr 1fr 4fr;
+    -ms-grid-rows: 80px;
     grid-template-columns: 1fr 1fr 4fr;
     grid-row: 80px;
     grid-template-areas:
@@ -228,8 +231,11 @@
     width: 60%;
     margin-right: 90px;
     grid-area: menu;
+    display: -ms-grid;
     display: grid;
     height: 80px;
+    -ms-grid-columns: 1fr;
+    -ms-grid-rows: 80px;
     grid-template-columns: 1fr ;
     grid-template-rows: 80px;
     align-content: center;
