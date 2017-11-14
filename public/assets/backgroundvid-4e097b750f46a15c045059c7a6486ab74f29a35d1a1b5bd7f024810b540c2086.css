@@ -1,0 +1,75 @@
+/* line 2, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+.animateduno {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+/* line 7, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+#videointro {
+  grid-area: videohome;
+  z-index: 100;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* line 16, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+.videologo {
+  height: 100vh;
+}
+
+/* line 22, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+.backvid {
+  width: 100vw;
+  height: 80vh;
+  z-index: 130;
+}
+
+/* line 29, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+#buttonback {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: 0;
+  z-index: 150;
+  transition: 0.5s;
+}
+/* line 43, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+#buttonback:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* line 51, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+#buttonback {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+}
+
+/* line 57, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+.logoback {
+  width: 40%;
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  /* line 63, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+  .backvid {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16 / 9) {
+  /* line 70, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/backgroundvid.scss */
+  .backvid {
+    width: 300%;
+    left: -100%;
+  }
+}

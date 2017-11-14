@@ -11,8 +11,9 @@
     height: 100vh;
     width: 100%;
     grid-template-columns:1fr;
-    grid-template-rows:1fr 1fr 1fr;
+    grid-template-rows:auto 1fr 1fr 1fr;
     grid-template-areas:
+    "videohome"
     "navbar"
     "main_content"
     "footer";
@@ -168,13 +169,26 @@
     padding-left: 100px;
   }
 
-  .pagina {
+  .fixed {
+    position: fixed;
+    top: 0;
+  }
+
+  .nofix {
+    position: static;
+  }
+
+
+
+  .navcont {
     display: grid;
     height: 100%;
     width: 100%;
     grid-template-columns: auto 70% auto;
-    grid-template-rows: 80px auto 80px;
+    grid-template-rows: auto 80px auto 80px;
+    margin-top:-10px;
     grid-template-areas:
+    "videohome videohome videohome"
     "navbar navbar navbar"
     ". main_content ."
     "footer footer footer";
@@ -183,6 +197,7 @@
   nav {
     background-color: rgb(27, 27, 27);
     grid-area: navbar;
+    z-index: 300;
     display: grid;
     height: 80px;
     grid-template-columns: 1fr 1fr 4fr;
