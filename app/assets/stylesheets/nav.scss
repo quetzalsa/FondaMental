@@ -168,6 +168,22 @@
       display: inline-block;
       float: left;
     }
+    #logonav {
+      float: left;
+    }
+    .repro {
+      float: left;
+    }
+    #audioplayer {
+      float: left;
+      #timeline {
+        float: left;
+      }
+      #pButton {
+        float: left;
+      }
+    }
+
   }
 
   .repro {
