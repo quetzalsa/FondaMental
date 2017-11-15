@@ -170,6 +170,10 @@
     float: left;
   }
 
+  #pButton {
+    float: left;
+  }
+
   .fixed {
     position: fixed;
     top: 0;
@@ -230,7 +234,7 @@
     text-decoration: none;
     text-align: center;
     transition: 0.5s;
-    padding: 0 20px;
+    padding-right: 25px;
     padding-top: 15px;
     box-sizing: border-box;
     float: left;
@@ -401,6 +405,7 @@
     text-decoration: none;
     text-align: center;
     transition: 0.5s;
+    padding-right: 0;
     padding-top: 15px;
     box-sizing: border-box;
   }
