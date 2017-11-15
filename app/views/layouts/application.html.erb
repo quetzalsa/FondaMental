@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
           <div class="repro" id="unico" data-turbolinks-permanent>
             <audio id="music" preload="true">
-              <source src="/audios/2-1.mp3">
+              <source src="<%= asset_path('nueva.mp3') %>">
               <source src="4.ogg">
             </audio>
               
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                         <%= link_to "Quienes Somos", fonda_mental_quienes_somos_path, class: ["itemen", cp(fonda_mental_quienes_somos_path)] %> 
                       </div>
                   </div>
-                  <%= link_to "Programa", eventos_path, class: ["itemen", cp(eventos_path)] %>
+                  <%= link_to "Calendario", eventos_path, class: ["itemen", cp(eventos_path)] %>
                   <%= link_to "Galeria", galeria_path, class: ["itemen", cp(galeria_path)] %>
                   <div class="dropdown">
                       <button class="dropbtn <%= cpa(records_concepto_path) %> <%= cpa(records_djs_path) %>">Records</button>

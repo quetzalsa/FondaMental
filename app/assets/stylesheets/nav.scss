@@ -159,7 +159,9 @@
   }
 
 
-
+  @mixin display-grid {
+    display: -ms-grid;
+  }
 
 
 }
@@ -180,14 +182,13 @@
     position: static;
   }
 
-  .itemen {
-    float: left;
-  }
-
   .navcont {
+    @include display-grid;
     display: grid;
     height: 100%;
     width: 100%;
+    -ms-grid-columns: 1fr 70% 1fr;
+    -ms-grid-rows: 1fr 80px 1fr 80px; 
     grid-template-columns: auto 70% auto;
     grid-template-rows: auto 80px auto 80px;
     margin-top:-10px;
@@ -200,9 +201,11 @@
 
   nav {
     background-color: rgb(27, 27, 27);
+    -ms-grid-row: 2 / 3;
+    -ms-grid-column: 1 / 4;
     grid-area: navbar;
     z-index: 300;
-    display: -ms-grid;
+    @include display-grid;
     display: grid;
     height: 80px;
     -ms-grid-columns: 1fr 1fr 4fr;
@@ -219,12 +222,16 @@
   .logonav {
     padding-top: 0.8em;
     width: 100px;
+    -ms-grid-column: 1 / 2;
+    -ms-grid-row: 1 / 2;
     grid-area: logo;
   }
 
   .repro {
     margin-top: 17px;
     width: 200px;
+    -ms-grid-row: 1 / 2;
+    -ms-grid-column: 2 / 3;
     grid-area: repro;
   }
 
@@ -232,8 +239,10 @@
   .menu {
     width: 60%;
     margin-right: 90px;
+    -ms-grid-row: 1 / 2;
+    -ms-grid-column: 3 / 4;
     grid-area: menu;
-    display: -ms-grid;
+    @include display-grid;
     display: grid;
     height: 80px;
     -ms-grid-columns: 1fr;
@@ -307,7 +316,10 @@
 }
 
   .menuitems {
+    @include display-grid;
     display: grid;
+    -ms-grid-columns: 1.2fr 1fr 1fr 1fr;
+    -ms-grid-rows: 80px; 
     grid-template-columns: 1.2fr 1fr 1fr 1fr;
     grid-template-rows: 80px;
     align-content: center;
