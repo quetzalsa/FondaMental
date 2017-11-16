@@ -1,0 +1,534 @@
+@media (max-width: 960px) {
+  /* line 3, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .repro {
+    width: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 9, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .pagina {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "videohome" "navbar" "main_content" "footer";
+  }
+
+  /* line 22, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  nav {
+    background-color: #070707;
+    grid-area: navbar;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "logo" "menu";
+    justify-items: center;
+    align-content: center;
+    z-index: 2000;
+  }
+
+  /* line 36, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  #logonav {
+    z-index: 2000;
+    text-align: center;
+  }
+
+  /* line 41, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .logonav {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0em;
+    box-sizing: border-box;
+    width: 70%;
+    grid-area: logo;
+  }
+
+  /* line 50, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .repro {
+    display: none;
+  }
+
+  /* line 54, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu {
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    grid-area: menu;
+    align-content: center;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  /* line 65, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu .icon {
+    display: block;
+    font-size: 5em;
+    padding-bottom: 35px;
+  }
+
+  /* line 72, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .responsive .itemen {
+    display: block;
+  }
+
+  /* line 76, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menuitems a {
+    display: block;
+    height: 53px;
+    font-family: 'fondamental', 'Lato', sans-serif;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 28px;
+  }
+
+  /* line 87, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menuitems a:hover {
+    background-color: #555555;
+    color: #E6E6E6;
+  }
+
+  /* line 92, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .itemen {
+    display: none;
+    border-bottom: 1px solid #888888;
+    width: 100vw;
+  }
+
+  /* line 98, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .responsive .menuitems a, .responsive .menuitems .dropdown, .responsive .menuitems .dropdown .drop-content a {
+    display: block;
+  }
+
+  /* line 102, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu a {
+    height: 100px;
+    display: none;
+    width: 100%;
+    padding: 60px 0px;
+    font-family: helvetica;
+    font-size: 1.5em;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /* line 114, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu .menuitems a {
+    height: 100%;
+    padding: 20px 0px;
+    font-family: 'fondamental';
+    font-size: 35px;
+  }
+
+  /* line 122, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .dropbtn {
+    display: block;
+    font-family: 'fondamental';
+    font-size: 40px;
+    color: #cfcfcf;
+    background-color: black;
+    width: 100%;
+    border: 0;
+    margin: auto;
+    height: 80px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+    z-index: -20;
+  }
+
+  /* line 139, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .dropdown {
+    height: 100%;
+    display: none;
+    width: 100%;
+    font-family: helvetica;
+    font-size: 1.5em;
+    color: #bbbbbb;
+    text-decoration: none;
+    text-align: center;
+  }
+
+  /* line 150, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .drop-content {
+    display: block;
+  }
+
+  /* line 154, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .drop-content a {
+    color: #cfcfcf;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+}
+@media (min-width: 961px) {
+  /* not support grid */
+  /* line 167, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .repro {
+    width: 300px;
+    padding-left: 100px;
+    float: left;
+  }
+
+  /* line 173, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  #pButton {
+    float: left;
+  }
+
+  /* line 177, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .fixed {
+    position: fixed;
+    transition: top 0.2s ease-in-out;
+  }
+
+  /* line 183, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .nofix {
+    position: static;
+  }
+
+  /* line 187, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .navcont {
+    height: 100%;
+    width: 100%;
+    margin-top: -10px;
+  }
+
+  /* line 193, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  nav {
+    background-color: #1b1b1b;
+    z-index: 300;
+    width: 100vw;
+    height: 80px;
+    justify-items: center;
+    align-content: center;
+    z-index: 300;
+  }
+
+  /* line 203, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .logonav {
+    padding-top: 0.8em;
+    width: 100px;
+    float: left;
+  }
+
+  /* line 209, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .repro {
+    margin-top: 17px;
+    width: 200px;
+    float: left;
+  }
+
+  /* line 216, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu {
+    width: 60%;
+    margin-right: 90px;
+    height: 80px;
+    align-content: center;
+    justify-content: center;
+    float: left;
+    transition: top 0.3s;
+  }
+
+  /* line 226, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu .icon {
+    display: none;
+  }
+
+  /* line 230, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menuitems a {
+    display: block;
+    font-family: 'fondamental';
+    font-size: 40px;
+    color: #cfcfcf;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    padding-right: 25px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  /* line 244, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .dropbtn {
+    display: block;
+    font-family: 'fondamental';
+    font-size: 40px;
+    color: #cfcfcf;
+    background-color: #1B1B1B;
+    border: 0;
+    height: 80px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+    z-index: -20;
+  }
+
+  /* line 259, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    float: left;
+  }
+
+  /* line 265, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .drop-content {
+    display: none;
+    position: absolute;
+    background-color: #1B1B1B;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+
+  /* line 274, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .drop-content a {
+    color: #cfcfcf;
+    padding: 12px 30px;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    float: left;
+    display: block;
+  }
+
+  /* line 284, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .dropdown:hover .drop-content {
+    display: block;
+  }
+
+  /* line 288, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .dropdown:hover .dropbtn {
+    background-color: #555555;
+    color: black;
+  }
+
+  /* line 293, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menuitems {
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* line 298, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .media {
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    background-color: #323232;
+  }
+
+  /* line 304, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .imagen_evento {
+    width: 40%;
+    display: inline-block;
+  }
+
+  /* end not support grid */
+  /* line 311, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu a:hover {
+    background-color: #555555;
+    color: black;
+  }
+
+  /* line 316, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .current {
+    color: #ff3b3f !important;
+  }
+
+  @supports (display: grid) {
+    /* line 324, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .repro {
+      width: 300px;
+      padding-left: 100px;
+    }
+
+    /* line 329, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .fixed {
+      position: fixed;
+      top: 0;
+    }
+
+    /* line 334, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .nofix {
+      position: static;
+    }
+
+    /* line 338, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .navcont {
+      display: grid;
+      height: 100%;
+      width: 100%;
+      grid-template-columns: auto 70% auto;
+      grid-template-rows: auto 80px auto 80px;
+      margin-top: -10px;
+      grid-template-areas: "videohome videohome videohome" "navbar navbar navbar" ". main_content ." "footer footer footer";
+    }
+
+    /* line 352, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    nav {
+      background-color: #1b1b1b;
+      grid-area: navbar;
+      z-index: 300;
+      display: grid;
+      height: 80px;
+      -ms-grid-columns: 1fr 1fr 4fr;
+      -ms-grid-rows: 80px;
+      grid-template-columns: 1fr 1fr 4fr;
+      grid-row: 80px;
+      grid-template-areas: "logo repro menu";
+      justify-items: center;
+      align-content: center;
+      z-index: 300;
+    }
+
+    /* line 369, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .logonav {
+      padding-top: 0.8em;
+      width: 100px;
+      grid-area: logo;
+    }
+
+    /* line 375, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .repro {
+      margin-top: 17px;
+      width: 200px;
+      grid-area: repro;
+    }
+
+    /* line 382, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .menu {
+      width: 60%;
+      margin-right: 90px;
+      grid-area: menu;
+      display: grid;
+      height: 80px;
+      -ms-grid-columns: 1fr;
+      -ms-grid-rows: 80px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 80px;
+      align-content: center;
+      justify-content: center;
+      transition: top 0.3s;
+    }
+
+    /* line 397, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .menu .icon {
+      display: none;
+    }
+
+    /* line 401, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .menuitems a {
+      display: block;
+      font-family: 'fondamental';
+      font-size: 40px;
+      color: #cfcfcf;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.5s;
+      padding-right: 0;
+      padding-top: 15px;
+      box-sizing: border-box;
+    }
+
+    /* line 414, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .dropbtn {
+      display: block;
+      font-family: 'fondamental';
+      font-size: 40px;
+      color: #cfcfcf;
+      background-color: #1B1B1B;
+      border: 0;
+      height: 80px;
+      text-decoration: none;
+      text-align: center;
+      transition: 0.5s;
+      box-sizing: border-box;
+      z-index: -20;
+    }
+
+    /* line 429, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* line 434, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .drop-content {
+      display: none;
+      position: absolute;
+      background-color: #1B1B1B;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    /* line 443, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .drop-content a {
+      color: #cfcfcf;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* line 450, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .dropdown:hover .drop-content {
+      display: block;
+    }
+
+    /* line 454, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .dropdown:hover .dropbtn {
+      background-color: #555555;
+      color: black;
+    }
+
+    /* line 459, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .menuitems {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr;
+      grid-template-rows: 80px;
+      align-content: center;
+      justify-content: center;
+    }
+
+    /* line 467, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+    .media {
+      position: relative;
+      display: inline-block;
+      height: 80px;
+      background-color: #323232;
+    }
+  }
+  /* line 476, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .menu a:hover {
+    background-color: #555555;
+    color: black;
+  }
+
+  /* line 481, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .current {
+    color: #ff3b3f !important;
+  }
+}
+@media (max-width: 1350px) {
+  /* line 489, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/nav.scss */
+  .dropbtn {
+    display: block;
+    font-family: 'fondamental';
+    font-size: 40px;
+    color: #cfcfcf;
+    border: 0;
+    line-height: 30px;
+    height: 80px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.5s;
+    box-sizing: border-box;
+    z-index: -20;
+  }
+}

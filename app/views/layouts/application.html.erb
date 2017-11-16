@@ -8,7 +8,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     
     <%= stylesheet_link_tag 'application',
-    'https://fonts.googleapis.com/css?family=Work+Sans|Lato|Abril+Fatface|Gravitas+One|Hind|Rubik+Mono+One|Open+Sans+Condensed:300|Open+Sans|Chelsea+Market|Changa+One',
+    'https://fonts.googleapis.com/css?family=Work+Sans|Lato|Abril+Fatface|Gravitas+One|Hind|Rubik+Mono+One|Open+Sans+Condensed:300|Open+Sans|Chelsea+Market|Changa+One|Quicksand',
      media: 'all', 'data-turbolinks-track' => true %>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
@@ -155,7 +155,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
             <%= image_tag("fonda_blanco.png", class: ["logoback", "animateduno", "zoomIn"]) %>
             <h2 class="animateduno zoomIn">Electronic Partys in Chile</h2>
-            <button id="playbut" class="animateduno zoomIn" onclick="videoback()">Entra</button>
+            <button id="playbut" class="hvr-wobble-vertical" onclick="videoback()"><i class="fa fa-3x fa-angle-double-down" aria-hidden="true"></i>
+</button>
         </div>
         <div id="videocontainer">
             <video preload loop muted autoplay  poster="http://res.cloudinary.com/quetzalss/image/upload/v1508345828/video/videback.png" class="backvid">

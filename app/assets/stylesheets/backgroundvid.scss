@@ -30,23 +30,22 @@
 
   #playbut {
     background: transparent;
-    border: rgb(240, 209, 35) 5px solid;
+    border: 0;
+    margin-top: 50px;
     color: #D4D4D4;
     padding: 10px;
     font-size: 2vmax;
     transition: 0.5s;
-    
     &:hover {
-      border: rgb(255, 115, 0) 5px solid;
-      background: rgb(255, 255, 255);
+      // background: rgb(255, 255, 255);
       color: rgb(0, 0, 0);
+      box-sizing: border-box;
       cursor: pointer;
     }
   }
 
   .reproduc {
-    border: rgb(255, 115, 0) 5px solid;
-    color: yellow;
+    opacity: 0.5;
   }
 
   #buttonback {
@@ -69,17 +68,24 @@
       font-size: 7vmax;
     }
     h2 {
+      font-family: 'Quicksand', sans-serif;
       font-size: 2.5vmax;
       margin-top: 50px;
     }
     
   }
 
-
+  .nav-up {
+    top: -80px;
+  }
+  .nav-down {
+    top: 0px;
+  }
 
   .logoback {
     
     width: 60%;
+    margin-top: 100px;
   }
   
   
