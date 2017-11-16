@@ -1,3 +1,130 @@
 // Place all the styles related to the Records controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.concepto {
+    font-family: 'Open Sans', sans-serif;
+    color: #D4D4D4;
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+    font-size: 1em;
+    padding-bottom: 30px;
+    h1 {
+        font-family: fondamental;
+        font-size: 60px;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+        width: 30%;
+    }
+}
+
+.biodj {
+    font-family: 'Open Sans', sans-serif;
+    color: #D4D4D4;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    padding-bottom: 30px;
+    img {
+        width: 100%;
+        margin: auto;
+    }
+    h1 {
+        
+        font-size: 5vmax;
+        text-align: center;
+    }
+    
+    
+}
+
+#biodjt {
+    width: 45%;
+    display: inline-block;
+    margin: auto;
+    text-align: justify;
+    padding-top: 40px;
+    margin-right: 25px; 
+}
+
+.concepto p a, .concepto p a i {
+    text-decoration: none;
+    color: #f2d989;
+    transition: 0.5s;
+    &:hover {
+        color: white;
+    }
+}
+
+
+
+
+
+@supports (display: grid) { 
+    // Place all the styles related to the Records controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.biodj {
+    font-family: 'Open Sans', sans-serif;
+    color: #D4D4D4;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 1em;
+    padding-bottom: 0px;
+    display: grid;
+    align-content: start;	
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+    grid-template-areas: 
+    "titulodj titulodj"
+    "imagendj imagendj"
+    "biodjuno biodjdos";
+    img {
+        width: 100%;
+        margin: auto;
+        grid-area: imagendj;
+    }
+    h1 {
+        
+        font-size: 5vmax;
+        text-align: center;
+        grid-area: titulodj;
+    }
+    
+    
+}
+
+#biodj1 {
+    margin: auto;
+    text-align: justify;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    grid-area: biodjuno;
+}
+
+#biodj2 {
+    margin: auto;
+    width: 100%;
+    text-align: justify !important;
+    padding-top: 20px;
+    grid-area: biodjdos;
+}
+
+.concepto p a, .concepto p a i {
+    text-decoration: none;
+    color: #f2d989;
+    transition: 0.5s;
+    &:hover {
+        color: white;
+    }
+}
+}
