@@ -1,89 +1,95 @@
-
 <div class="main_content">
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="galeriaside">
-    <%= render 'galeriaprinc'%>
-</div>
-</div>
-
-<%# <span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span> %>
-
-    <div id="imacamino">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="galeriaside">
+            <%= render 'galeriaprinc'%>
+        </div>
     </div>
 
-    <div class="gal_tit_dos">
-        <h1>Camino <br> Marginal</h1>
-    </div>
+    <%# <span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span> %>
 
-    <div class="galeria">
-
-        <div class="info">
-            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
-            </button>
-
-            
-            <div class="panel">
-            <%= cl_image_tag("afiches/camino_marginal" , class: "afiche") %>
-            <div class="textopanel">
-            <p>Camino Marginal fue la primera fiesta electrónica realizada en el bar La Konsulta. El
-                lugar habla por sí mismo: deshecho, sucio, antiguo y oscuro. Una apología a la temática
-                de esta fiesta escondida en la noche santiaguina</p>
-            <h3>14/05/2016</h3>
-            <h3>Cenicero Club, Santiago Centro</h3>
-            <h3>Line Up</h3>
-                <p><%= render 'vinilicon' %> Square Neck - Bretaña/Francia</p>
-                <p><%= render 'vinilicon' %> Kamila Govorcin - Santiago/Chile</p>
-                <p><%= render 'vinilicon' %> Pato Salinas - Santiago/Chile</p>
-                <p><%= render 'vinilicon' %> Kenny - Santiago/Chile</p>
-                <p><%= render 'vinilicon' %> Mañungo - Santiago/Chile</p>
-            <h3>Sonido: Funktion One</h3>
-            </div>
-            </div>
+        <div id="imacamino">
         </div>
 
-    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
-    
-    <div class="dosvert">
-        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min03" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal03"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min01" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal01"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    </div>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min02" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal02"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min04" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal04"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min06" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal06"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min05" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal05"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <div class="dosvert">
-        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min07" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal07"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min08" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal08"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    </div>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min09" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal09"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min13" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal13"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <div class="dosvert">
-        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min11" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal11"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min12" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal12"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    </div>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min10" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal10"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min15" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal15"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <div class="dosvert">
-        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min14" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal14"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min17" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal17"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    </div>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min16" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal16"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <div class="dosvert">
-        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min18" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal18"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min19" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal19"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    </div>
-    <div class="dosvert">
-         <%= link_to cl_image_tag("caminomarginal/camino_marginal_min20" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal20"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min22" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal22"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    </div>
-    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min21" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal21"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-    
-    
+        <div class="gal_tit_dos">
+            <h1>Camino
+                <br> Marginal</h1>
+        </div>
 
-    
-    
-</div>
+        <div class="galeria">
+
+            <div class="info">
+                <button class="accordion">
+                    <i class="fa fa-info" aria-hidden="true"></i> Fiesta
+                    <i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+                </button>
+
+
+                <div class="panel">
+                    <%= cl_image_tag("afiches/camino_marginal" , class: "afiche") %>
+                        <div class="textopanel">
+                            <p>Camino Marginal fue la primera fiesta electrónica realizada en el bar La Konsulta. El lugar habla
+                                por sí mismo: deshecho, sucio, antiguo y oscuro. Una apología a la temática de esta fiesta
+                                escondida en la noche santiaguina</p>
+                            <h3>14/05/2016</h3>
+                            <h3>Cenicero Club, Santiago Centro</h3>
+                            <h3>Line Up</h3>
+                            <p>
+                                <%= render 'vinilicon' %> Square Neck - Bretaña/Francia</p>
+                            <p>
+                                <%= render 'vinilicon' %> Kamila Govorcin - Santiago/Chile</p>
+                            <p>
+                                <%= render 'vinilicon' %> Pato Salinas - Santiago/Chile</p>
+                            <p>
+                                <%= render 'vinilicon' %> Kenny - Santiago/Chile</p>
+                            <p>
+                                <%= render 'vinilicon' %> Mañungo - Santiago/Chile</p>
+                            <%= cl_image_tag("lineup/linecaminomarginal.jpg" , class: "aficheline") %>
+                            <h3>Sonido: Funktion One</h3>
+                        </div>
+                </div>
+            </div>
+
+            <div class="dosvert">
+                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min03" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal03"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min01" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal01"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+            </div>
+            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min02" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal02"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min04" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal04"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min06" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal06"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min05" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal05"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                            <div class="dosvert">
+                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min07" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal07"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min08" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal08"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                            </div>
+                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min09" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal09"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min13" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal13"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                    <div class="dosvert">
+                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min11" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal11"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min12" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal12"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                    </div>
+                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min10" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal10"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min15" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal15"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                            <div class="dosvert">
+                                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min14" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal14"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min17" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal17"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                            </div>
+                                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min16" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal16"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                <div class="dosvert">
+                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min18" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal18"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min19" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal19"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                </div>
+                                                <div class="dosvert">
+                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min20" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal20"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min22" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal22"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                </div>
+                                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min21" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal21"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+
+
+
+
+
+        </div>
 </div>
 
 <%# <script>
@@ -95,15 +101,3 @@
             document.getElementById("mySidenav").style.width = "0";
         }
 </script> %>
-
-
-
-
-
-
-
-
-
-
-
-

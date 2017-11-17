@@ -36,12 +36,13 @@
                 <p><%= render 'galery/vinilicon' %> Alejandro Caro - Santiago/Chile</p>
                 <p><%= render 'galery/vinilicon' %> Michelangelo Buzzi - Milan/Italia</p>
                 <p><%= render 'galery/vinilicon' %> Oscar Campbell - Santiago/Chile</p>
+                <%= cl_image_tag("lineup/lineliberamusica.jpg" , class: "aficheline") %>
             <h3></h3>
             </div>
             </div>
         </div>
 
-    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6aKWRNqBtQw" frameborder="0" allowfullscreen></iframe>
     
     <%= link_to cl_image_tag("liberamusica/libera_musica_min01" , class: "galeria_foto"), cl_image_path("liberamusica/libera_musica01"), class: "galeria_foto swipebox", "rel" => "liberamusica1" %>
     <%= link_to cl_image_tag("liberamusica/libera_musica_min02" , class: "galeria_foto"), cl_image_path("liberamusica/libera_musica02"), class: "galeria_foto swipebox", "rel" => "liberamusica1" %>

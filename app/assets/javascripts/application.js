@@ -18,9 +18,16 @@
 
 
 
+var path = window.location.pathname;
+if (path == "/") {
+    music.play();  
+} 
 function videoback() {
     //document.getElementById('videointro').style.display = 'none';
-    music.play();    
+    
+        music.play();  
+     
+      
     $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
     $( "#playbut" ).css( {"opacity": "0.3"} )
     $('html, body').animate({

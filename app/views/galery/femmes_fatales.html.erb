@@ -35,12 +35,13 @@
                 <p><%= render 'galery/vinilicon' %> Lisa Cropp - Hamburgo/Alemania</p>
                 <p><%= render 'galery/vinilicon' %> Umho - Santiago/Chile</p>
                 <p><%= render 'galery/vinilicon' %> PMH - Paris/Francia</p>
+                <%= cl_image_tag("lineup/linefemmesfatales.jpg" , class: "aficheline") %>
             <h3>Sonido: Funktion One</h3>
             </div>
             </div>
         </div>
 
-    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/akQOdm0OxOw" frameborder="0" allowfullscreen></iframe>
     
     <%= link_to cl_image_tag("femmesfatales/femmes_falates_min01" , class: "galeria_foto"), cl_image_path("femmesfatales/femmes_falates01"), class: "galeria_foto swipebox", "rel" => "femmesfatales1" %>
     <%= link_to cl_image_tag("femmesfatales/femmes_falates_min02" , class: "galeria_foto"), cl_image_path("femmesfatales/femmes_falates02"), class: "galeria_foto swipebox", "rel" => "femmesfatales1" %>

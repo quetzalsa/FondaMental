@@ -1,36 +1,31 @@
-
-
 @media (max-width: 960px) {
     #logo_fonda {
-    background-image: url(<%= asset_path "fonda_blanco.png" %>);
-    height: 50vh;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: 60%;
-}
-
+        background-image: url(<%= asset_path "fonda_blanco.png" %>);
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
+    }
     #fonda_mental1 {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 60px;
-    padding-top: 60px;
-    color: #d4d4d4;
-    font-family: 'Open Sans', sans-serif;
-    
-    h1 {
-        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        color: #d4d4d4;
+        font-family: 'Open Sans', sans-serif;
+        h1 {
+            text-align: center;
+        }
+        p {
+            width: 100%;
+            text-align: left;
+            margin: auto;
+            font-size: 1em;
+        }
+        ul li {
+            font-size: 1em;
+        }
     }
-    p {
-        width:100%;
-        text-align: left;
-        margin:auto;
-        font-size: 1em;
-    }
-    ul li {
-        font-size: 1em;
-    }
-    }
-
     #fonda_mental2 {
         width: 80%;
         margin: auto;
@@ -38,21 +33,19 @@
         padding-bottom: 60px;
         color: #d4d4d4;
         font-family: 'Open Sans', sans-serif;
-        
         h1 {
             text-align: center;
         }
         p {
-            width:100%;
+            width: 100%;
             text-align: left;
-            margin:auto;
+            margin: auto;
             font-size: 1em;
         }
         ul li {
             font-size: 1em;
         }
     }
-
     #fonda_mental3 {
         width: 80%;
         margin: auto;
@@ -60,53 +53,75 @@
         padding-bottom: 60px;
         color: #d4d4d4;
         font-family: 'Open Sans', sans-serif;
-        
         h1 {
             text-align: center;
         }
         p {
-            width:100%;
+            width: 100%;
             text-align: left;
-            margin:auto;
+            margin: auto;
             font-size: 1em;
         }
         ul li {
             font-size: 1em;
         }
+    }
+    .textofunda {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "tuno" "tdos";
+    }
+    #tfund1 {
+        margin: auto;
+        text-align: justify !important;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        grid-area: tuno;
+    }
+    #tfund2 {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: justify !important;
+        padding-top: 20px;
+        grid-area: tdos;
     }
 }
 
 @media (min-width: 961px) {
     #logo_fonda {
-    background-image: url(<%= asset_path "fonda_blanco.png" %>);
-    height: 100vh;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: 60%;
+        background-image: url(<%= asset_path "fonda_blanco.png" %>);
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 60%;
     }
-
     #fonda_mental1 {
-    width: 80%;
-    margin: auto;
-    padding-bottom: 60px;
-    padding-top: 60px;
-    color: #d4d4d4;
-    font-family: 'Open Sans', sans-serif;
-    
-    h1 {
-        text-align: center;
+        width: 80%;
+        margin: auto;
+        padding-bottom: 60px;
+        padding-top: 60px;
+        color: #d4d4d4;
+        font-family: 'Open Sans', sans-serif;
+        h1 {
+            text-align: center;
+        }
+        p {
+            width: 100%;
+            text-align: justify;
+            margin: auto;
+            font-size: 1em;
+        }
+        ul li {
+            font-size: 1em;
+        }
     }
-    p {
-        width:100%;
-        text-align:justify;
-        margin:auto;
-        font-size: 1em;
-    }
-    ul li {
-        font-size: 1em;
-    }
-    }
-
     #fonda_mental2 {
         width: 80%;
         margin: auto;
@@ -114,21 +129,19 @@
         padding-bottom: 60px;
         color: #d4d4d4;
         font-family: 'Open Sans', sans-serif;
-        
         h1 {
             text-align: center;
         }
         p {
-            width:100%;
-            text-align:justify;
-            margin:auto;
+            width: 100%;
+            text-align: justify;
+            margin: auto;
             font-size: 1em;
         }
         ul li {
             font-size: 1em;
         }
     }
-
     #fonda_mental3 {
         width: 80%;
         margin: auto;
@@ -136,14 +149,13 @@
         padding-bottom: 60px;
         color: #d4d4d4;
         font-family: 'Open Sans', sans-serif;
-        
         h1 {
             text-align: center;
         }
         p {
-            width:100%;
-            text-align:justify;
-            margin:auto;
+            width: 100%;
+            text-align: justify;
+            margin: auto;
             font-size: 1em;
         }
         ul li {
@@ -151,7 +163,6 @@
         }
     }
 }
-
 
 #imagen1 {
     background-image: url(<%= asset_path "sobre1.jpg" %>);
@@ -160,6 +171,46 @@
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#imagenfunda {
+    background-image: url(<%= asset_path "fundadores.jpg" %>);
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -60px;
+    padding-top: 0;
+}
+
+@media (min-width: 960px) {
+    .textofunda {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "tuno tdos";
+    }
+    #tfund1 {
+        margin: auto;
+        text-align: justify;
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        grid-area: tuno;
+    }
+    #tfund2 {
+        margin: auto;
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: justify !important;
+        padding-top: 20px;
+        grid-area: tdos;
+    }
 }
 
 #imagen2 {
@@ -179,4 +230,3 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-

@@ -37,13 +37,13 @@
                 <p><%= render 'galery/vinilicon' %> Lisa Cropp - Hamburgo/Alemania</p>
                 <p><%= render 'galery/vinilicon' %> Andrea Paz - Santiago/Chile</p>
                 <p><%= render 'galery/vinilicon' %> Leo Vargas - Valparaíso/Chile</p>
+                <%= cl_image_tag("lineup/linephysical.jpg" , class: "aficheline") %>
             <h3>Sonido: Funktion One</h3>
             <h3>Colaborador: Club Mate</h3>
             </div>
             </div>
         </div>
 
-    <iframe src="https://www.youtube.com/embed/d3JU2as9bcE?rel=0" frameborder="0" allowfullscreen></iframe>
     
     <%= link_to cl_image_tag("physical/physical_min01" , class: "galeria_foto"), cl_image_path("physical/physical01"), class: "galeria_foto swipebox", "rel" => "physical1" %>
     <%= link_to cl_image_tag("physical/physical_min02" , class: "galeria_foto"), cl_image_path("physical/physical02"), class: "galeria_foto swipebox", "rel" => "physical1" %>
