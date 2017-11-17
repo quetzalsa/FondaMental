@@ -19,7 +19,7 @@
 
 
 var path = window.location.pathname;
-if (path == "/") {
+if (path == "/" && $( window ).width() >= 960) {
     music.play();  
 } 
 function videoback() {
@@ -93,7 +93,7 @@ document.addEventListener("turbolinks:load", function() {
       acc[i].onclick = function() {
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
-        
+
         if (panel.style.maxHeight){
           panel.style.maxHeight = null;
         } else {

@@ -1,9 +1,13 @@
 @media (max-width: 960px) {
 
   .repro {
-    width: 0px;
+    display: none;
     padding: 0;
     margin: 0;
+  }
+
+  .current {
+    color: #ff3b3f !important;
   }
 
   .pagina {
