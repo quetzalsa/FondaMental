@@ -4,4 +4,7 @@ class RecordsController < ApplicationController
 
   def djs
   end
+
+  def fechas
+  end
 end

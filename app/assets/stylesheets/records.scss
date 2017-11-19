@@ -84,7 +84,15 @@
 @supports (display: grid) { 
 
     
-
+.dj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    .info {
+        height: 100%;
+        width: 100%;
+    }
+}
 
 .biodj {
     font-family: 'Open Sans', sans-serif;

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get '/records/concepto' => 'records#concepto'
 
+  get '/records/fechas' => 'records#fechas'
+
   get '/records/djs' => 'records#djs'
 
   get '/fonda_mental/historia' => 'fonda#historia'
