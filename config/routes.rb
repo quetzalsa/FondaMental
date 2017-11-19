@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  get 'records/jean_madry'
+
+  get 'records/lisa_cropp'
+
+  get 'records/deniroster'
+
   get '/records/concepto' => 'records#concepto'
 
   get '/records/fechas' => 'records#fechas'

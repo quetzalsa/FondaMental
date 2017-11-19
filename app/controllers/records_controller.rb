@@ -1,10 +1,10 @@
 class RecordsController < ApplicationController
-  def concepto
+  def jean_madry
   end
 
-  def djs
+  def lisa_cropp
   end
 
-  def fechas
+  def deniroster
   end
 end
