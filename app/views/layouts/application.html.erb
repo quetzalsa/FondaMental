@@ -217,9 +217,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
                   <%= link_to "Calendario", eventos_path, class: ["itemen", cp(eventos_path)] %>
                   <%= link_to "Galeria", galeria_path, class: ["itemen", cp(galeria_path)] %>
                   <div class="dropdown">
-                      <button class="dropbtn <%= cpa(records_concepto_path) %> <%= cpa(records_djs_path) %>">Records</button>
+                      <button class="dropbtn <%= cpa(records_label_path) %> <%= cpa(records_djs_path) %>">Records</button>
                       <div class="drop-content">
-                        <%= link_to "Label", records_concepto_path, class: ["itemen", cp(records_concepto_path)] %>
+                        <%= link_to "Label", records_label_path, class: ["itemen", cp(records_label_path)] %>
                         <%= link_to "Dj's", records_djs_path, class: ["itemen", cp(records_djs_path)] %>
                         <%= link_to "Fechas", records_fechas_path, class: ["itemen", cp(records_fechas_path)] %>
                       </div>

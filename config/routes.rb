@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   get 'records/deniroster'
 
-  get '/records/concepto' => 'records#concepto'
+  get '/records/label' => 'records#concepto'
 
   get '/records/fechas' => 'records#fechas'
 
