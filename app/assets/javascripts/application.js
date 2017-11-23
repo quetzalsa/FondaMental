@@ -17,6 +17,14 @@
 //= require_tree .
 
 
+window.addEventListener('touchstart', function() {
+function block2() {
+    $('.drop1').toggleClass( "dblock")
+}
+function block1() {
+    $('.drop2').toggleClass( "dblock")
+}
+}
 
 var path = window.location.pathname;
 if (path == "/" && $( window ).width() >= 960) {
