@@ -17,14 +17,34 @@
 //= require_tree .
 
 
-window.addEventListener('touchstart', function() {
-function block2() {
-    $('.drop1').toggleClass( "dblock")
+
+if (/MSIE 10/i.test(navigator.userAgent)) {
+    // This is internet explorer 10
+    window.alert('Recomendamos usar un navegador distinto a Edge o Internet Explorer');
+ }
+ 
+ if (/MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)) {
+     // This is internet explorer 9 or 11
+     window.alert('Recomendamos usar un navegador distinto a Edge o Explorer');
+ }
+ 
+ if (/Edge\/\d./i.test(navigator.userAgent)){
+    // This is Microsoft Edge
+    window.alert('Recomendamos usar un navegador distinto a Edge o Explorer');
+ }
+
+
+var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+
+if (supportsTouch == true) {
+    function block2() {
+        $('.drop1').toggleClass( "dblock")
+    }
+    function block1() {
+        $('.drop2').toggleClass( "dblock")
+    }
 }
-function block1() {
-    $('.drop2').toggleClass( "dblock")
-}
-}
+    
 
 var path = window.location.pathname;
 if (path == "/" && $( window ).width() >= 960) {
