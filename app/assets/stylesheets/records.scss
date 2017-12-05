@@ -1,13 +1,30 @@
 // Place all the styles related to the Records controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.panel.eventos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 40px;
+    text-align: center;
+}
+
+.recordsevento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+
 button.accordion.fechasrecords#accordion {
     background: transparent;
     color: #f2d989; 
     cursor: pointer;
     padding: 18px;
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 4rem;
+    font-size: 5vmax;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -92,6 +109,9 @@ button.accordion.fechasrecords#accordion {
 }
 
 @supports (display: grid) {
+    @media (max-width: 800px) {
+        
+    }
     #biodj1 {
         margin: auto;
         text-align: justify;
