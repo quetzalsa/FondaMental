@@ -34,15 +34,17 @@ if (/MSIE 10/i.test(navigator.userAgent)) {
  }
 
 
-var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
+// var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
-if (supportsTouch == true) {
-    function block2() {
-        $('.drop1').toggleClass( "dblock")
-    }
-    function block1() {
-        $('.drop2').toggleClass( "dblock")
-    }
+// if (supportsTouch == true) {
+    
+// }
+
+function block2() {
+    $('.drop1').toggleClass( "dblock")
+}
+function block1() {
+    $('.drop2').toggleClass( "dblock")
 }
     
 

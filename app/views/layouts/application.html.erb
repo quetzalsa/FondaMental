@@ -147,6 +147,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </button> 
 
 <% if current_page?(root_path) %>
+<header>
   <div id="videointro">
       <div id="videologo">
         <div id="buttonback">
@@ -167,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       
     
     </div> 
+    </header>
 <% end %>
       
     <div class="navcont">
@@ -218,7 +220,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                   <%= link_to "Calendario", eventos_path, class: ["itemen", cp(eventos_path)] %>
                   <%= link_to "Galeria", galeria_path, class: ["itemen", cp(galeria_path)] %>
                   <div class="dropdown">
-                      <button class="dropbtn <%= cpa(records_label_path) %> <%= cpa(records_djs_path) %>" onclick="block1()">Records</button>
+                      <button class="dropbtn <%= cpa(records_label_path) %> <%= cpa(records_djs_path) %> <%= cpa(records_fechas_path) %>" onclick="block1()">Records</button>
                       <div class="drop-content drop2">
                         <%= link_to "Label", records_label_path, class: ["itemen", cp(records_label_path)] %>
                         <%= link_to "Dj's", records_djs_path, class: ["itemen", cp(records_djs_path)] %>
@@ -238,8 +240,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         
         
 
-
+    
        <div class="footer" id="footer">
+       <footer>
           <div class="socialnet">
             <%= link_to 'https://soundcloud.com/fonda_mental', class: ["sim1"], :target => '_blanc' do %>
               <i class="fa fa-soundcloud fa-2x" aria-hidden="true"></i>
@@ -255,8 +258,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
               <a href="tel:+569 8185 2306"><i class="fa fa-whatsapp" aria-hidden="true"></i> +569 8185 2306</a>
               </div>
           </div> 
-          
-      </div></div>
+          </footer>
+      </div>
+      
+      </div>
       
     </div>
      

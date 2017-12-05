@@ -1,6 +1,21 @@
 // Place all the styles related to the Records controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+button.accordion.fechasrecords#accordion {
+    background: transparent;
+    color: #f2d989; 
+    cursor: pointer;
+    padding: 18px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 4rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
 .concepto {
     font-family: 'Open Sans', sans-serif;
     color: #D4D4D4;
@@ -11,6 +26,7 @@
     padding-bottom: 30px;
     h1 {
         font-family: fondamental;
+        font-weight: normal;
         font-size: 55px;
         text-align: center;
     }
