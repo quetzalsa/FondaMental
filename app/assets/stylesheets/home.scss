@@ -7,16 +7,17 @@
     font-family: 'Work Sans', sans-serif;
     color:#D4D4D4;
     h1 {
-        font-family: 'alpenkreuzer', sans-serif;
-        font-size: 70px;
-        background: #e7e7e7;
-        color: rgb(42, 42, 42);
-        text-align: center;
-        margin: 0px;
-        padding: 3vh 0px;
+        font-size: 7vmax;
     }
 
 }
+
+.homepodcast {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5vmax;
+    margin-top: 0;
+}
+
 .aficheprinc {
     width: 100%;
 }
@@ -25,6 +26,10 @@
     margin: auto;
     padding-bottom: 100px;
     padding-top: 20px;
+    .imagen_evento img {
+        max-height: 300px;
+        width: auto;
+    }
     #fechaprox {
         font-size: 100px;
         text-align: center;
@@ -36,6 +41,13 @@
         font-size: 60px;
         padding-top: 70px;
         margin: 20px 0px;
+    }
+    #ultimo {
+        text-align: center;
+        font-size: 60px;
+        color: #58E5DA;
+        padding-top: 40px;
+        margin: 10px 0 -50px 0;
     }
     .line_up {
         width: 70%;
