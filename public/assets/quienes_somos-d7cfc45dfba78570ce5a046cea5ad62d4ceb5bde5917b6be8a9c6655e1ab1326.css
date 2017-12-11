@@ -1,0 +1,38 @@
+/* line 1, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/quienes_somos.scss */
+.person_equipo {
+  padding: 30px;
+}
+/* line 3, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/quienes_somos.scss */
+.person_equipo img {
+  height: auto;
+  max-width: 100%;
+  border-radius: 50%;
+}
+/* line 8, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/quienes_somos.scss */
+.person_equipo h2 {
+  color: #f2d989;
+  text-align: center;
+}
+
+/* line 14, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/quienes_somos.scss */
+.person_equipo.ultimo_perfil {
+  grid-column: 2 / 3;
+}
+
+/* line 18, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/quienes_somos.scss */
+.ima_persona {
+  background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1512944534/fotos_equipo/antoine_equipo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+/* line 28, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/quienes_somos.scss */
+.equipo_perfiles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
