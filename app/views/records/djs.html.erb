@@ -19,6 +19,13 @@
     </div>
 </div>
 
+<div id="okin" class="sidenav" style="z-index: 1000;">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeDeni()">&times;</a>
+    <div class="galeriasidedj">
+        <%= render 'okin'%>
+    </div>
+</div>
+
 <div class="galeria_princ">
     <div class="imagen_evento" onclick="openJean()">
         <h1>JEAN MADRY (PARIS/FRANCIA)</h1>
@@ -32,7 +39,12 @@
 
     <div class="imagen_evento" onclick="openDeni()">
         <h1>DENIROSTER (PARIS)</h1>
-        <%= image_tag("http://res.cloudinary.com/quetzalss/image/upload/v1/lacourdesmiracles/la_cour_des_miracles17", class: "galerynav") %>
+        <%= cl_image_tag("records/deniroster/deni_perfil.jpg", class: "galerynav") %>
+    </div>
+
+    <div class="imagen_evento" onclick="openOkin()">
+        <h1>OKIN (PARIS)</h1>
+        <%= cl_image_tag("records/deniroster/deni_perfil.jpg", class: "galerynav") %>
     </div>
 </div>
 
@@ -64,6 +76,16 @@
 
     function closeDeni() {
         document.getElementById("deniroster").style.width = "0";
+        $('nav').removeClass('nav-up').addClass('nav-down');
+    }
+
+    function openOkin() {
+        document.getElementById("okin").style.width = "100%";
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    }
+
+    function closeOkin() {
+        document.getElementById("okin").style.width = "0";
         $('nav').removeClass('nav-up').addClass('nav-down');
     }
 </script>

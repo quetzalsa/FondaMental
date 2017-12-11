@@ -8,13 +8,13 @@
     h2 {
         color: #f2d989;
         text-align: center;
-        font-size: 3vmax;
+        font-size: 1.8vmax;
     }
 }
 
-.person_equipo.ultimo_perfil {
-    grid-column: 2 / 3;
-}
+// .person_equipo.ultimo_perfil {
+//     grid-column: 2 / 3;
+// }
 
 .ima_persona {
     background-image: url('http://res.cloudinary.com/quetzalss/image/upload/v1512944534/fotos_equipo/antoine_equipo.jpg');
@@ -29,6 +29,7 @@
 .equipo_perfiles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top:20px;
     justify-items: center;
 }
 
@@ -40,8 +41,8 @@
         margin-bottom: 0;
     }
 
-    .person_equipo.ultimo_perfil {
-        grid-column: 1 / 2;
-    }
+    // .person_equipo.ultimo_perfil {
+    //     grid-column: 1 / 2;
+    // }
  }
 
