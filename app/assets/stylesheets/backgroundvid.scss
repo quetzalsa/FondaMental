@@ -76,9 +76,12 @@
     
   }
 
+@media (min-width: 961px) {
   .nav-up {
     top: -80px;
   }
+}
+
   .nav-down {
     top: 0px;
   }
