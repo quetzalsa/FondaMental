@@ -8,6 +8,7 @@
     h2 {
         color: #f2d989;
         text-align: center;
+        font-size: 3vmax;
     }
 }
 
@@ -20,8 +21,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 250px;
-    width: 250px;
+    height: auto;
+    max-width: 100%;
     border-radius: 50%;
 }
 
@@ -30,4 +31,17 @@
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
 }
+
+@media (max-width: 960px) {
+    .equipo_perfiles {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        margin-bottom: 0;
+    }
+
+    .person_equipo.ultimo_perfil {
+        grid-column: 1 / 2;
+    }
+ }
 
