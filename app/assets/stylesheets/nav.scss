@@ -1,5 +1,10 @@
 @media (max-width: 960px) {
 
+
+  #myTopnav {
+    width: 100%;
+  }
+
   .repro {
     display: none;
     padding: 0;
@@ -37,6 +42,7 @@
     justify-items: center;
     align-content: center;
     z-index: 800;
+    
   }
 
   #logonav {
@@ -61,7 +67,7 @@
 
   .menu {
     width: 100%;
-    
+    display: block;
     background-color: rgb(37, 37, 37);
     grid-area: menu;
     align-content: center;
@@ -70,7 +76,8 @@
   }
 
   .menu.responsive {
-    height: 100vh;
+    height: 100%;
+    position: static;
   }
 
   
@@ -101,7 +108,7 @@
   }
 
   .itemen {
-    display: none;
+    display: block;
     border-bottom: 1px solid rgb(136, 136, 136);
     width: 100vw;
   }
@@ -111,10 +118,9 @@
   }
 
   .menu a {
-    height: 100px;
     display: none;
     width: 100%;
-    padding: 30px 0px;
+    padding: 0px 0px;
     box-sizing: border-box;
     font-family: helvetica;
     font-size: 5vw;
