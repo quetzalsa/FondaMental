@@ -1,0 +1,103 @@
+<div class="main_content">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="galeriaside">
+            <%= render 'galeriaprinc'%>
+        </div>
+    </div>
+
+    <%# <span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span> %>
+
+        <div id="imacamino">
+        </div>
+
+        <div class="gal_tit_dos">
+            <h1>Abrecielo</h1>
+        </div>
+
+        <div class="galeria">
+
+            <div class="info">
+                <button class="accordion">
+                    <i class="fa fa-info" aria-hidden="true"></i> Fiesta
+                    <i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+                </button>
+
+
+                <div class="panel">
+                    <%= cl_image_tag("afiches/abrecielo.jpg" , class: "afiche") %>
+                        <div class="textopanel">
+                            <p><%= render 'galery/vinilicon' %> Inti Kunza + Koby Perc - Chile/La Chimba Discos</p>
+                        <p><%= render 'galery/vinilicon' %> Daniel Parra - Chile/Sonido Likido</p>
+                        <p><%= render 'galery/vinilicon' %> Ricardo Molinari - Chile/Pacha CL</p>
+                        <p><%= render 'galery/vinilicon' %> Sarnival - España/UFO Group/Advance Techno</p>
+                        <p><%= render 'galery/vinilicon' %> Lisa Cropp - Alemania/Fonda Mental</p>
+                        <p><%= render 'galery/vinilicon' %> Jean Madry - Francia/Fonda Mental</p>
+                        <p><%= render 'galery/vinilicon' %> Deniroster Lab - Francia/Fonda Mental</p>
+                        <p><%= render 'galery/vinilicon' %> Agustin Klein - Argentina/Sousa Label</p>
+                        <p><%= render 'galery/vinilicon' %> Okin - Francia</p>
+                        <p><%= render 'galery/vinilicon' %> Mer Esnal - Argentina</p>
+                        <p><%= render 'galery/vinilicon' %> Sebastián Cárcamo - Chile</p>
+                        <p><%= render 'galery/vinilicon' %> Hawer Sanchez - Colombia/NO NAME</p>
+                <%= cl_image_tag("lineup/abrecieloline.jpg" , class: "aficheline") %>
+                <h3>2 noches de camping (duchas y baños)</h3>
+                    <h3>30 horas de Música</h3>
+                    <h3>12 Djs</h3>
+                    <h3>Sonido Funktion One</h3>
+                    <h3>Piscina Natural</h3>
+                    <h3>Food Trucks</h3>
+                        </div>
+                </div>
+            </div>
+
+            <div class="dosvert">
+                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min03" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal03"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min01" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal01"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+            </div>
+            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min02" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal02"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min04" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal04"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min06" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal06"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min05" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal05"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                            <div class="dosvert">
+                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min07" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal07"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min08" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal08"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                            </div>
+                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min09" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal09"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min13" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal13"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                    <div class="dosvert">
+                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min11" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal11"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min12" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal12"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                    </div>
+                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min10" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal10"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min15" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal15"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                            <div class="dosvert">
+                                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min14" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal14"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min17" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal17"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                            </div>
+                                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min16" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal16"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                <div class="dosvert">
+                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min18" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal18"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min19" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal19"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                </div>
+                                                <div class="dosvert">
+                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min20" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal20"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min22" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal22"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                                                </div>
+                                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min21" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal21"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+
+
+
+
+
+        </div>
+</div>
+
+<%# <script>
+    function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+</script> %>

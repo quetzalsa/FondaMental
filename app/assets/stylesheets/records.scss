@@ -24,10 +24,10 @@ button.accordion.fechasrecords#accordion {
     cursor: pointer;
     padding: 18px;
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 5vmax;
+    font-size: 3vmax;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 0px;
     border: none;
     outline: none;
     transition: 0.4s;
@@ -169,7 +169,7 @@ button.accordion.fechasrecords#accordion {
             height: 100%;
             font-family: 'Open Sans', sans-serif;
             color: #D4D4D4;
-            width: 100%;
+            width: 70%;
             text-align: center;
             justify-content: center;
             h1 {
@@ -181,7 +181,7 @@ button.accordion.fechasrecords#accordion {
             img {
                 grid-column: 1 / 3;
                 grid-row: 2 / 3;
-                width: 80%;
+                width: 50%;
                 margin: auto;
                 padding-bottom: 3rem;
             }
@@ -203,7 +203,7 @@ button.accordion.fechasrecords#accordion {
             }
         }
         .soundbio {
-            width: 80%;
+            width: 60%;
             height: 100px;
             margin: auto;
             margin-top: 30px;

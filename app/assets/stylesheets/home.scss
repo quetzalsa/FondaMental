@@ -9,7 +9,23 @@
     h1 {
         font-size: 7vmax;
     }
+}
 
+.imagen_home1 {
+    background-image: url('http://res.cloudinary.com/quetzalss/image/upload/v1512944927/fotos_home/home1.jpg');
+    height: 300px;
+    // background-position: 0px -40px;
+    background-position: 0 -130px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen_home2 {
+    background-image: url('http://res.cloudinary.com/quetzalss/image/upload/v1512944927/fotos_home/home2.jpg');
+    height: 300px;
+    background-position: 0 -130px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .homepodcast {

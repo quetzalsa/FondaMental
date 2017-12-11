@@ -1,12 +1,14 @@
 Rails.application.routes.draw do
 
+  get 'galery/abrecielo'
+
   get 'records/jean_madry'
 
   get 'records/lisa_cropp'
 
   get 'records/deniroster'
 
-  get '/records/label' => 'records#concepto'
+  get '/records/infos' => 'records#concepto'
 
   get '/records/fechas' => 'records#fechas'
 
@@ -45,6 +47,8 @@ Rails.application.routes.draw do
   get '/galeria/la_cour_des_miracles' => 'galery#la_cour_des_miracles'
 
   get '/galeria/furia_patria' => 'galery#furia_patria'
+
+  get '/galeria/abrecielo' => 'galery#abrecielo'
 
   get "/fotos" => "fonda_mental#fotos"
   get "/galeria" => "fonda_mental#media"

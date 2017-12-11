@@ -1,86 +1,76 @@
-
 <div class="main_content">
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="galeriaside">
-<%= render 'galeriaprinc'%>
-</div>
-</div>
-
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="galeriaside">
+            <%= render 'galeriaprinc'%>
+        </div>
+    </div>
 
     <div id="imalesannes">
     </div>
 
     <div class="gal_tit_dos">
-        <h1>Les Annees <br> Folles</h1>
+        <h1>Les Annees
+            <br> Folles</h1>
     </div>
 
     <div class="galeria">
 
         <div class="info">
-            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            <button class="accordion">
+                <i class="fa fa-info" aria-hidden="true"></i> Fiesta
+                <i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
             </button>
 
-            
+
             <div class="panel">
-            <%= cl_image_tag("afiches/les_annes_folles" , class: "afiche") %>
-            <div class="textopanel">
-            <p>Celebramos la hermosa locura de los años 20` justo en medio de dos grandes guerras.
-                Ambiente de jazz club, disfraces antiguos, visuales y atavíos de época completaron una
-                fiesta electrónica con acentos del pasado</p>
-            <h3>29/07/2016</h3>
-            <h3>Casa Catedral, barrio Brasil, Santiago</h3>
-            <h3>Line Up</h3>
-                <p><%= render 'galery/vinilicon' %> Michelangelo Buzzi - Milano/Italia</p>
-                <p><%= render 'galery/vinilicon' %> Ricardo Molinari - Santiago/Chile</p>
-                <p><%= render 'galery/vinilicon' %> Greyhead - Santiago/Chile</p>
-                <p><%= render 'galery/vinilicon' %> Daniel Klauser b2b Matías Rivera - Santiago/Chile</p>
-                <%= cl_image_tag("lineup/linelesannesfolles.jpg" , class: "aficheline") %>
-            <h3></h3>
-            </div>
+                <%= cl_image_tag("afiches/les_annes_folles" , class: "afiche") %>
+                    <div class="textopanel">
+                        <p>Celebramos la hermosa locura de los años 20` justo en medio de dos grandes guerras. Ambiente de jazz
+                            club, disfraces antiguos, visuales y atavíos de época completaron una fiesta electrónica con
+                            acentos del pasado</p>
+                        <h3>29/07/2016</h3>
+                        <h3>Casa Paris, Santiago</h3>
+                        <h3>Line Up</h3>
+                        <p>
+                            <%= render 'galery/vinilicon' %> Michelangelo Buzzi - Milano/Italia</p>
+                        <p>
+                            <%= render 'galery/vinilicon' %> Ricardo Molinari - Santiago/Chile</p>
+                        <p>
+                            <%= render 'galery/vinilicon' %> Greyhead - Santiago/Chile</p>
+                        <p>
+                            <%= render 'galery/vinilicon' %> Daniel Klauser b2b Matías Rivera - Santiago/Chile</p>
+                        <%= cl_image_tag("lineup/linelesannesfolles.jpg" , class: "aficheline") %>
+                            <h3></h3>
+                    </div>
             </div>
         </div>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/GQq6Wq1_29o" frameborder="0" allowfullscreen></iframe>
-    
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min01" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles01"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <div class="dosvert">
-         <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min02" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles02"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min03" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles03"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GQq6Wq1_29o" frameborder="0" allowfullscreen></iframe>
+
+        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min01" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles01"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+            <div class="dosvert">
+                <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min02" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles02"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min03" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles03"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+            </div>
+            <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min04" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles04"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min05" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles05"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min06" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles06"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min07" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles07"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                            <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min08" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles08"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min09" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles09"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min10" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles10"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min11" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles11"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                            <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min12" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles12"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                                <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min13" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles13"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                                    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min14" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles14"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                                        <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min15" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles15"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+                                                            <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min16" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles16"), class: "galeria_foto swipebox", "rel" => "folles1" %>
+
+
+
+
+
+
     </div>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min04" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles04"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min05" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles05"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min06" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles06"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min07" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles07"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min08" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles08"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min09" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles09"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min10" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles10"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min11" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles11"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min12" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles12"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min13" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles13"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min14" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles14"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min15" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles15"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-    <%= link_to cl_image_tag("lesannesfolles/les_annes_folles_min16" , class: "galeria_foto"), cl_image_path("lesannesfolles/les_annes_folles16"), class: "galeria_foto swipebox", "rel" => "folles1" %>
-
-    
-    
-
-    
-    
 </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-

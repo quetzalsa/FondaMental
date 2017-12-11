@@ -2,9 +2,10 @@
 
     
 
-
+<%
+=begin %>
     <div class="info" id="info">
-            <button class="accordion" id="accordion" style="font-size:5vmax;margin-top: 100px;"><span style="font-size:5vmax;">24-26/11/2017</span> <br> Abrecielo <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
+            <button class="accordion" id="accordion" style="margin-top: 100px;"><span>24-26/11/2017</span> <br> Abrecielo <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
             </button>
             <div class="panel">
                 <div class="proxevent" style="color:#D4D4D4;">
@@ -32,7 +33,7 @@
                         <p><%= render 'galery/vinilicon' %> Sebastián Cárcamo - Chile</p>
                         <p><%= render 'galery/vinilicon' %> Hawer Sanchez - Colombia/NO NAME</p>
                     </div>
-                    <%= image_tag("abrecieloline.jpg" , class: "aficheprinc") %>
+                    <%= cl_image_tag("afiches/abrecielo.jpg" , class: "aficheprinc") %>
                 <hr>
                 </div>
                 <p id="descripcion">Preventas - $30.000 (120 cupos) Incluye:</p>
@@ -55,6 +56,45 @@
             </div>
     </div>
 
+<%
+=end %>
+
+     <div class="info" id="info">
+            <button class="accordion" id="accordion"><span>24-26/11/2017</span> <br> Abrecielo <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+           <%= cl_image_tag("afiches/abrecielo.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Abramos el cielo al paisaje de las estrellas fugaces, a la caída de los meteoritos, al incandescente camino de los cometas!</p>
+            <h3>Vi 24 - Do 26 Noviembre</h3>
+            <h3>Cabildo, Chile, V Región</h3>
+            <h3>Line Up</h3>
+                        <p><%= render 'galery/vinilicon' %> Inti Kunza + Koby Perc - Chile/La Chimba Discos</p>
+                        <p><%= render 'galery/vinilicon' %> Daniel Parra - Chile/Sonido Likido</p>
+                        <p><%= render 'galery/vinilicon' %> Ricardo Molinari - Chile/Pacha CL</p>
+                        <p><%= render 'galery/vinilicon' %> Sarnival - España/UFO Group/Advance Techno</p>
+                        <p><%= render 'galery/vinilicon' %> Lisa Cropp - Alemania/Fonda Mental</p>
+                        <p><%= render 'galery/vinilicon' %> Jean Madry - Francia/Fonda Mental</p>
+                        <p><%= render 'galery/vinilicon' %> Deniroster Lab - Francia/Fonda Mental</p>
+                        <p><%= render 'galery/vinilicon' %> Agustin Klein - Argentina/Sousa Label</p>
+                        <p><%= render 'galery/vinilicon' %> Okin - Francia</p>
+                        <p><%= render 'galery/vinilicon' %> Mer Esnal - Argentina</p>
+                        <p><%= render 'galery/vinilicon' %> Sebastián Cárcamo - Chile</p>
+                        <p><%= render 'galery/vinilicon' %> Hawer Sanchez - Colombia/NO NAME</p>
+                <%= cl_image_tag("lineup/abrecieloline.jpg" , class: "aficheline") %>
+            <h3>2 noches de camping (duchas y baños)</h3>
+                    <h3>30 horas de Música</h3>
+                    <h3>12 Djs</h3>
+                    <h3>Sonido: Funktion One</h3>
+                    <h3>Piscina Natural</h3>
+                    <h3>Food Trucks</h3>
+            
+            </div>
+            </div>
+        </div>
+     
      <div class="info" id="info">
             <button class="accordion" id="accordion"><span>8/09/2017</span> <br> Furia Patria <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
             </button>
@@ -242,7 +282,7 @@
                 Ambiente de jazz club, disfraces antiguos, visuales y atavíos de época completaron una
                 fiesta electrónica con acentos del pasado</p>
             <h3>10/06/2016</h3>
-            <h3>Casa Catedral, barrio Brasil, Santiago</h3>
+            <h3>Casa Paris, Santiago</h3>
             <h3>Line Up</h3>
                 <p><%= render 'galery/vinilicon' %> Michelangelo Buzzi - Milano/Italia</p>
                 <p><%= render 'galery/vinilicon' %> Ricardo Molinari - Santiago/Chile</p>
@@ -372,7 +412,6 @@
                 <p><%= render 'galery/vinilicon' %> Galaxy - Santiago/Chile</p>
                 <p><%= render 'galery/vinilicon' %> Mutantes - Viña del Mar/Chile</p>
                 <p><%= render 'galery/vinilicon' %> PMH - Paris/Francia</p>
-            <h3>Sonido: Funktion One</h3>
             </div>
             </div>
         </div>
