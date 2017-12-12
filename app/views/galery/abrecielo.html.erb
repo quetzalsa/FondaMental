@@ -8,7 +8,7 @@
 
     <%# <span id="botonside" style="font-size:30px;cursor:pointer" onclick="openNav()">Galeria</span> %>
 
-        <div id="imacamino">
+        <div id="imaabrecielo">
         </div>
 
         <div class="gal_tit_dos">
@@ -40,50 +40,67 @@
                         <p><%= render 'galery/vinilicon' %> Sebastián Cárcamo - Chile</p>
                         <p><%= render 'galery/vinilicon' %> Hawer Sanchez - Colombia/NO NAME</p>
                 <%= cl_image_tag("lineup/abrecieloline.jpg" , class: "aficheline") %>
-                <h3>2 noches de camping (duchas y baños)</h3>
-                    <h3>30 horas de Música</h3>
-                    <h3>12 Djs</h3>
-                    <h3>Sonido Funktion One</h3>
-                    <h3>Piscina Natural</h3>
-                    <h3>Food Trucks</h3>
+                <h3>Sonido: Funktion One</h3>
+               <div style="text-align: left;width:70%;margin:auto;">
+            <p>2 noches de camping (duchas y baños)</p>
+                    <p>30 horas de Música</p>
+                    <p>12 Djs</p>
+                    <p>Piscina Natural</p>
+                    <p>Food Trucks</p>
+                    </div>
                         </div>
                 </div>
             </div>
 
             <div class="dosvert">
-                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min03" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal03"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min01" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal01"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min05" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo04"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min05" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo05"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
             </div>
-            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min02" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal02"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min04" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal04"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min06" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal06"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min05" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal05"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                            <div class="dosvert">
-                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min07" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal07"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min08" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal08"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                            </div>
-                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min09" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal09"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min13" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal13"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                    <div class="dosvert">
-                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min11" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal11"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min12" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal12"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                    </div>
-                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min10" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal10"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min15" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal15"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                            <div class="dosvert">
-                                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min14" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal14"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min17" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal17"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                            </div>
-                                            <%= link_to cl_image_tag("caminomarginal/camino_marginal_min16" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal16"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                                <div class="dosvert">
-                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min18" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal18"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min19" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal19"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                                </div>
-                                                <div class="dosvert">
-                                                    <%= link_to cl_image_tag("caminomarginal/camino_marginal_min20" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal20"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                                        <%= link_to cl_image_tag("caminomarginal/camino_marginal_min22" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal22"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
-                                                </div>
-                                                <%= link_to cl_image_tag("caminomarginal/camino_marginal_min21" , class: "galeria_foto"), cl_image_path("caminomarginal/camino_marginal21"),  class: "galeria_foto swipebox", "rel" => "caminomarg1" %>
+            <%= link_to cl_image_tag("abrecielo/abrecielo_min02" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo02"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+            <%= link_to cl_image_tag("abrecielo/abrecielo_min03" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo03"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+            <div class="dosvert">
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min01" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo01"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min06" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo06"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+            </div>
+            <%= link_to cl_image_tag("abrecielo/abrecielo_min07" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo07"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+            <%= link_to cl_image_tag("abrecielo/abrecielo_min08" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo08"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+            
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min09" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo09"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min10" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo10"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+            <div class="dosvert">
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min11" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo11"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min12" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo12"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+             </div>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min35" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo35"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min37" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo15"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+             <div class="dosvert">
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min14" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo14"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min17" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo17"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+            </div>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min13" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo13"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min15" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo15"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min18" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo18"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min19" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo19"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min20" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo20"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min21" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo21"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min22" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo22"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min16" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo23"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min23" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo16"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min24" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo24"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min25" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo25"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min26" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo26"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min27" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo27"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min28" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo28"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min29" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo29"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min30" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo30"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min34" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo34"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min33" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo33"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min31" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo31"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min32" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo32"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min36" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo36"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min38" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo38"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+                <%= link_to cl_image_tag("abrecielo/abrecielo_min39" , class: "galeria_foto"), cl_image_path("abrecielo/abrecielo39"),  class: "galeria_foto swipebox", "rel" => "abrecielo1" %>
+
 
 
 

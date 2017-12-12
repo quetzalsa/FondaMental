@@ -20,7 +20,7 @@
 </div>
 
 <div id="okin" class="sidenav" style="z-index: 1000;">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeDeni()">&times;</a>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeOkin()">&times;</a>
     <div class="galeriasidedj">
         <%= render 'okin'%>
     </div>
@@ -28,7 +28,7 @@
 
 <div class="galeria_princ">
     <div class="imagen_evento" onclick="openJean()">
-        <h1>JEAN MADRY (PARIS/FRANCIA)</h1>
+        <h1>JEAN MADRY (FRANCIA)</h1>
         <%= image_tag("jeanmadry.jpg", class: "galerynav") %>
     </div>
 
@@ -38,13 +38,13 @@
     </div>
 
     <div class="imagen_evento" onclick="openDeni()">
-        <h1>DENIROSTER (PARIS)</h1>
+        <h1>DENIROSTER (FRANCIA)</h1>
         <%= cl_image_tag("records/deniroster/deni_perfil.jpg", class: "galerynav") %>
     </div>
 
     <div class="imagen_evento" onclick="openOkin()">
-        <h1>OKIN (PARIS)</h1>
-        <%= cl_image_tag("records/deniroster/deni_perfil.jpg", class: "galerynav") %>
+        <h1>OKIN (FRANCIA)</h1>
+        <%= cl_image_tag("records/okin/okin_perfil.jpg", class: "galerynav") %>
     </div>
 </div>
 
