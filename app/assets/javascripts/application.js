@@ -47,16 +47,159 @@ function block1() {
     $('.drop2').toggleClass( "dblock")
 }
     
-
+var playlist = [music, music1, music2];
+var randomindex = Math.floor(Math.random()*(playlist.length));
+var randomSong = nuevoRandom();
 var path = window.location.pathname;
+var nuevoindex;
+
+//Play and Pause
+function play() {
+    // start music
+    if (randomSong.paused) {
+        randomSong.play();
+        // remove play, add pause
+        pButton.className = "";
+        pButton.className = "pause";
+    } else { // pause music
+        randomSong.pause();
+        // remove pause, add play
+        pButton.className = "";
+        pButton.className = "play";
+    }
+}
+function nuevoRandom() {
+    do {
+        nuevoindex = Math.floor(Math.random()*(playlist.length));
+    }
+    while (nuevoindex == randomindex);
+    randomindex = nuevoindex;
+    randomSong = playlist[randomindex];
+    return randomSong;
+}
+function nuevotime() {
+    
+    // timeline width adjusted for playhead
+    var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+    
+    // play button event listenter
+    pButton.addEventListener("click", play);
+    
+    // timeupdate event listener
+    randomSong.addEventListener("timeupdate", timeUpdate, false);
+     randomSong.currentTime = 0;
+    // makes timeline clickable
+    timeline.addEventListener("click", function(event) {
+        moveplayhead(event);
+        randomSong.currentTime = duration * clickPercent(event);
+    }, false);
+    
+    // returns click as decimal (.77) of the total timelineWidth
+    function clickPercent(event) {
+        return (event.clientX - getPosition(timeline)) / timelineWidth;
+    
+    }
+    
+    // makes playhead draggable
+    playhead.addEventListener('mousedown', mouseDown, false);
+    window.addEventListener('mouseup', mouseUp, false);
+    
+    // Boolean value so that audio position is updated only when the playhead is released
+    var onplayhead = false;
+    
+    // mouseDown EventListener
+    function mouseDown() {
+        onplayhead = true;
+        window.addEventListener('mousemove', moveplayhead, true);
+        randomSong.removeEventListener('timeupdate', timeUpdate, false);
+    }
+    
+    // mouseUp EventListener
+    // getting input from all mouse clicks
+    function mouseUp(event) {
+        if (onplayhead == true) {
+            moveplayhead(event);
+            window.removeEventListener('mousemove', moveplayhead, true);
+            // change current time
+            randomSong.currentTime = duration * clickPercent(event);
+            randomSong.addEventListener('timeupdate', timeUpdate, false);
+        }
+        onplayhead = false;
+    }
+    // mousemove EventListener
+    // Moves playhead as user drags
+    function moveplayhead(event) {
+        var newMargLeft = event.clientX - getPosition(timeline);
+    
+        if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+            playhead.style.marginLeft = newMargLeft + "px";
+        }
+        if (newMargLeft < 0) {
+            playhead.style.marginLeft = "0px";
+        }
+        if (newMargLeft > timelineWidth) {
+            playhead.style.marginLeft = timelineWidth + "px";
+        }
+    }
+    
+    // timeUpdate
+    // Synchronizes playhead position with current point in audio
+    function timeUpdate() {
+        var playPercent = timelineWidth * (randomSong.currentTime / duration);
+        playhead.style.marginLeft = playPercent + "px";
+        if (randomSong.currentTime == duration) {
+            pButton.className = "";
+            pButton.className = "play";
+        }
+    }
+    
+    //Play and Pause
+    function play() {
+        // start music
+        if (randomSong.paused) {
+            randomSong.play();
+            // remove play, add pause
+            pButton.className = "";
+            pButton.className = "pause";
+        } else { // pause music
+            randomSong.pause();
+            // remove pause, add play
+            pButton.className = "";
+            pButton.className = "play";
+        }
+    }
+    
+    
+    // Gets audio file duration
+    randomSong.addEventListener("canplaythrough", function() {
+        duration = randomSong.duration;
+    }, false);
+    
+    // getPosition
+    // Returns elements left position relative to top-left of viewport
+    function getPosition(el) {
+        return el.getBoundingClientRect().left;
+    }
+    randomSong.play();
+    $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
+}
+
+// randomSong.addEventListener('ended',function(){
+    
+//     nuevoRandom();
+//     nuevotime();
+//       });
+      function onfinito() {
+        nuevoRandom();
+        nuevotime();
+      }
+
+
 if (path == "/" && $( window ).width() >= 960) {
-    music.play();  
+    randomSong.play();  
 } 
 function videoback() {
     //document.getElementById('videointro').style.display = 'none';
-    
-        music.play();  
-     
       
     $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
     $( "#playbut" ).css( {"opacity": "0.3"} )
@@ -103,8 +246,6 @@ function hasScrolled() {
     
     lastScrollTop = st;
 }
-
-
 
 
 document.addEventListener("turbolinks:load", function() {

@@ -51,43 +51,57 @@
 </div>
 
 <script>
+
+    var madry = document.getElementById("jean_madry"),
+        lisacr = document.getElementById("lisa_cropp"),
+        deniros = document.getElementById("deniroster"),
+        okin = document.getElementById("okin");
+
     function openJean() {
-        document.getElementById("jean_madry").style.width = "100%";
+        madry.style.width = "100%";
         $('nav').removeClass('nav-down').addClass('nav-up');
+        $('nav').css( {"display": "none"} );
     }
 
     function closeJean() {
-        document.getElementById("jean_madry").style.width = "0";
+        madry.style.width = "0";
+        $('nav').css( {"display": "grid"} );
         $('nav').removeClass('nav-up').addClass('nav-down');
     }
 
     function openLisa() {
-        document.getElementById("lisa_cropp").style.width = "100%";
+        lisacr.style.width = "100%";
         $('nav').removeClass('nav-down').addClass('nav-up');
+        $('nav').css( {"display": "none"} );
     }
 
     function closeLisa() {
-        document.getElementById("lisa_cropp").style.width = "0";
+        lisacr.style.width = "0";
+        $('nav').css( {"display": "grid"} );
         $('nav').removeClass('nav-up').addClass('nav-down');
     }
 
     function openDeni() {
-        document.getElementById("deniroster").style.width = "100%";
+        deniros.style.width = "100%";
         $('nav').removeClass('nav-down').addClass('nav-up');
+        $('nav').css( {"display": "none"} );
     }
 
     function closeDeni() {
-        document.getElementById("deniroster").style.width = "0";
+        deniros.style.width = "0";
+        $('nav').css( {"display": "grid"} );
         $('nav').removeClass('nav-up').addClass('nav-down');
     }
 
     function openOkin() {
-        document.getElementById("okin").style.width = "100%";
+        okin.style.width = "100%";
         $('nav').removeClass('nav-down').addClass('nav-up');
+        $('nav').css( {"display": "none"} );
     }
 
     function closeOkin() {
-        document.getElementById("okin").style.width = "0";
+        okin.style.width = "0";
         $('nav').removeClass('nav-up').addClass('nav-down');
+        $('nav').css( {"display": "grid"} );
     }
 </script>
