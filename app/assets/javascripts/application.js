@@ -33,7 +33,7 @@ if (/MSIE 10/i.test(navigator.userAgent)) {
     window.alert('Recomendamos usar un navegador distinto a Edge o Explorer');
  }
 
-
+ 
 // var supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints;
 
 // if (supportsTouch == true) {
@@ -47,157 +47,149 @@ function block1() {
     $('.drop2').toggleClass( "dblock")
 }
     
-var playlist = [music, music1, music2];
-var randomindex = Math.floor(Math.random()*(playlist.length));
-var randomSong = nuevoRandom();
+// var playlist = [music, music1, music2];
+// var randomindex = Math.floor(Math.random()*(playlist.length));
+// var randomSong = playlist[randomindex];
 var path = window.location.pathname;
-var nuevoindex;
+// var nuevoindex;
 
-//Play and Pause
-function play() {
-    // start music
-    if (randomSong.paused) {
-        randomSong.play();
-        // remove play, add pause
-        pButton.className = "";
-        pButton.className = "pause";
-    } else { // pause music
-        randomSong.pause();
-        // remove pause, add play
-        pButton.className = "";
-        pButton.className = "play";
-    }
-}
-function nuevoRandom() {
-    do {
-        nuevoindex = Math.floor(Math.random()*(playlist.length));
-    }
-    while (nuevoindex == randomindex);
-    randomindex = nuevoindex;
-    randomSong = playlist[randomindex];
-    return randomSong;
-}
-function nuevotime() {
+
+// //Play and Pause
+// function play() {
+//     // start music
+//     if (!randomSong.paused) {
+//         randomSong.pause();
+//         pButton.className = "play";
+//     } else {
+//         if (randomSong.currentTime !== 0) {
+//             randomSong.play();
+//             pButton.className = "";
+//             pButton.className = "pause";
+//         } else {
+//             onfinito();
+//         }
+//     }
+// }
+// function nuevoRandom() {
+//     do {
+//         nuevoindex = Math.floor(Math.random()*(playlist.length));
+//     }
+//     while (nuevoindex == randomindex);
+//     randomindex = nuevoindex;
+//     randomSong = playlist[randomindex];
+//     return randomSong;
+// }
+
+
+
+
+// function nuevotime() {
     
     // timeline width adjusted for playhead
-    var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
+    // var timelineWidth = timeline.offsetWidth - playhead.offsetWidth;
     
     // play button event listenter
-    pButton.addEventListener("click", play);
+    // pButton.addEventListener("click", play);
     
     // timeupdate event listener
-    randomSong.addEventListener("timeupdate", timeUpdate, false);
-     randomSong.currentTime = 0;
-    // makes timeline clickable
-    timeline.addEventListener("click", function(event) {
-        moveplayhead(event);
-        randomSong.currentTime = duration * clickPercent(event);
-    }, false);
+    // randomSong.addEventListener("timeupdate", timeUpdate, false);
+    //  randomSong.currentTime = 0;
+    // // makes timeline clickable
+    // timeline.addEventListener("click", function(event) {
+    //     moveplayhead(event);
+    //     randomSong.currentTime = duration * clickPercent(event);
+    // }, false);
     
-    // returns click as decimal (.77) of the total timelineWidth
-    function clickPercent(event) {
-        return (event.clientX - getPosition(timeline)) / timelineWidth;
+    // // returns click as decimal (.77) of the total timelineWidth
+    // function clickPercent(event) {
+    //     return (event.clientX - getPosition(timeline)) / timelineWidth;
     
-    }
+    // }
     
     // makes playhead draggable
-    playhead.addEventListener('mousedown', mouseDown, false);
-    window.addEventListener('mouseup', mouseUp, false);
+    // playhead.addEventListener('mousedown', mouseDown, false);
+    // window.addEventListener('mouseup', mouseUp, false);
     
-    // Boolean value so that audio position is updated only when the playhead is released
-    var onplayhead = false;
+    // // Boolean value so that audio position is updated only when the playhead is released
+    // var onplayhead = false;
     
-    // mouseDown EventListener
-    function mouseDown() {
-        onplayhead = true;
-        window.addEventListener('mousemove', moveplayhead, true);
-        randomSong.removeEventListener('timeupdate', timeUpdate, false);
-    }
+    // // mouseDown EventListener
+    // function mouseDown() {
+    //     onplayhead = true;
+    //     window.addEventListener('mousemove', moveplayhead, true);
+    //     randomSong.removeEventListener('timeupdate', timeUpdate, false);
+    // }
     
     // mouseUp EventListener
     // getting input from all mouse clicks
-    function mouseUp(event) {
-        if (onplayhead == true) {
-            moveplayhead(event);
-            window.removeEventListener('mousemove', moveplayhead, true);
-            // change current time
-            randomSong.currentTime = duration * clickPercent(event);
-            randomSong.addEventListener('timeupdate', timeUpdate, false);
-        }
-        onplayhead = false;
-    }
+    // function mouseUp(event) {
+    //     if (onplayhead == true) {
+    //         moveplayhead(event);
+    //         window.removeEventListener('mousemove', moveplayhead, true);
+    //         // change current time
+    //         randomSong.currentTime = duration * clickPercent(event);
+    //         randomSong.addEventListener('timeupdate', timeUpdate, false);
+    //     }
+    //     onplayhead = false;
+    // }
     // mousemove EventListener
     // Moves playhead as user drags
-    function moveplayhead(event) {
-        var newMargLeft = event.clientX - getPosition(timeline);
+    // function moveplayhead(event) {
+    //     var newMargLeft = event.clientX - getPosition(timeline);
     
-        if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
-            playhead.style.marginLeft = newMargLeft + "px";
-        }
-        if (newMargLeft < 0) {
-            playhead.style.marginLeft = "0px";
-        }
-        if (newMargLeft > timelineWidth) {
-            playhead.style.marginLeft = timelineWidth + "px";
-        }
-    }
+    //     if (newMargLeft >= 0 && newMargLeft <= timelineWidth) {
+    //         playhead.style.marginLeft = newMargLeft + "px";
+    //     }
+    //     if (newMargLeft < 0) {
+    //         playhead.style.marginLeft = "0px";
+    //     }
+    //     if (newMargLeft > timelineWidth) {
+    //         playhead.style.marginLeft = timelineWidth + "px";
+    //     }
+    // }
     
     // timeUpdate
     // Synchronizes playhead position with current point in audio
-    function timeUpdate() {
-        var playPercent = timelineWidth * (randomSong.currentTime / duration);
-        playhead.style.marginLeft = playPercent + "px";
-        if (randomSong.currentTime == duration) {
-            pButton.className = "";
-            pButton.className = "play";
-        }
-    }
-    
-    //Play and Pause
-    function play() {
-        // start music
-        if (randomSong.paused) {
-            randomSong.play();
-            // remove play, add pause
-            pButton.className = "";
-            pButton.className = "pause";
-        } else { // pause music
-            randomSong.pause();
-            // remove pause, add play
-            pButton.className = "";
-            pButton.className = "play";
-        }
-    }
+    // function timeUpdate() {
+    //     var playPercent = timelineWidth * (randomSong.currentTime / duration);
+    //     playhead.style.marginLeft = playPercent + "px";
+    //     if (randomSong.currentTime == duration) {
+    //         pButton.className = "";
+    //         pButton.className = "play";
+    //     }
+    // }
     
     
     // Gets audio file duration
-    randomSong.addEventListener("canplaythrough", function() {
-        duration = randomSong.duration;
-    }, false);
+    // randomSong.addEventListener("canplaythrough", function() {
+    //     duration = randomSong.duration;
+    // }, false);
     
     // getPosition
     // Returns elements left position relative to top-left of viewport
-    function getPosition(el) {
-        return el.getBoundingClientRect().left;
-    }
-    randomSong.play();
-    $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
-}
+    // function getPosition(el) {
+    //     return el.getBoundingClientRect().left;
+    // }
+// }
 
 // randomSong.addEventListener('ended',function(){
     
 //     nuevoRandom();
 //     nuevotime();
 //       });
-      function onfinito() {
-        nuevoRandom();
-        nuevotime();
-      }
+    //   function onfinito() {
+        
+    //     nuevoRandom();
+    //     nuevotime();
+    //     randomSong.play();
+    //     $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
+    //     }
 
-
+      
 if (path == "/" && $( window ).width() >= 960) {
-    randomSong.play();  
+    music.play();
 } 
+
 function videoback() {
     //document.getElementById('videointro').style.display = 'none';
       

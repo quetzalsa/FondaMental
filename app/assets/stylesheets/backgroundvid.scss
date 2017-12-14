@@ -108,29 +108,32 @@
   // }
   
   @media (max-width: 960px) {
-    .backvid {
-      height:100vh;
-      object-fit: cover;
-      overflow: hidden;
-        z-index: 100;
-      }
+    // .backvid {
+    //   height:100vh;
+    //   object-fit: cover;
+    //   overflow: hidden;
+    //     z-index: 100;
+    //   }
 
-      #playbut {
-        display: none;
-      }
+      // #playbut {
+      //   display: none;
+      // }
       
-    .videointro {
-      z-index: 100;
-      height: 100vh;
-      background: black;
+    // .videointro {
+    //   z-index: 100;
+    //   height: 100vh;
+    //   background: black;
+    // }
+    #videointro {
+      display: none !important;
     }
-    .logoback {
-      width: 80%;
-    }
-    #videologo {
-      height: 100vh;
-    }
-    #buttonback {
-      margin-top: 30px;
-    }
+    // .logoback {
+    //   width: 80%;
+    // }
+    // #videologo {
+    //   height: 100vh;
+    // }
+    // #buttonback {
+    //   margin-top: 30px;
+    // }
   }

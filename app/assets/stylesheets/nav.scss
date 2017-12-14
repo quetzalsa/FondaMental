@@ -15,18 +15,17 @@
     color: #ff3b3f !important;
   }
 
-  .pagina {
-    display: grid;
-    height: 100vh;
-    width: 100%;
-    grid-template-columns:1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "videohome"
-    "navbar"
-    "main_content"
-    "footer";
-  }
+  // .pagina {
+  //   display: grid;
+  //   height: 100vh;
+  //   width: 100%;
+  //   grid-template-columns:1fr;
+  //   grid-template-rows:1fr 1fr 1fr;
+  //   grid-template-areas:
+  //   "navbar"
+  //   "main_content"
+  //   "footer";
+  // }
 
   nav {
     background-color: rgb(7, 7, 7);
