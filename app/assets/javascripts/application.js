@@ -17,6 +17,125 @@
 //= require_tree .
 
 
+// filter
+var lisa = document.getElementsByClassName('lisa_cropp');
+var okin = document.getElementsByClassName('okin');
+var deniroster = document.getElementsByClassName('deniroster');
+var jean = document.getElementsByClassName('jean_madry');
+
+var filtrolisa = $('#filtrolisa'),
+    filtrodeni = $('#filtrodeni'),
+    filtrokin = $('.filtrokin'),
+    filtrojean = $('#filtrojean'),
+    todos = $('#todos');
+
+function todosDjs() {
+    for (var i = 0; i < okin.length; i++) { 
+        okin[i].style.display = "grid"; 
+    }
+    for (var i = 0; i < deniroster.length; i++) { 
+        deniroster[i].style.display = "grid"; 
+    }
+    for (var i = 0; i < jean.length; i++) { 
+        jean[i].style.display = "grid"; 
+    }
+    for (var i = 0; i < lisa.length; i++) { 
+        lisa[i].style.display = "grid"; 
+    }
+
+    filtrolisa.removeClass( "filtro_activo");
+    filtrodeni.removeClass( "filtro_activo");
+    filtrokin.removeClass( "filtro_activo");
+    filtrojean.removeClass( "filtro_activo");
+    todos.addClass( "filtro_activo");
+}
+
+
+function soloLisa() {
+    for (var i = 0; i < okin.length; i++) { 
+        okin[i].style.display = "none"; 
+    }
+    for (var i = 0; i < deniroster.length; i++) { 
+        deniroster[i].style.display = "none"; 
+    }
+    for (var i = 0; i < jean.length; i++) { 
+        jean[i].style.display = "none"; 
+    }
+    for (var i = 0; i < lisa.length; i++) { 
+        lisa[i].style.display = "grid"; 
+    }
+    
+    filtrolisa.addClass( "filtro_activo");
+    filtrodeni.removeClass( "filtro_activo");
+    filtrokin.removeClass( "filtro_activo");
+    filtrojean.removeClass( "filtro_activo");
+    todos.removeClass( "filtro_activo");
+}
+
+function soloJean() {
+    for (var i = 0; i < okin.length; i++) { 
+        okin[i].style.display = "none"; 
+    }
+    for (var i = 0; i < deniroster.length; i++) { 
+        deniroster[i].style.display = "none"; 
+    }
+    for (var i = 0; i < jean.length; i++) { 
+        jean[i].style.display = "grid"; 
+    }
+    for (var i = 0; i < lisa.length; i++) { 
+        lisa[i].style.display = "none"; 
+    }
+
+    filtrolisa.removeClass( "filtro_activo");
+    filtrodeni.removeClass( "filtro_activo");
+    filtrokin.removeClass( "filtro_activo");
+    filtrojean.addClass( "filtro_activo");
+    todos.removeClass( "filtro_activo");
+}
+
+function soloDeni() {
+    for (var i = 0; i < okin.length; i++) { 
+        okin[i].style.display = "none"; 
+    }
+    for (var i = 0; i < deniroster.length; i++) { 
+        deniroster[i].style.display = "grid"; 
+    }
+    for (var i = 0; i < jean.length; i++) { 
+        jean[i].style.display = "none"; 
+    }
+    for (var i = 0; i < lisa.length; i++) { 
+        lisa[i].style.display = "none"; 
+    }
+
+    filtrolisa.removeClass( "filtro_activo");
+    filtrodeni.addClass("filtro_activo");
+    filtrokin.removeClass( "filtro_activo");
+    filtrojean.removeClass( "filtro_activo");
+    todos.removeClass( "filtro_activo");
+}
+
+function soloOkin() {
+    for (var i = 0; i < okin.length; i++) { 
+        okin[i].style.display = "grid"; 
+    }
+    for (var i = 0; i < deniroster.length; i++) { 
+        deniroster[i].style.display = "none"; 
+    }
+    for (var i = 0; i < jean.length; i++) { 
+        jean[i].style.display = "none"; 
+    }
+    for (var i = 0; i < lisa.length; i++) { 
+        lisa[i].style.display = "none"; 
+    }
+
+    filtrolisa.removeClass( "filtro_activo");
+    filtrodeni.removeClass( "filtro_activo");
+    filtrojean.removeClass( "filtro_activo");
+    todos.removeClass( "filtro_activo");
+    $('.filtrokin').addClass("filtro_activo");
+}
+
+
 
 if (/MSIE 10/i.test(navigator.userAgent)) {
     // This is internet explorer 10

@@ -2,6 +2,68 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.filtros_fechas {
+    h2 {
+        margin-top: 30px;
+        text-align: center;
+        font-family: 'Work Sans', sans-serif;
+        color: #D6D6D6;
+        font-size: 2vmax;
+    }
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.filtro_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "lisa jean"
+    "deni okin"
+    "todas todas";
+    #filtrolisa {
+        grid-area: lisa;
+    }
+    #filtrodeni {
+        grid-area: deni;
+    }
+    #filtrookin {
+        grid-area: okin;
+    }
+    #filtrojean {
+        grid-area: jean;
+    }
+    #todos {
+        grid-area: todas;
+    }
+}
+
+button.filtros_fechas {
+    margin: auto;
+    transition: 0.5s;
+    min-height: 35px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2vmax;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #D6D6D6;
+    border: 0;
+    background-color: rgb(39, 39, 39);
+    &:hover {
+        background-color: #D6D6D6;
+        color: rgb(43, 43, 43);
+        cursor: pointer;
+    }
+    
+}
+
+button.filtros_fechas.filtro_activo {
+    background-color: #D6D6D6;
+    color: rgb(43, 43, 43);
+}
+
 .face_event:hover {
     color: white;
 }
@@ -20,6 +82,8 @@
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: auto;
 }
 
 button.accordion.fechasrecords#accordion {

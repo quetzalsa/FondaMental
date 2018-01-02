@@ -2,7 +2,9 @@
 
 <div class="main_content">
 
-    <div class="info" id="info">
+    
+
+    <%# <div class="info" id="info">
         <button class="accordion fechasrecords" id="accordion">
             <br> Lisa Cropp <br>
             <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -10,10 +12,22 @@
         </button>
 
         
+        
+    </div> %>
+<div class="filtros_fechas">
+    <h2>Filtrar:</h2>
+    <div class="filtro_grid">
+    <button class="filtros_fechas" id="filtrolisa" onclick = "soloLisa()">Lisa Cropp</button>
+    <button class="filtros_fechas" id="filtrojean" onclick = "soloJean()">Jean Madry</button>
+    <button class="filtros_fechas" id="filtrodeni" onclick = "soloDeni()">Deniroster</button>
+    <button class="filtros_fechas filtrokin" id"filtrookin" onclick = "soloOkin()">Okin</button>
+    <button class="filtros_fechas filtro_activo" id="todos" onclick = "todosDjs()">Todas</button>
+    </div>
+</div>
 
-        <div class="panel eventos eventos">
+    <div class="panel eventos eventos">
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
                 <%= link_to 'https://www.facebook.com/events/364592150667826/', class: ["soundj"], :target => '_blanc' do %>
             <i class="face_event fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -29,7 +43,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
                 <%= cl_image_tag("records/lisacropp/lcropp_madry_ciclodocu.png" , class: "afiche") %>
             </div>
@@ -45,7 +59,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
                 <div class="textopanel">
                     <h3>02/12/2017</h3>
@@ -57,7 +71,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_deni_jmadry_abrecielo.png" , class: "afiche") %>
             </div>
@@ -73,7 +87,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1956145677986378/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -89,7 +103,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/deni_lcropp_4_11.png" , class: "afiche") %>
             </div>
@@ -105,7 +119,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1448538521933478/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -121,7 +135,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_beeunder.png" , class: "afiche") %>
             </div>
@@ -136,7 +150,7 @@
                 </div>
             </div>
             </div>
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1323082084480591/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -152,7 +166,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_nomade.png" , class: "afiche") %>
             </div>
@@ -168,7 +182,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1395550287161547/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -184,7 +198,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_hijasnoche.png" , class: "afiche") %>
             </div>
@@ -200,7 +214,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1566112276793056/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -216,7 +230,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_lapipol.png" , class: "afiche") %>
             </div>
@@ -232,7 +246,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1674582112849264/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -248,7 +262,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_bocacalle.png" , class: "afiche") %>
             </div>
@@ -264,7 +278,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1535457806466516/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -280,7 +294,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_physical.png" , class: "afiche") %>
             </div>
@@ -296,7 +310,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1781885218745110/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -312,7 +326,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/lcropp_redlight.png" , class: "afiche") %>
             </div>
@@ -328,7 +342,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento lisa_cropp">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1021538454609775/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -344,19 +358,10 @@
             </div>
         </div>
         </div>
-    </div>
 
-    <div class="info" id="info">
-        <button class="accordion fechasrecords" id="accordion">
-            <br> Deniroster <br>
-            <i class="fa fa-angle-down" aria-hidden="true"></i>
-            <i class="fa fa-angle-up" aria-hidden="true"></i>
-        </button>
-
-
-        <div class="panel eventos eventos">
+    <div class="panel eventos eventos">
             
-            <div class="recordsevento">
+            <div class="recordsevento deniroster">
             <div class="afiche">
             <%= cl_image_tag("records/lisacropp/showcasefonda.jpg" , class: "afiche") %>
             </div>
@@ -372,7 +377,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento deniroster">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/489284251445984/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -388,7 +393,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento deniroster">
             <div class="afiche">
             <%= cl_image_tag("records/deniroster/deni_lcropp_4_11.jpg" , class: "afiche") %>
             </div>
@@ -404,7 +409,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento deniroster">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1326531010736202/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -420,7 +425,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento deniroster">
             <div class="afiche">
             <%= cl_image_tag("records/deniroster/deni_lapipol.jpg" , class: "afiche") %>
             </div>
@@ -436,7 +441,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento deniroster">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1566112276793056/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -452,7 +457,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento deniroster">
             <div class="afiche">
             <%= cl_image_tag("records/deniroster/deni_zocain.jpg" , class: "afiche") %>
             </div>
@@ -468,19 +473,21 @@
             </div>
             </div>
         </div>
-    </div>
 
-    <div class="info" id="info">
+    <%# <div class="info" id="info">
         <button class="accordion fechasrecords" id="accordion">
-            <br> Jean Madry <br>
+            <br> Deniroster <br>
             <i class="fa fa-angle-down" aria-hidden="true"></i>
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </button>
 
 
-        <div class="panel eventos">
+        
+    </div> %>
 
-            <div class="recordsevento">
+    <div class="panel eventos">
+
+            <div class="recordsevento jean_madry">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/364592150667826/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -496,7 +503,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento jean_madry">
             <div class="afiche">
                 <%= cl_image_tag("records/lisacropp/lcropp_madry_ciclodocu.png" , class: "afiche") %>
             </div>
@@ -512,7 +519,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento jean_madry">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/489284251445984/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -528,7 +535,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento jean_madry">
             <div class="afiche">
             <%= cl_image_tag("records/jeanmadry/jmadry_petit.png" , class: "afiche") %>
             </div>
@@ -541,7 +548,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento jean_madry">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1395550287161547/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -557,7 +564,7 @@
                 </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento jean_madry">
             <div class="afiche">
             <%= cl_image_tag("lineup/linefreefall.jpg" , class: "afiche") %>
             </div>
@@ -573,7 +580,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento jean_madry">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/1389037067848635/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -589,7 +596,7 @@
             </div>
             </div>
             
-            <div class="recordsevento">
+            <div class="recordsevento jean_madry">
             <div class="afiche">
             <%= cl_image_tag("records/jeanmadry/jmadry_leveltech.jpg" , class: "afiche") %>
             </div>
@@ -605,20 +612,21 @@
             </div>
             </div>
         </div>
-    </div>
 
-
-    <div class="info" id="info">
+    <%# <div class="info" id="info">
         <button class="accordion fechasrecords" id="accordion">
-            <br> Okin <br>
+            <br> Jean Madry <br>
             <i class="fa fa-angle-down" aria-hidden="true"></i>
             <i class="fa fa-angle-up" aria-hidden="true"></i>
         </button>
 
 
-        <div class="panel eventos">
+        
+    </div> %>
+
+    <div class="panel eventos">
             
-            <div class="recordsevento">
+            <div class="recordsevento okin">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/134862890558044/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -634,7 +642,7 @@
                 </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento okin">
             <div class="afiche">
             <%= cl_image_tag("records/okin/okin_bourbon.jpg" , class: "afiche") %>
             </div>
@@ -647,7 +655,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento okin">
             <div class="infofechas">
             <%= link_to 'https://www.facebook.com/events/489284251445984/', class: ["soundj"], :target => '_blanc' do %>
             <i class="fa fa-facebook-square fa-3x" aria-hidden="true" style="margin-top: 2rem;"></i>
@@ -663,7 +671,7 @@
             </div>
             </div>
 
-            <div class="recordsevento">
+            <div class="recordsevento okin">
             <div class="afiche">
             <%= cl_image_tag("records/okin/okin_arrayan.jpg" , class: "afiche") %>
             </div>
@@ -680,7 +688,17 @@
             </div>
             
         </div>
-    </div>
+
+    <%# <div class="info" id="info">
+        <button class="accordion fechasrecords" id="accordion">
+            <br> Okin <br>
+            <i class="fa fa-angle-down" aria-hidden="true"></i>
+            <i class="fa fa-angle-up" aria-hidden="true"></i>
+        </button>
+
+
+        
+    </div> %>
 
 
 
