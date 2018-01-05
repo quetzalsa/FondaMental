@@ -26,30 +26,31 @@ var jean = document.getElementsByClassName('jean_madry');
 var filtrolisa = $('#filtrolisa'),
     filtrodeni = $('#filtrodeni'),
     filtrokin = $('.filtrokin'),
-    filtrojean = $('#filtrojean'),
-    todos = $('#todos');
+    filtrojean = $('#filtrojean');
+    // todos = $('#todos');
 
-function todosDjs() {
-    for (var i = 0; i < okin.length; i++) { 
-        okin[i].style.display = "grid"; 
-    }
-    for (var i = 0; i < deniroster.length; i++) { 
-        deniroster[i].style.display = "grid"; 
-    }
-    for (var i = 0; i < jean.length; i++) { 
-        jean[i].style.display = "grid"; 
-    }
-    for (var i = 0; i < lisa.length; i++) { 
-        lisa[i].style.display = "grid"; 
-    }
+// function todosDjs() {
+//     for (var i = 0; i < okin.length; i++) { 
+//         okin[i].style.display = "grid"; 
+//     }
+//     for (var i = 0; i < deniroster.length; i++) { 
+//         deniroster[i].style.display = "grid"; 
+//     }
+//     for (var i = 0; i < jean.length; i++) { 
+//         jean[i].style.display = "grid"; 
+//     }
+//     for (var i = 0; i < lisa.length; i++) { 
+//         lisa[i].style.display = "grid"; 
+//     }
 
-    filtrolisa.removeClass( "filtro_activo");
-    filtrodeni.removeClass( "filtro_activo");
-    filtrokin.removeClass( "filtro_activo");
-    filtrojean.removeClass( "filtro_activo");
-    todos.addClass( "filtro_activo");
-}
+//     filtrolisa.removeClass( "filtro_activo");
+//     filtrodeni.removeClass( "filtro_activo");
+//     filtrokin.removeClass( "filtro_activo");
+//     filtrojean.removeClass( "filtro_activo");
+//     todos.addClass( "filtro_activo");
+// }
 
+soloLisa()
 
 function soloLisa() {
     for (var i = 0; i < okin.length; i++) { 
@@ -69,7 +70,7 @@ function soloLisa() {
     filtrodeni.removeClass( "filtro_activo");
     filtrokin.removeClass( "filtro_activo");
     filtrojean.removeClass( "filtro_activo");
-    todos.removeClass( "filtro_activo");
+    // todos.removeClass( "filtro_activo");
 }
 
 function soloJean() {
@@ -90,7 +91,7 @@ function soloJean() {
     filtrodeni.removeClass( "filtro_activo");
     filtrokin.removeClass( "filtro_activo");
     filtrojean.addClass( "filtro_activo");
-    todos.removeClass( "filtro_activo");
+    // todos.removeClass( "filtro_activo");
 }
 
 function soloDeni() {
@@ -111,7 +112,7 @@ function soloDeni() {
     filtrodeni.addClass("filtro_activo");
     filtrokin.removeClass( "filtro_activo");
     filtrojean.removeClass( "filtro_activo");
-    todos.removeClass( "filtro_activo");
+    // todos.removeClass( "filtro_activo");
 }
 
 function soloOkin() {
@@ -131,7 +132,7 @@ function soloOkin() {
     filtrolisa.removeClass( "filtro_activo");
     filtrodeni.removeClass( "filtro_activo");
     filtrojean.removeClass( "filtro_activo");
-    todos.removeClass( "filtro_activo");
+    // todos.removeClass( "filtro_activo");
     $('.filtrokin').addClass("filtro_activo");
 }
 
