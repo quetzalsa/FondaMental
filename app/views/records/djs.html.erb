@@ -55,7 +55,7 @@
     var madry = document.getElementById("jean_madry"),
         lisacr = document.getElementById("lisa_cropp"),
         deniros = document.getElementById("deniroster"),
-        okin = document.getElementById("okin");
+        okinfr = document.getElementById("okin");
 
     function openJean() {
         madry.style.width = "100%";
@@ -94,13 +94,13 @@
     }
 
     function openOkin() {
-        okin.style.width = "100%";
+        okinfr.style.width = "100%";
         $('nav').removeClass('nav-down').addClass('nav-up');
         $('nav').css( {"display": "none"} );
     }
 
     function closeOkin() {
-        okin.style.width = "0";
+        okinfr.style.width = "0";
         $('nav').removeClass('nav-up').addClass('nav-down');
         $('nav').css( {"display": "grid"} );
     }
