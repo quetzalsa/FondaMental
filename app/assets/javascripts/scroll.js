@@ -12,15 +12,26 @@
     function responsiveMenu() {
     var x = document.getElementById("myTopnav"),
         nav = document.getElementById("navegacion");
+        // $(document).on('scroll', function() {
+        //     if (($(document).scrollTop() > 605) && (document.getElementById("myTopnav").className === "menu responsive")) {
+        //         var x = document.getElementById("myTopnav"),
+        //         nav = document.getElementById("navegacion");
+        //         x.className = "menu";
+        //         nav.style.position = "fixed";
+        //     }
+        // });
     if (x.className === "menu") {
-        x.className += " responsive";
-        nav.style.position = "static";
+        $("html, body").stop(true, false).animate({ scrollTop: 0 },500, function() {
+            x.className += " responsive";        
+            nav.style.position = "static";
+        });
     } else {
         x.className = "menu";
         nav.style.position = "fixed";
       }
     } 
 
+    
     
       
 	
