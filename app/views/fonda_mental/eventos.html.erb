@@ -61,6 +61,29 @@
 <%
 =end %>
 
+    <div class="info" id="info">
+            <button class="accordion" id="accordion"><span>27/01/2018</span> <br> Street Life <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/street_life.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Fue la celebración de nuestros dos años de vida y, junto a las fiestas de septiembre,
+                quisimos hacer una fonda tradicional: banderas, sombreros, chinchineros y escándalo. En
+                esta fonda el techno era el folclore nacional e hicimos un B2B entre Lisa Cropp y un
+                chinchinero en vivo</p>
+            <h3>27/01/2018</h3>
+            <h3>Sandwich Hams & Coffee (Barrio Italia)</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Lisa Cropp – Hamburgo/Alemania</p>
+                <p><%= render 'galery/vinilicon' %> Guillermo Jamas – Paris/Francia</p>
+                <%= cl_image_tag("lineup/line_street.jpg", class: "aficheline") %> 
+            <h3>Colaborador: Sandwich Hams & Coffee</h3>
+            </div>
+            </div>
+        </div>
+
      <div class="info" id="info">
             <button class="accordion" id="accordion"><span>24-26/11/2017</span> <br> Abrecielo <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
             </button>
