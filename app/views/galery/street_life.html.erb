@@ -1,0 +1,116 @@
+<% @title = "Street Life" %>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+
+
+    <div id="imastreet">
+    </div>
+
+    <div class="gal_tit_dos">
+        <h1>Street<br>Life</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/street_life.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>La calle es el lugar de las inspiraciones. Todo en ella vibra de vida y sensaciones.
+                Esta llena de diversidad y de originalidad. De conceptos brutos y abstractos con formas variadas.
+                Quien sabe tomarse el tiempo de percibirlos, puede rellenar formidablemente su fuente de creación y potenciar su imaginación de manera infinita.
+                Caminar sobre su pavimiento es como un viaje al desconocido. Todo puede occurir en cualquier momento.
+                Ruidos, encuentros, colores, visiones y movimientos son los elementos que la definen.
+                El ser humano ya no es un individuo solo sino un total heterogéneo, formidable, maravilloso… </p>
+            <h3>27/01/2018</h3>
+            <h3>Sandwich Hams & Coffee (Barrio Italia)</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Lisa Cropp – Hamburgo/Alemania</p>
+                <p><%= render 'galery/vinilicon' %> Guillermo Jamas – Paris/Francia</p>
+                <%= cl_image_tag("lineup/line_street.jpg", class: "aficheline") %> 
+            <h3>Colaborador: Sandwich Hams & Coffee</h3>
+            </div>
+            </div>
+        </div>
+    
+    <%= link_to cl_image_tag("streetlife/street_life_min01" , class: "galeria_foto"), cl_image_path("streetlife/street_life01"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min02" , class: "galeria_foto"), cl_image_path("streetlife/street_life02"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min03" , class: "galeria_foto"), cl_image_path("streetlife/street_life03"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min04" , class: "galeria_foto"), cl_image_path("streetlife/street_life04"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min05" , class: "galeria_foto"), cl_image_path("streetlife/street_life05"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min06" , class: "galeria_foto"), cl_image_path("streetlife/street_life06"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min07" , class: "galeria_foto"), cl_image_path("streetlife/street_life07"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min08" , class: "galeria_foto"), cl_image_path("streetlife/street_life08"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min09" , class: "galeria_foto"), cl_image_path("streetlife/street_life09"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min10" , class: "galeria_foto"), cl_image_path("streetlife/street_life10"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min11" , class: "galeria_foto"), cl_image_path("streetlife/street_life11"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min12" , class: "galeria_foto"), cl_image_path("streetlife/street_life12"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min13" , class: "galeria_foto"), cl_image_path("streetlife/street_life13"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <div class="dosvert">
+    <%= link_to cl_image_tag("streetlife/street_life_min14" , class: "galeria_foto"), cl_image_path("streetlife/street_life14"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min16" , class: "galeria_foto"), cl_image_path("streetlife/street_life16"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    </div>
+    <div class="dosvert">
+    <%= link_to cl_image_tag("streetlife/street_life_min17" , class: "galeria_foto"), cl_image_path("streetlife/street_life17"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min18" , class: "galeria_foto"), cl_image_path("streetlife/street_life18"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    </div>
+    <%= link_to cl_image_tag("streetlife/street_life_min15" , class: "galeria_foto"), cl_image_path("streetlife/street_life15"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min19" , class: "galeria_foto"), cl_image_path("streetlife/street_life19"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min20" , class: "galeria_foto"), cl_image_path("streetlife/street_life20"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min21" , class: "galeria_foto"), cl_image_path("streetlife/street_life21"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min22" , class: "galeria_foto"), cl_image_path("streetlife/street_life22"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min23" , class: "galeria_foto"), cl_image_path("streetlife/street_life23"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min24" , class: "galeria_foto"), cl_image_path("streetlife/street_life24"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min25" , class: "galeria_foto"), cl_image_path("streetlife/street_life25"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min26" , class: "galeria_foto"), cl_image_path("streetlife/street_life26"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min27" , class: "galeria_foto"), cl_image_path("streetlife/street_life27"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min28" , class: "galeria_foto"), cl_image_path("streetlife/street_life28"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min29" , class: "galeria_foto"), cl_image_path("streetlife/street_life29"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min30" , class: "galeria_foto"), cl_image_path("streetlife/street_life30"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min31" , class: "galeria_foto"), cl_image_path("streetlife/street_life31"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min32" , class: "galeria_foto"), cl_image_path("streetlife/street_life32"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min33" , class: "galeria_foto"), cl_image_path("streetlife/street_life33"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min34" , class: "galeria_foto"), cl_image_path("streetlife/street_life34"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min35" , class: "galeria_foto"), cl_image_path("streetlife/street_life35"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min36" , class: "galeria_foto"), cl_image_path("streetlife/street_life36"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min37" , class: "galeria_foto"), cl_image_path("streetlife/street_life37"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min38" , class: "galeria_foto"), cl_image_path("streetlife/street_life38"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min39" , class: "galeria_foto"), cl_image_path("streetlife/street_life39"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min40" , class: "galeria_foto"), cl_image_path("streetlife/street_life40"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min41" , class: "galeria_foto"), cl_image_path("streetlife/street_life41"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min42" , class: "galeria_foto"), cl_image_path("streetlife/street_life42"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min43" , class: "galeria_foto"), cl_image_path("streetlife/street_life43"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min44" , class: "galeria_foto"), cl_image_path("streetlife/street_life44"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min45" , class: "galeria_foto"), cl_image_path("streetlife/street_life45"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min46" , class: "galeria_foto"), cl_image_path("streetlife/street_life46"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+    <%= link_to cl_image_tag("streetlife/street_life_min47" , class: "galeria_foto"), cl_image_path("streetlife/street_life47"), class: "galeria_foto swipebox", "rel" => "streetlife-1" %>
+
+    
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

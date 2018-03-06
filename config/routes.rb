@@ -50,6 +50,8 @@ Rails.application.routes.draw do
 
   get '/galeria/abrecielo' => 'galery#abrecielo'
 
+  get '/galeria/street_life' => 'galery#street_life'
+
   get "/fotos" => "fonda_mental#fotos"
   get "/galeria" => "fonda_mental#media"
   get "/videos" => "fonda_mental#videos"
