@@ -14,7 +14,11 @@
 
 }
 
-
+@media (max-width: 570px) { 
+  .socialnet {
+    padding: 0;
+  }
+}
 
 .sim1 {
   grid-area: uno;

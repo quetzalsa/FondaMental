@@ -101,6 +101,16 @@ button.accordion.fechasrecords#accordion {
     transition: 0.4s;
 }
 
+@media (max-width: 960px) {
+    .concepto {
+        padding-top: 60px;
+    }
+
+    .filtros_fechas {
+        margin-top: 30px;
+    }
+}
+
 .concepto {
     font-family: 'Open Sans', sans-serif;
     color: #D4D4D4;
