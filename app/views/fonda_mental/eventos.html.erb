@@ -62,6 +62,38 @@
 =end %>
 
     <div class="info" id="info">
+            <button class="accordion" id="accordion"><span>09/03/2018</span> <br> Abracadabra <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/abracadabra.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Como un conejo en un sobrero de mago, hemos desaparecido un tiempo para volver de forma espectacular en esta nueva temporada !
+            Al redoble de tambores, la Fonda Mental aparecerá detras del telón rojo por una noche de ilusión, un momento de extendido espectáculo, una pausa fantaseosa de la realidad! 
+            <br>
+
+Tengan la mente bien despierta y los oídos bien abiertos, porque sus cuerpos no saben lo que les espera!
+Atrévanse a participar de nuestro gran truco donde la fórmula mágica sera el techno, el boom boom, el «abracadabra»!
+
+Después de la bomba de humo, surgiremos de la nada!
+
+Besos embrujados</p>
+            <h3>09/03/2018</h3>
+            <h3>Secret Spot, Santiago Centro</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Deniroster - Francia/Fonda Mental</p>
+                <p><%= render 'galery/vinilicon' %> Sarnival - España/UFO Group/Advance Techno</p>
+                <p><%= render 'galery/vinilicon' %> Diegors - Chile/Discos Pato Carlos</p>
+                
+                <%= cl_image_tag("lineup/lineabracadabra.jpg" , class: "aficheline") %>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+
+    <div class="info" id="info">
             <button class="accordion" id="accordion"><span>27/01/2018</span> <br> Street Life <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
             </button>
 

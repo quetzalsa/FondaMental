@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'galery/abracadabra'
+
   get 'galery/abrecielo'
 
   get 'records/jean_madry'
@@ -51,6 +53,8 @@ Rails.application.routes.draw do
   get '/galeria/abrecielo' => 'galery#abrecielo'
 
   get '/galeria/street_life' => 'galery#street_life'
+
+  get '/galeria/abracadabra' => 'galery#abracadabra'
 
   get "/fotos" => "fonda_mental#fotos"
   get "/galeria" => "fonda_mental#media"

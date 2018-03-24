@@ -1,0 +1,159 @@
+<% @title = "Abracadabra" %>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+
+
+    <div id="imaabra">
+    </div>
+
+    <div class="gal_tit">
+        <h1>Abracadabra</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/abracadabra.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Como un conejo en un sobrero de mago, hemos desaparecido un tiempo para volver de forma espectacular en esta nueva temporada !
+                Al redoble de tambores, la Fonda Mental aparecerá detras del telón rojo por una noche de ilusión, un momento de extendido espectáculo, una pausa fantaseosa de la realidad! 
+                <br>
+                Tengan la mente bien despierta y los oídos bien abiertos, porque sus cuerpos no saben lo que les espera!
+                Atrévanse a participar de nuestro gran truco donde la fórmula mágica sera el techno, el boom boom, el «abracadabra»!
+                Después de la bomba de humo, surgiremos de la nada!
+                Besos embrujados</p>
+            <h3>09/03/2018</h3>
+            <h3>Secret Spot, Santiago Centro</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Deniroster - Francia/Fonda Mental</p>
+                <p><%= render 'galery/vinilicon' %> Sarnival - España/UFO Group/Advance Techno</p>
+                <p><%= render 'galery/vinilicon' %> Diegors - Chile/Discos Pato Carlos</p>
+                
+                <%= cl_image_tag("lineup/lineabracadabra.jpg" , class: "aficheline") %>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+    
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min01" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra01"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min02" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra02"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min03" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra03"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min04" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra04"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min05" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra05"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min06" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra06"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min07" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra07"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min08" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra08"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min09" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra09"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min10" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra10"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("abracadabra/abracadabra_min11" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra11"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+        <%= link_to cl_image_tag("abracadabra/abracadabra_min13" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra13"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    </div>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min12" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra12"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min14" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra14"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min16" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra16"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min17" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra17"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min18" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra18"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min15" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra15"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min19" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra19"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min20" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra20"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min21" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra21"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min22" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra22"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min23" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra23"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min24" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra24"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("abracadabra/abracadabra_min25" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra25"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+        <%= link_to cl_image_tag("abracadabra/abracadabra_min26" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra26"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    </div>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min27" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra27"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min28" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra28"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min29" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra29"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min30" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra30"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min31" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra31"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min32" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra32"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min33" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra33"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min34" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra34"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min35" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra35"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min36" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra36"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min37" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra37"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min38" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra38"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min39" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra39"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("abracadabra/abracadabra_min40" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra40"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+        <%= link_to cl_image_tag("abracadabra/abracadabra_min41" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra41"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    </div>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min42" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra42"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min43" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra43"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min44" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra44"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min45" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra45"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min46" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra46"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min47" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra47"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min48" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra48"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min49" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra49"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min50" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra50"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min51" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra51"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min52" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra52"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min53" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra53"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min54" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra54"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min55" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra55"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min56" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra56"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min57" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra57"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min58" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra58"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min59" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra59"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min60" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra60"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min61" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra61"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min62" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra62"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min63" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra63"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min64" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra43"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min65" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra65"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min66" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra66"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min67" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra67"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min68" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra68"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min69" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra69"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min70" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra70"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min71" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra71"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min72" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra72"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min73" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra73"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min74" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra74"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min75" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra75"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min76" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra76"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min77" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra77"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min78" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra78"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min79" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra79"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min80" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra80"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min81" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra81"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min82" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra82"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min83" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra83"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min84" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra84"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min85" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra85"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    <%= link_to cl_image_tag("abracadabra/abracadabra_min86" , class: "galeria_foto"), cl_image_path("abracadabra/abracadabra86"), class: "galeria_foto swipebox", "rel" => "abracadabra-1" %>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
