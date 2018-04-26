@@ -1,4 +1,4 @@
 class GaleryController < ApplicationController
-  def abracadabra
+  def asylum
   end
 end

@@ -1,0 +1,168 @@
+<% @title = "Asylum" %>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+
+
+    <div id="imaasylum">
+    </div>
+
+    <div class="gal_tit_dos">
+        <h1>Asylum</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/asylum.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>La sociedad conformista dice que el techno es música de locos y que los ritmos que escuchamos son para enloquecerse. Tan poco nos comprenden que piensan que preferimos agruparnos en lugares oscuros donde los bajos resuenan para hacernos perder la cabeza.
+            Por esta vez, vamos a darles la razón! 
+                <br>
+                Los sonidos serán tan incontrolables que tendremos que ponernos camisas de fuerza! Tu cerebro estará a merced de perturbaciones que tomarán control de tu voluntad y harán que el baile sea la única cosa que sus cuerpos será capaz de hacer…
+                </p>
+            <h3>20/04/2018</h3>
+            <h3>Secret Spot, Santiago Centro</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Volatile - Chile/Music Matters</p>
+                <p><%= render 'galery/vinilicon' %> Lisa Cropp - Alemania/Fonda Mental</p>
+                <p><%= render 'galery/vinilicon' %> Roman & Castro - Chile/Pirotecnia</p>
+                
+                <%= cl_image_tag("lineup/lineasylum.jpg" , class: "aficheline") %>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+        <!-- <iframe width="90%" height="300px" src="https://www.youtube.com/embed/ob8vJJdOV-4" frameborder="0" allowfullscreen></iframe> -->
+    
+    <%= link_to cl_image_tag("asylum/asylum_min01" , class: "galeria_foto"), cl_image_path("asylum/asylum01"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min02" , class: "galeria_foto"), cl_image_path("asylum/asylum02"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min03" , class: "galeria_foto"), cl_image_path("asylum/asylum03"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min04" , class: "galeria_foto"), cl_image_path("asylum/asylum04"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min05" , class: "galeria_foto"), cl_image_path("asylum/asylum05"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min06" , class: "galeria_foto"), cl_image_path("asylum/asylum06"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min07" , class: "galeria_foto"), cl_image_path("asylum/asylum07"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min08" , class: "galeria_foto"), cl_image_path("asylum/asylum08"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min09" , class: "galeria_foto"), cl_image_path("asylum/asylum09"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min10" , class: "galeria_foto"), cl_image_path("asylum/asylum10"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min11" , class: "galeria_foto"), cl_image_path("asylum/asylum11"), class:"galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min13" , class: "galeria_foto"), cl_image_path("asylum/asylum13"), class:"galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min12" , class: "galeria_foto"), cl_image_path("asylum/asylum12"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min14" , class: "galeria_foto"), cl_image_path("asylum/asylum14"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min16" , class: "galeria_foto"), cl_image_path("asylum/asylum16"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min17" , class: "galeria_foto"), cl_image_path("asylum/asylum17"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min18" , class: "galeria_foto"), cl_image_path("asylum/asylum18"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min15" , class: "galeria_foto"), cl_image_path("asylum/asylum15"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min19" , class: "galeria_foto"), cl_image_path("asylum/asylum19"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min20" , class: "galeria_foto"), cl_image_path("asylum/asylum20"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min21" , class: "galeria_foto"), cl_image_path("asylum/asylum21"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min22" , class: "galeria_foto"), cl_image_path("asylum/asylum22"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min23" , class: "galeria_foto"), cl_image_path("asylum/asylum23"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min24" , class: "galeria_foto"), cl_image_path("asylum/asylum24"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min25" , class: "galeria_foto"), cl_image_path("asylum/asylum25"), class:"galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min26" , class: "galeria_foto"), cl_image_path("asylum/asylum26"), class:"galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min27" , class: "galeria_foto"), cl_image_path("asylum/asylum27"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min28" , class: "galeria_foto"), cl_image_path("asylum/asylum28"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min29" , class: "galeria_foto"), cl_image_path("asylum/asylum29"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min30" , class: "galeria_foto"), cl_image_path("asylum/asylum30"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min31" , class: "galeria_foto"), cl_image_path("asylum/asylum31"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min32" , class: "galeria_foto"), cl_image_path("asylum/asylum32"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min33" , class: "galeria_foto"), cl_image_path("asylum/asylum33"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min34" , class: "galeria_foto"), cl_image_path("asylum/asylum34"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("asylum/asylum_min35" , class: "galeria_foto"), cl_image_path("asylum/asylum35"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        <%= link_to cl_image_tag("asylum/asylum_min44" , class: "galeria_foto"), cl_image_path("asylum/asylum44"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        </div>
+    <%= link_to cl_image_tag("asylum/asylum_min36" , class: "galeria_foto"), cl_image_path("asylum/asylum36"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min37" , class: "galeria_foto"), cl_image_path("asylum/asylum37"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min38" , class: "galeria_foto"), cl_image_path("asylum/asylum38"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min39" , class: "galeria_foto"), cl_image_path("asylum/asylum39"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min40" , class: "galeria_foto"), cl_image_path("asylum/asylum40"), class:"galeria_foto swipebox", "rel" => "asylum-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("asylum/asylum_min41" , class: "galeria_foto"), cl_image_path("asylum/asylum41"),  class:"galeria_foto swipebox", "rel" => "asylum-1" %>
+        <%= link_to cl_image_tag("asylum/asylum_min43" , class: "galeria_foto"), cl_image_path("asylum/asylum43"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+    </div>
+    <%= link_to cl_image_tag("asylum/asylum_min42" , class: "galeria_foto"), cl_image_path("asylum/asylum42"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min44" , class: "galeria_foto"), cl_image_path("asylum/asylum44"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min45" , class: "galeria_foto"), cl_image_path("asylum/asylum45"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min46" , class: "galeria_foto"), cl_image_path("asylum/asylum46"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min47" , class: "galeria_foto"), cl_image_path("asylum/asylum47"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min48" , class: "galeria_foto"), cl_image_path("asylum/asylum48"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min49" , class: "galeria_foto"), cl_image_path("asylum/asylum49"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min50" , class: "galeria_foto"), cl_image_path("asylum/asylum50"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min51" , class: "galeria_foto"), cl_image_path("asylum/asylum51"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min52" , class: "galeria_foto"), cl_image_path("asylum/asylum52"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min53" , class: "galeria_foto"), cl_image_path("asylum/asylum53"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min54" , class: "galeria_foto"), cl_image_path("asylum/asylum54"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min55" , class: "galeria_foto"), cl_image_path("asylum/asylum55"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min56" , class: "galeria_foto"), cl_image_path("asylum/asylum56"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min57" , class: "galeria_foto"), cl_image_path("asylum/asylum57"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min58" , class: "galeria_foto"), cl_image_path("asylum/asylum58"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min59" , class: "galeria_foto"), cl_image_path("asylum/asylum59"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("asylum/asylum_min60" , class: "galeria_foto"), cl_image_path("asylum/asylum60"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        <%= link_to cl_image_tag("asylum/asylum_min62" , class: "galeria_foto"), cl_image_path("asylum/asylum62"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        </div>
+    <%= link_to cl_image_tag("asylum/asylum_min61" , class: "galeria_foto"), cl_image_path("asylum/asylum61"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min63" , class: "galeria_foto"), cl_image_path("asylum/asylum63"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("asylum/asylum_min64" , class: "galeria_foto"), cl_image_path("asylum/asylum43"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        <%= link_to cl_image_tag("asylum/asylum_min65" , class: "galeria_foto"), cl_image_path("asylum/asylum65"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+    </div>
+    <%= link_to cl_image_tag("asylum/asylum_min66" , class: "galeria_foto"), cl_image_path("asylum/asylum66"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min67" , class: "galeria_foto"), cl_image_path("asylum/asylum67"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min68" , class: "galeria_foto"), cl_image_path("asylum/asylum68"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min69" , class: "galeria_foto"), cl_image_path("asylum/asylum69"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min70" , class: "galeria_foto"), cl_image_path("asylum/asylum70"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min71" , class: "galeria_foto"), cl_image_path("asylum/asylum71"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("asylum/asylum_min72" , class: "galeria_foto"), cl_image_path("asylum/asylum72"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        <%= link_to cl_image_tag("asylum/asylum_min74" , class: "galeria_foto"), cl_image_path("asylum/asylum74"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+    </div>
+    <%= link_to cl_image_tag("asylum/asylum_min73" , class: "galeria_foto"), cl_image_path("asylum/asylum73"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min74" , class: "galeria_foto"), cl_image_path("asylum/asylum74"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min75" , class: "galeria_foto"), cl_image_path("asylum/asylum75"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min76" , class: "galeria_foto"), cl_image_path("asylum/asylum76"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min77" , class: "galeria_foto"), cl_image_path("asylum/asylum77"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min78" , class: "galeria_foto"), cl_image_path("asylum/asylum78"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min79" , class: "galeria_foto"), cl_image_path("asylum/asylum79"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("asylum/asylum_min80" , class: "galeria_foto"), cl_image_path("asylum/asylum80"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        <%= link_to cl_image_tag("asylum/asylum_min83" , class: "galeria_foto"), cl_image_path("asylum/asylum83"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        </div>
+    <%= link_to cl_image_tag("asylum/asylum_min82" , class: "galeria_foto"), cl_image_path("asylum/asylum82"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <%= link_to cl_image_tag("asylum/asylum_min81" , class: "galeria_foto"), cl_image_path("asylum/asylum81"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    <div class="dosvert">
+        <%= link_to cl_image_tag("asylum/asylum_min83" , class: "galeria_foto"), cl_image_path("asylum/asylum83"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+        <%= link_to cl_image_tag("asylum/asylum_min84" , class: "galeria_foto"), cl_image_path("asylum/asylum84"), class:   "galeria_foto swipebox", "rel" => "asylum-1" %>
+    </div>
+    <%= link_to cl_image_tag("asylum/asylum_min85" , class: "galeria_foto"), cl_image_path("asylum/asylum85"), class: "galeria_foto swipebox", "rel" => "asylum-1" %>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
