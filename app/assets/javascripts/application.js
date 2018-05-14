@@ -306,9 +306,9 @@ var path = window.location.pathname;
     //     }
 
       
-if (path == "/" && $( window ).width() >= 960) {
-    music.play();
-} 
+// if (path == "/" && $( window ).width() >= 960) {
+//     music.play();
+// } 
 
 function videoback() {
     //document.getElementById('videointro').style.display = 'none';
