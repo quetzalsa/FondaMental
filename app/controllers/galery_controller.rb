@@ -1,4 +1,4 @@
 class GaleryController < ApplicationController
-  def asylum
+  def soul_station
   end
 end

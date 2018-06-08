@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class GaleryControllerTest < ActionDispatch::IntegrationTest
-  test "should get asylum" do
-    get galery_asylum_url
+  test "should get soul_station" do
+    get galery_soul_station_url
     assert_response :success
   end
 

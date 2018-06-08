@@ -62,6 +62,32 @@
 =end %>
 
 <div class="info">
+            <button class="accordion" id="accordion"><span>01/05/2018</span> <br> Soul Station <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/soul_station.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>La música es la letra del alma. Los ritmos sus palabras y las melodías sus frases. 
+                <br>
+                ¡Queremos sintonizar las pulsaciones de sus corazones con la voz de la Fonda Mental!
+                </p>
+            <h3>01/05/2018</h3>
+            <h3>Secret Spot, Santiago Centro</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Dj Haiti - Chile</p>
+                <p><%= render 'galery/vinilicon' %> Melania Wonder - Argentina</p>
+                <p><%= render 'galery/vinilicon' %> Jean Madry - Francia/Fonda Mental</p>
+                
+                <%= cl_image_tag("lineup/linesoul.jpg" , class: "aficheline") %>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+
+<div class="info">
             <button class="accordion" id="accordion"><span>20/04/2018</span> <br> Asylum <br> <i class="fa fa-angle-down" aria-hidden="true"></i> <i class="fa fa-angle-up" aria-hidden="true"></i>
             </button>
 

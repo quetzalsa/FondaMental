@@ -1,0 +1,156 @@
+<% @title = "Soul Station" %>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+
+
+    <div id="imasoul">
+    </div>
+
+    <div class="gal_tit_dos">
+        <h1>Soul Station</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/soul_station.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>La música es la letra del alma. Los ritmos sus palabras y las melodías sus frases. 
+                <br>
+                ¡Queremos sintonizar las pulsaciones de sus corazones con la voz de la Fonda Mental!
+                </p>
+            <h3>01/05/2018</h3>
+            <h3>Secret Spot, Santiago Centro</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Dj Haiti - Chile</p>
+                <p><%= render 'galery/vinilicon' %> Melania Wonder - Argentina</p>
+                <p><%= render 'galery/vinilicon' %> Jean Madry - Francia/Fonda Mental</p>
+                
+                <%= cl_image_tag("lineup/linesoul.jpg" , class: "aficheline") %>
+            <h3>Sonido: Funktion One</h3>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+        <!-- <iframe width="90%" height="300px" src="https://www.youtube.com/embed/ob8vJJdOV-4" frameborder="0" allowfullscreen></iframe> -->
+    
+    <%= link_to cl_image_tag("soul station/soul_station_min01" , class: "galeria_foto"), cl_image_path("soul station/soul_station01"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min02" , class: "galeria_foto"), cl_image_path("soul station/soul_station02"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min03" , class: "galeria_foto"), cl_image_path("soul station/soul_station03"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    
+    <%= link_to cl_image_tag("soul station/soul_station_min13" , class: "galeria_foto"), cl_image_path("soul station/soul_station13"), class:"galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min04" , class: "galeria_foto"), cl_image_path("soul station/soul_station04"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <div class="dosvert">
+    <%= link_to cl_image_tag("soul station/soul_station_min05" , class: "galeria_foto"), cl_image_path("soul station/soul_station05"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min06" , class: "galeria_foto"), cl_image_path("soul station/soul_station06"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    </div>
+    <%= link_to cl_image_tag("soul station/soul_station_min07" , class: "galeria_foto"), cl_image_path("soul station/soul_station07"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min08" , class: "galeria_foto"), cl_image_path("soul station/soul_station08"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min09" , class: "galeria_foto"), cl_image_path("soul station/soul_station09"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min10" , class: "galeria_foto"), cl_image_path("soul station/soul_station10"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min11" , class: "galeria_foto"), cl_image_path("soul station/soul_station11"), class:"galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min12" , class: "galeria_foto"), cl_image_path("soul station/soul_station12"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min14" , class: "galeria_foto"), cl_image_path("soul station/soul_station14"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min16" , class: "galeria_foto"), cl_image_path("soul station/soul_station16"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min17" , class: "galeria_foto"), cl_image_path("soul station/soul_station17"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min18" , class: "galeria_foto"), cl_image_path("soul station/soul_station18"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min15" , class: "galeria_foto"), cl_image_path("soul station/soul_station15"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min19" , class: "galeria_foto"), cl_image_path("soul station/soul_station19"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min20" , class: "galeria_foto"), cl_image_path("soul station/soul_station20"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min21" , class: "galeria_foto"), cl_image_path("soul station/soul_station21"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min22" , class: "galeria_foto"), cl_image_path("soul station/soul_station22"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min23" , class: "galeria_foto"), cl_image_path("soul station/soul_station23"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min24" , class: "galeria_foto"), cl_image_path("soul station/soul_station24"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min25" , class: "galeria_foto"), cl_image_path("soul station/soul_station25"), class:"galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min26" , class: "galeria_foto"), cl_image_path("soul station/soul_station26"), class:"galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min27" , class: "galeria_foto"), cl_image_path("soul station/soul_station27"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min28" , class: "galeria_foto"), cl_image_path("soul station/soul_station28"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min29" , class: "galeria_foto"), cl_image_path("soul station/soul_station29"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min30" , class: "galeria_foto"), cl_image_path("soul station/soul_station30"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min31" , class: "galeria_foto"), cl_image_path("soul station/soul_station31"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min32" , class: "galeria_foto"), cl_image_path("soul station/soul_station32"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min33" , class: "galeria_foto"), cl_image_path("soul station/soul_station33"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min34" , class: "galeria_foto"), cl_image_path("soul station/soul_station34"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min35" , class: "galeria_foto"), cl_image_path("soul station/soul_station35"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min44" , class: "galeria_foto"), cl_image_path("soul station/soul_station44"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min36" , class: "galeria_foto"), cl_image_path("soul station/soul_station36"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min37" , class: "galeria_foto"), cl_image_path("soul station/soul_station37"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min38" , class: "galeria_foto"), cl_image_path("soul station/soul_station38"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min39" , class: "galeria_foto"), cl_image_path("soul station/soul_station39"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min40" , class: "galeria_foto"), cl_image_path("soul station/soul_station40"), class:"galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min41" , class: "galeria_foto"), cl_image_path("soul station/soul_station41"),  class:"galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min43" , class: "galeria_foto"), cl_image_path("soul station/soul_station43"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min42" , class: "galeria_foto"), cl_image_path("soul station/soul_station42"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min44" , class: "galeria_foto"), cl_image_path("soul station/soul_station44"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min45" , class: "galeria_foto"), cl_image_path("soul station/soul_station45"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min46" , class: "galeria_foto"), cl_image_path("soul station/soul_station46"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min47" , class: "galeria_foto"), cl_image_path("soul station/soul_station47"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min48" , class: "galeria_foto"), cl_image_path("soul station/soul_station48"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min49" , class: "galeria_foto"), cl_image_path("soul station/soul_station49"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min50" , class: "galeria_foto"), cl_image_path("soul station/soul_station50"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min51" , class: "galeria_foto"), cl_image_path("soul station/soul_station51"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min52" , class: "galeria_foto"), cl_image_path("soul station/soul_station52"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min53" , class: "galeria_foto"), cl_image_path("soul station/soul_station53"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min54" , class: "galeria_foto"), cl_image_path("soul station/soul_station54"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min55" , class: "galeria_foto"), cl_image_path("soul station/soul_station55"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min56" , class: "galeria_foto"), cl_image_path("soul station/soul_station56"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min57" , class: "galeria_foto"), cl_image_path("soul station/soul_station57"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min58" , class: "galeria_foto"), cl_image_path("soul station/soul_station58"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min59" , class: "galeria_foto"), cl_image_path("soul station/soul_station59"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min60" , class: "galeria_foto"), cl_image_path("soul station/soul_station60"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min62" , class: "galeria_foto"), cl_image_path("soul station/soul_station62"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min61" , class: "galeria_foto"), cl_image_path("soul station/soul_station61"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min63" , class: "galeria_foto"), cl_image_path("soul station/soul_station63"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min64" , class: "galeria_foto"), cl_image_path("soul station/soul_station43"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min65" , class: "galeria_foto"), cl_image_path("soul station/soul_station65"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min66" , class: "galeria_foto"), cl_image_path("soul station/soul_station66"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min67" , class: "galeria_foto"), cl_image_path("soul station/soul_station67"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min68" , class: "galeria_foto"), cl_image_path("soul station/soul_station68"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min69" , class: "galeria_foto"), cl_image_path("soul station/soul_station69"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min70" , class: "galeria_foto"), cl_image_path("soul station/soul_station70"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min71" , class: "galeria_foto"), cl_image_path("soul station/soul_station71"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min72" , class: "galeria_foto"), cl_image_path("soul station/soul_station72"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min74" , class: "galeria_foto"), cl_image_path("soul station/soul_station74"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min73" , class: "galeria_foto"), cl_image_path("soul station/soul_station73"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min74" , class: "galeria_foto"), cl_image_path("soul station/soul_station74"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min75" , class: "galeria_foto"), cl_image_path("soul station/soul_station75"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min76" , class: "galeria_foto"), cl_image_path("soul station/soul_station76"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min77" , class: "galeria_foto"), cl_image_path("soul station/soul_station77"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min78" , class: "galeria_foto"), cl_image_path("soul station/soul_station78"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min79" , class: "galeria_foto"), cl_image_path("soul station/soul_station79"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min80" , class: "galeria_foto"), cl_image_path("soul station/soul_station80"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min83" , class: "galeria_foto"), cl_image_path("soul station/soul_station83"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min82" , class: "galeria_foto"), cl_image_path("soul station/soul_station82"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min81" , class: "galeria_foto"), cl_image_path("soul station/soul_station81"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min83" , class: "galeria_foto"), cl_image_path("soul station/soul_station83"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min84" , class: "galeria_foto"), cl_image_path("soul station/soul_station84"), class:   "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    <%= link_to cl_image_tag("soul station/soul_station_min85" , class: "galeria_foto"), cl_image_path("soul station/soul_station85"), class: "galeria_foto swipebox", "rel" => "soulstation-1" %>
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
