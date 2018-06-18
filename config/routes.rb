@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'galery/street_life_valpo'
+
   get 'galery/soul_station'
   
   get 'galery/street_life'

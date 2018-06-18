@@ -1,0 +1,96 @@
+<% @title = "Street Life" %>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+
+
+    <div id="imastreetval">
+    </div>
+
+    <div class="gal_tit_dos">
+        <h1>Street Life<br>Tarde Porteña</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+           <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/street_life_valpo.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>La música hace viajar y te transporta como las olas del mar…
+                <br>
+                hemos tomado la decisión de traer nuestra onda hasta el borde costero y refrescar nuestro concepto con brisa marina en el maravilloso puerto de Valparaíso! 
+                </p>
+            <h3>19/05/2018</h3>
+            <h3>Hostal Licanantay, Valparaiso</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Sebastian Carcamo - Valparaiso</p>
+                <p><%= render 'galery/vinilicon' %> Lisa Cropp - Alemania/Fonda Mental</p>
+                <p><%= render 'galery/vinilicon' %> Sarnival - España</p>
+                
+                <%= cl_image_tag("lineup/line_up_valpo.jpg" , class: "aficheline") %>
+            </div>
+            </div>
+        </div>   
+    
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min01" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo01"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min02" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo02"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min03" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo03"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min04" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo04"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min05" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo05"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min06" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo06"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min07" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo07"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min08" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo08"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min09" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo09"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min10" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo10"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min11" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo11"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min12" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo12"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min13" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo13"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min14" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo14"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min16" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo16"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min17" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo17"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min18" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo18"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min15" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo15"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min19" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo19"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min20" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo20"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min21" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo21"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min22" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo22"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min23" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo23"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min24" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo24"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min25" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo25"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min26" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo26"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min27" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo27"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min28" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo28"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min29" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo29"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min30" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo30"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    <%= link_to cl_image_tag("streetlifevalpo/street_life_valpo_min31" , class: "galeria_foto"), cl_image_path("streetlifevalpo/street_life_valpo31"), class: "galeria_foto swipebox", "rel" => "streetlifevalpo-1" %>
+    
+
+    
+    
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

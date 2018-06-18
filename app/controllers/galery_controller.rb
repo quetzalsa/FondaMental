@@ -1,4 +1,4 @@
 class GaleryController < ApplicationController
-  def soul_station
+  def street_life_valpo
   end
 end
