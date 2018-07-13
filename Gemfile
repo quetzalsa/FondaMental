@@ -11,6 +11,7 @@ gem 'cloudinary'
 gem 'rename'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+ruby '2.4.1'
 
 group :production do
   gem 'rails_12factor'
