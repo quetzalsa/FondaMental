@@ -14,7 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require swipebox
+//= require owljs
 //= require_tree .
+
+
+
 
 
 // filter
