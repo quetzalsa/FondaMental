@@ -12,17 +12,21 @@ Rails.application.routes.draw do
 
   get 'galery/abrecielo'
 
-  get 'records/jean_madry'
+  # get 'records/jean_madry'
 
-  get 'records/lisa_cropp'
+  # get 'records/lisa_cropp'
 
-  get 'records/deniroster'
+  # get 'records/deniroster'
 
-  get '/records/infos' => 'records#concepto'
+  # get '/records/infos' => 'records#concepto'
 
-  get '/records/fechas' => 'records#fechas'
+  # get '/records/fechas' => 'records#fechas'
 
-  get '/records/djs' => 'records#djs'
+  get 'playlist/inerte_camino_porteno' => 'playlist#playuno'
+
+  get '/playlist' => 'playlist#playlist'
+
+  get '/colaboradores' => 'fonda_mental#colaboradores'
 
   get '/fonda_mental/historia' => 'fonda#historia'
 

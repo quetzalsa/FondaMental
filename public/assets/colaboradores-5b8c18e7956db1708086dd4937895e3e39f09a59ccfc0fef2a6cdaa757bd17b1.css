@@ -1,0 +1,266 @@
+/* line 1, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaborades-total {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto 1fr;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* line 11, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaboradores-titulo {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+  text-align: center;
+  color: #d4d4d4;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* line 21, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+.colaboradores {
+  box-sizing: border-box;
+}
+/* line 23, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+.colaboradores h2 {
+  font-family: 'work sans', sans-serif;
+  color: #f2d989;
+  font-size: 40px;
+}
+/* line 28, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+.colaboradores a {
+  text-decoration: none;
+}
+/* line 30, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+.colaboradores a p {
+  text-decoration: none;
+  color: #d4d4d4;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+/* line 36, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+.colaboradores a img {
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/* line 44, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#clubmate {
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  width: 50%;
+  text-align: center;
+}
+
+/* line 50, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#funktionone {
+  grid-column: 1 / 5;
+  grid-row: 3 / 4;
+  text-align: center;
+}
+/* line 54, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#funktionone a {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-content: center;
+  align-items: center;
+}
+
+/* line 61, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#vj {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  text-align: center;
+}
+/* line 66, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#vj a img {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  padding: 0px;
+}
+
+/* line 74, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaborador-foto {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  text-align: center;
+}
+/* line 79, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaborador-foto a img {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  padding: 0px;
+}
+
+/* line 87, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaborador-video {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  text-align: center;
+}
+/* line 92, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaborador-video a img {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  padding: 0px;
+}
+
+/* line 100, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaborador-decoracion {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+  text-align: center;
+}
+/* line 105, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+#colaborador-decoracion a img {
+  border-radius: 50%;
+  width: 60%;
+  height: auto;
+  padding: 0px;
+}
+
+@media (max-width: 1300px) {
+  /* line 116, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  .colaboradores h2 {
+    font-family: 'work sans', sans-serif;
+    color: #f2d989;
+    font-size: 30px;
+  }
+}
+@media (max-width: 960px) {
+  /* line 125, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #colaborades-total {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  /* line 132, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  .colaboradores h2 {
+    font-family: 'work sans', sans-serif;
+    color: #f2d989;
+    font-size: 40px;
+  }
+  /* line 137, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  .colaboradores a {
+    text-decoration: none;
+  }
+  /* line 139, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  .colaboradores a p {
+    text-decoration: none;
+    color: #d4d4d4;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  /* line 145, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  .colaboradores a img {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  /* line 153, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #clubmate {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: 50%;
+    text-align: center;
+  }
+
+  /* line 159, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #funktionone {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+  }
+  /* line 163, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #funktionone a {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    align-content: center;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  /* line 173, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #vj {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    text-align: center;
+  }
+  /* line 178, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #vj a img {
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    padding: 0px;
+  }
+
+  /* line 186, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #colaborador-foto {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    text-align: center;
+  }
+  /* line 191, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #colaborador-foto a img {
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    padding: 0px;
+  }
+
+  /* line 199, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #colaborador-video {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    text-align: center;
+  }
+  /* line 204, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #colaborador-video a img {
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    padding: 0px;
+  }
+
+  /* line 212, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #colaborador-decoracion {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+    text-align: center;
+  }
+  /* line 217, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  #colaborador-decoracion a img {
+    border-radius: 50%;
+    width: 60%;
+    height: auto;
+    padding: 0px;
+  }
+}
+@media (max-width: 450px) {
+  /* line 229, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  .colaboradores h2 {
+    font-family: 'work sans', sans-serif;
+    color: #f2d989;
+    font-size: 20px;
+  }
+  /* line 235, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/colaboradores.scss */
+  .colaboradores a p {
+    font-size: 15px;
+  }
+}

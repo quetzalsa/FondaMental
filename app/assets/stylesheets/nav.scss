@@ -377,7 +377,7 @@
     height: 80px;
     -ms-grid-columns: 1fr 1fr 4fr;
     -ms-grid-rows: 80px;
-    grid-template-columns: 1fr 1fr 4fr;
+    grid-template-columns: 1fr 1fr 5fr;
     grid-row: 80px;
     grid-template-areas:
     "logo repro menu";
@@ -400,7 +400,7 @@
 
 
   .menu {
-    width: 60%;
+    width: 80%;
     margin-right: 90px;
     grid-area: menu;
     display: grid;
@@ -427,8 +427,7 @@
     text-decoration: none;
     text-align: center;
     transition: 0.5s;
-    padding-right: 0;
-    padding-top: 15px;
+    padding: 15px 10px 0 10px;
     box-sizing: border-box;
   }
 
@@ -480,33 +479,34 @@
   .dropdown:hover .dropbtn {
     background-color: rgb(85, 85, 85);
     color: rgb(0, 0, 0);
-}
-
-  .menuitems {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
-    grid-template-rows: 80px;
-    align-content: center;
-    justify-content: center;
   }
 
-  .media {
-    position: relative;
-    display: inline-block;
-    height: 80px;
-    background-color: rgb(50, 50, 50);
+    .menuitems {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr 1.2fr;
+      grid-template-rows: 80px;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
     }
-}
+
+    .media {
+      position: relative;
+      display: inline-block;
+      height: 80px;
+      background-color: rgb(50, 50, 50);
+      }
+  }
 
 
-.menu a:hover {
-  background-color: rgb(85, 85, 85);
-  color: rgb(0, 0, 0);
-}
+  .menu a:hover {
+    background-color: rgb(85, 85, 85);
+    color: rgb(0, 0, 0);
+  }
 
-.current {
-  color: #ff3b3f !important;
-}
+  .current {
+    color: #ff3b3f !important;
+  }
 }
 
 

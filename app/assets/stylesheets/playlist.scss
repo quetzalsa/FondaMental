@@ -1,0 +1,109 @@
+.info.playlink {
+    a {
+        background: transparent;
+        cursor: pointer;
+        padding: 18px;
+        font-family: 'Rubik Mono One', sans-serif;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 30px;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        color: #58e5da;
+        font-size: 30px;
+    }
+    a:last-of-type {
+        margin-bottom: -25px;
+    }
+    a:hover {
+        color: #ffffff;
+    }
+}
+
+.videosyou.playlist {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    grid-template-rows: repeat(4, auto);
+    .imagen_evento {
+        box-sizing: border-box;
+        height: 100%;
+        margin-bottom: 40px;
+        margin-top: 0;
+        cursor: auto;
+        padding-bottom: 0;
+        div {
+            transform: translate(-50%, -50%);
+            position: relative;
+            top: 50%;
+            left: 50%;
+            h2 {
+                font-family: 'work sans', sans-serif;
+                color: #f2d989;
+                cursor: auto;
+                font-size: 25px;
+                margin-top: 0;
+            }
+        }
+    }
+}
+.playlist-nombre {
+    text-align: center;
+    margin-top: 20vh;
+    .vinilo {
+        width: 50px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    color: #58e5da;
+    padding: 18px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 4vmax;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+@media (max-width:960px) {
+    .info.playlink {
+        margin-top: 100px;
+        a {
+            font-size: 4vmax;
+        }
+        a:last-of-type {
+            margin-bottom: -25px;
+        }
+        a:hover {
+            color: #ffffff;
+        }
+    }
+    .playlist-nombre {
+        margin-top: 20vh;
+        color: #58e5da;
+        padding: 18px;
+        font-family: 'Rubik Mono One', sans-serif;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .videosyou.playlist {
+        .imagen_evento {
+            div {
+                transform: translate(0, 0);
+                position: static;
+                h2 {
+                    font-family: 'work sans', sans-serif;
+                    color: #f2d989;
+                    cursor: auto;
+                    font-size: 30px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
