@@ -1,3 +1,6 @@
+// Place all the styles related to the Playlist controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
 .info.playlink {
     a {
         background: transparent;
@@ -62,7 +65,7 @@
     color: #58e5da;
     padding: 18px;
     font-family: 'Rubik Mono One', sans-serif;
-    font-size: 4vmax;
+    font-size: 3.5vmax;
     width: 100%;
     text-align: center;
     margin-top: 30px;
@@ -83,11 +86,12 @@
         }
     }
     .playlist-nombre {
+        margin: auto;
         margin-top: 20vh;
         color: #58e5da;
         padding: 18px;
         font-family: 'Rubik Mono One', sans-serif;
-        width: 100%;
+        width: 80%;
         text-align: center;
         margin-bottom: 0;
     }
