@@ -23,6 +23,20 @@
     a:hover {
         color: #ffffff;
     }
+    &:after {
+        content: "";
+        height: 1px;
+        width: 30%;
+        margin: auto;
+        margin-top: 35px;
+        background: rgb(255, 255, 255);
+    }
+    &:last-of-type:after {
+        content: "";
+        height: 0;
+        background: transparent;
+        margin-bottom: -35px;
+    }
 }
 
 .videosyou.playlist {
@@ -70,6 +84,14 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 0;
+}
+
+#subscribe-you {
+    margin: 100px auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 @media (max-width:960px) {

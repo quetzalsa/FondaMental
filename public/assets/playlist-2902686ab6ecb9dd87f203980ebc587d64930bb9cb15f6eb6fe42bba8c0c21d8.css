@@ -1,0 +1,148 @@
+/* line 5, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.info.playlink a {
+  background: transparent;
+  cursor: pointer;
+  padding: 18px;
+  font-family: 'Rubik Mono One', sans-serif;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  color: #58e5da;
+  font-size: 30px;
+}
+/* line 20, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.info.playlink a:last-of-type {
+  margin-bottom: -25px;
+}
+/* line 23, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.info.playlink a:hover {
+  color: #ffffff;
+}
+/* line 26, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.info.playlink:after {
+  content: "";
+  height: 1px;
+  width: 30%;
+  margin: auto;
+  margin-top: 35px;
+  background: white;
+}
+/* line 34, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.info.playlink:last-of-type:after {
+  content: "";
+  height: 0;
+  background: transparent;
+  margin-bottom: -35px;
+}
+
+/* line 42, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.videosyou.playlist {
+  padding-top: 20px;
+  padding-bottom: 80px;
+  width: 90%;
+  margin: auto;
+  box-sizing: border-box;
+  grid-template-rows: repeat(4, auto);
+}
+/* line 49, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.videosyou.playlist .imagen_evento {
+  box-sizing: border-box;
+  height: 100%;
+  margin-bottom: 40px;
+  margin-top: 0;
+  cursor: auto;
+  padding-bottom: 0;
+}
+/* line 56, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.videosyou.playlist .imagen_evento div {
+  transform: translate(-50%, -50%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+}
+/* line 61, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.videosyou.playlist .imagen_evento div h2 {
+  font-family: 'work sans', sans-serif;
+  color: #f2d989;
+  cursor: auto;
+  font-size: 25px;
+  margin-top: 0;
+}
+
+/* line 71, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.playlist-nombre {
+  text-align: center;
+  margin-top: 20vh;
+  color: #58e5da;
+  padding: 18px;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 3.5vmax;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+/* line 74, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+.playlist-nombre .vinilo {
+  width: 50px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* line 89, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+#subscribe-you {
+  margin: 100px auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+@media (max-width: 960px) {
+  /* line 98, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+  .info.playlink {
+    margin-top: 100px;
+  }
+  /* line 100, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+  .info.playlink a {
+    font-size: 4vmax;
+  }
+  /* line 103, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+  .info.playlink a:last-of-type {
+    margin-bottom: -25px;
+  }
+  /* line 106, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+  .info.playlink a:hover {
+    color: #ffffff;
+  }
+
+  /* line 110, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+  .playlist-nombre {
+    margin: auto;
+    margin-top: 20vh;
+    color: #58e5da;
+    padding: 18px;
+    font-family: 'Rubik Mono One', sans-serif;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  /* line 122, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+  .videosyou.playlist .imagen_evento div {
+    transform: translate(0, 0);
+    position: static;
+  }
+  /* line 125, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/playlist.scss */
+  .videosyou.playlist .imagen_evento div h2 {
+    font-family: 'work sans', sans-serif;
+    color: #f2d989;
+    cursor: auto;
+    font-size: 30px;
+    margin-top: 0;
+  }
+}

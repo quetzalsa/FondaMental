@@ -22,11 +22,13 @@ Rails.application.routes.draw do
 
   # get '/records/fechas' => 'records#fechas'
 
-  get 'playlist/inerte_camino_porteno' => 'playlist#playuno'
+  get 'musica/playlist/inerte_camino_porteno' => 'playlist#playuno'
 
-  get 'playlist/cuando_sale_el_sol' => 'playlist#playdos'
+  get 'musica/playlist/cuando_sale_el_sol' => 'playlist#playdos'
 
-  get '/playlist' => 'playlist#playlist'
+  get 'musica/playlist' => 'playlist#playlist'
+
+  get 'musica/podcast' => 'playlist#podcast'
 
   get '/colaboradores' => 'fonda_mental#colaboradores'
 

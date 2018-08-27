@@ -1,4 +1,4 @@
 class PlaylistController < ApplicationController
-  def playdos
+  def podcast
   end
 end
