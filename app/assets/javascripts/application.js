@@ -317,7 +317,7 @@ var path = window.location.pathname;
 function videoback() {
     //document.getElementById('videointro').style.display = 'none';
       
-    $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
+    // $( "#pButton" ).removeClass( "play" ).addClass( "pause" );
     $( "#playbut" ).css( {"opacity": "0.3"} )
     $('html, body').animate({
         scrollTop: $("#navegacion").offset().top

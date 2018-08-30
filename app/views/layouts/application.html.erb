@@ -173,8 +173,8 @@
     <div id="videointro">
         <div id="videologo">
             <div id="buttonback">
-
-                <%= image_tag("fonda_blanco.png", class: ["logoback", "animateduno", "zoomIn"]) %>
+                <!-- <video type="video/webm" style="background:transparent;" autoplay class="logoback animateduno zoomIn" src="http://res.cloudinary.com/quetzalss/video/upload/v1535603591/video/logo_total_1.webm"></video> -->
+                <%= cl_image_tag("logo/fonda_menta_b.png", class: ["logoback", "animateduno", "zoomIn"]) %>
                     <h2 class="animateduno zoomIn">Under Mind Experience</h2>
                     <button id="playbut" class="hvr-wobble-vertical" onclick="videoback()">
                         <i class="fa fa-3x fa-angle-double-down" aria-hidden="true"></i>
@@ -242,8 +242,8 @@
                   <%= link_to "Eventos", eventos_path, class: ["itemen", cp(eventos_path)] %>
                   <%= link_to "Galeria", galeria_path, class: ["itemen", cp(galeria_path)] %>
                   <div class="dropdown">
-                      <button class="dropbtn fond <%= cpa(musica_playlist_path) %> <%= cpa(musica_podcast_path) %>" onclick="block2()">Musica</button>
-                      <div class="drop-content drop1">
+                      <button class="dropbtn fond <%= cpa(musica_playlist_path) %> <%= cpa(musica_podcast_path) %>" onclick="block1()">Musica</button>
+                      <div class="drop-content drop2">
                         <%= link_to "Playlists", musica_playlist_path, class: ["itemen", cp(musica_playlist_path)] %> 
                         <%= link_to "Podcasts", musica_podcast_path, class: ["itemen", cp(musica_podcast_path)] %> 
                       </div>
