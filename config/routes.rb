@@ -2,12 +2,6 @@ Rails.application.routes.draw do
 
   get 'galery/cuartoscuro'
 
-  get 'playlist/playseis'
-
-  get 'playlist/playcinco'
-
-  get 'playlist/playtres'
-
   get 'galery/street_life_valpo'
 
   get 'galery/soul_station'
@@ -40,7 +34,7 @@ Rails.application.routes.draw do
 
   get 'musica/playlist/para_bailar_con_tu_sombra_quien_mas_te_conoce' => 'playlist#playcinco'
 
-  get 'musica/playlist/explorando_las_profundidades' => 'playlist#playseis'
+  get 'musica/playlist/looking_for_the_deep' => 'playlist#playseis'
 
   get 'musica/playlist' => 'playlist#playlist'
 
