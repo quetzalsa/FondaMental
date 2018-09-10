@@ -1,0 +1,1027 @@
+@media (min-width: 961px) {
+  /* line 5, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .info {
+    font-family: 'Work Sans', sans-serif;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    display: grid;
+    grid-gap: 1em;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* line 15, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #info {
+    font-family: 'Work Sans', sans-serif;
+    display: block;
+    display: grid;
+    grid-gap: 1em;
+    justify-items: center;
+  }
+
+  /* line 23, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion {
+    background-color: #2b2b2b;
+    color: #dc2626;
+    cursor: pointer;
+    padding: 18px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 30px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* line 36, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .accordion span {
+    color: #58e5da;
+    font-size: 45px;
+  }
+
+  /* line 41, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion {
+    background: transparent;
+    color: #f2d989;
+    cursor: pointer;
+    padding: 18px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3vmax;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  /* line 54, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion i {
+    margin-top: -20px;
+    color: grey;
+  }
+
+  /* line 60, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .active .fa-angle-down {
+    display: none;
+  }
+
+  /* line 64, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #accordion .fa-angle-up {
+    display: none;
+  }
+
+  /* line 68, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #accordion.active .fa-angle-up {
+    display: inline;
+    margin-top: -20px;
+    color: #58E5DA;
+  }
+
+  /* line 74, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion:hover i {
+    color: #58E5DA;
+  }
+
+  /* line 78, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #arrow {
+    float: right;
+  }
+
+  /* line 82, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion i {
+    color: black;
+    transition: 0.5s;
+  }
+
+  /* line 87, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion.active, button.accordion:hover {
+    color: #d83434;
+  }
+
+  /* line 91, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion.active, button#accordion:hover {
+    color: #e2e2e2;
+  }
+
+  /* line 95, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion.active i, button.accordion:hover i {
+    color: #d4d4d4;
+  }
+
+  /* line 99, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .info .panel {
+    padding: 0 18px;
+    margin-top: 0px;
+    max-height: 0;
+    width: 90%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: center;
+    color: #d4d4d4;
+  }
+
+  /* line 112, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .videosyou {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 300px);
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* line 124, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel {
+    margin: auto;
+    width: 80%;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  /* line 130, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3 {
+    font-size: 2.5vmax;
+  }
+
+  /* line 134, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel ul {
+    font-size: 30px;
+  }
+
+  /* line 138, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3:nth-child(1) {
+    color: #d4d4d4;
+  }
+
+  /* line 142, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3:nth-child(2) {
+    color: #f2d989;
+  }
+
+  /* line 146, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3:nth-child(3) {
+    color: #58e5da;
+  }
+
+  /* line 151, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .galeria_princ {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  @supports (display: grid) {
+    /* line 163, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+    .imagen_evento {
+      width: 100%;
+      margin: auto;
+    }
+
+    /* line 168, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+    .galeria_princ {
+      text-align: center;
+      margin: auto;
+    }
+  }
+  /* line 174, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .galeria {
+    padding: 30px 0px 70px 0px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+  }
+
+  /* line 185, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .galeria iframe {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    min-height: 500px;
+    width: 100%;
+  }
+
+  /* line 192, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imafreefall {
+    background-image: url(/assets/free_fall/free_fall13-6c4cb44734a306f4c45daa7a8cf6ba15381a7d2ebe6fa8094ed13804d15630cb.jpg);
+    height: 60vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 206, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imalacour {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508265989/lacourdesmiracles/la_cour_des_miracles01.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 215, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaphysical {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256929/physical/physical09.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 224, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imatechnorama {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256868/technorama/technorama18.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 233, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imafemmes {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256584/femmesfatales/femmes_falates02.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 242, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaredlight {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256568/redlight/red_light07.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 251, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imalesannes {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256461/lesannesfolles/les_annes_folles10.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 260, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imacamino {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508271834/caminomarginal/camino_marginal11.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 269, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imalibera {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508255295/liberamusica/libera_musica12.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 278, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imallamado {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508254745/elllamadodeldesierto/el_llamado_del_desierto_min14.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 287, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imawoods {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508255192/inthewoodsforlove/in_the_woods_for_love09.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 296, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaflower {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508255042/flowerpower/flower_power20.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 305, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imallamado {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508254635/elllamadodeldesierto/el_llamado_del_desierto14.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 314, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imasintom {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508254250/sintomasdieziocheros/sintomas_dieziocheros08.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 323, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imafuria {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256981/furiapatria/furia_patria16.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 332, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaabrecielo {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1513037030/abrecielo/abrecielo12.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 341, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imastreet {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1513037030/streetlife/street_life47.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 350, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaabra {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1521858004/abracadabra/abracadabra_fondo.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 359, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaasylum {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1524706128/asylum/asylum45.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 368, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imasoul {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1528497327/soul%20station/soul_station76.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 376, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imacuarto {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1536609830/cuartoscuro/cuartoscuro_61.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 384, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imastreetval {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1528497327/streetlifevalpo/street_life_valpo15.jpg");
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 394, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .dosvert {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grit-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+
+  /* line 406, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit {
+    height: 30vh;
+    background-color: black;
+    margin-top: -65px;
+  }
+  /* line 411, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 96px;
+    color: #cccccc;
+    padding: 60px 0px;
+    text-align: center;
+  }
+
+  /* line 421, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit_dos {
+    min-height: 30vh;
+    background-color: black;
+    margin-top: -65px;
+  }
+  /* line 426, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit_dos h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 90px;
+    color: #cccccc;
+    padding: 30px 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 960px) {
+  /* line 438, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .main_content {
+    margin-top: -10vh;
+  }
+
+  /* line 441, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #fonda_mental3 {
+    padding-top: 100px;
+  }
+
+  /* line 445, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imafreefall {
+    background-image: url(/assets/free_fall/free_fall13-6c4cb44734a306f4c45daa7a8cf6ba15381a7d2ebe6fa8094ed13804d15630cb.jpg);
+    height: 60vh;
+    margin-bottom: -30px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 459, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imalacour {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508265989/lacourdesmiracles/la_cour_des_miracles01.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 468, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaphysical {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256929/physical/physical09.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 477, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imatechnorama {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256868/technorama/technorama18.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 486, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imafemmes {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256584/femmesfatales/femmes_falates02.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 495, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaredlight {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256568/redlight/red_light07.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 504, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imalesannes {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256461/lesannesfolles/les_annes_folles10.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* line 513, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imacamino {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508271834/caminomarginal/camino_marginal11.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 522, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imalibera {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508255295/liberamusica/libera_musica12.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 531, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imallamado {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508254745/elllamadodeldesierto/el_llamado_del_desierto_min14.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 540, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imawoods {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508255192/inthewoodsforlove/in_the_woods_for_love09.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 549, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaflower {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508255042/flowerpower/flower_power20.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 558, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imallamado {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508254635/elllamadodeldesierto/el_llamado_del_desierto14.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 567, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imasintom {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508254250/sintomasdieziocheros/sintomas_dieziocheros08.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 576, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imafuria {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1508256981/furiapatria/furia_patria16.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 585, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaabrecielo {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1513037030/abrecielo/abrecielo12.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 594, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imastreet {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1513037030/streetlife/street_life47.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 603, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imaabra {
+    background-image: url("http://res.cloudinary.com/quetzalss/image/upload/v1521858004/abracadabra/abracadabra_fondo.jpg");
+    height: 60vh;
+    margin-bottom: -30px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  /* line 612, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .info {
+    font-family: 'Work Sans', sans-serif;
+    grid-column: 1;
+    width: 100%;
+    grid-row: 1;
+    display: grid;
+    grid-gap: 1em;
+    justify-items: center;
+  }
+
+  /* line 622, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #info {
+    font-family: 'Work Sans', sans-serif;
+    grid-column: 1;
+    width: 100%;
+    margin-bottom: -60px;
+    grid-row: 1;
+    display: grid;
+    grid-gap: 1em;
+    justify-items: center;
+  }
+
+  /* line 635, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion {
+    background-color: #2b2b2b;
+    color: #444;
+    cursor: pointer;
+    color: #dc2626;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 20px;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* line 650, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .accordion span {
+    color: #58e5da;
+    font-size: 3vmax;
+  }
+
+  /* line 655, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3:nth-child(2) {
+    color: #f2d989;
+  }
+
+  /* line 659, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  /* line 663, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3:nth-child(1) {
+    color: #d4d4d4;
+  }
+
+  /* line 667, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3:nth-child(3) {
+    color: #58e5da;
+  }
+
+  /* line 671, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion {
+    background: transparent;
+    color: #f2d989;
+    cursor: pointer;
+    padding: 18px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 3vmax;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  /* line 684, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion i {
+    margin-top: -20px;
+    color: grey;
+  }
+
+  /* line 691, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .active .fa-angle-down {
+    display: none;
+  }
+
+  /* line 695, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #accordion .fa-angle-up {
+    display: none;
+  }
+
+  /* line 699, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #accordion.active .fa-angle-up {
+    display: inline;
+    color: #58E5DA;
+  }
+
+  /* line 704, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion:hover i {
+    color: #58E5DA;
+  }
+
+  /* line 708, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion.active, button#accordion:hover {
+    color: #e2e2e2;
+  }
+
+  /* line 712, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #arrow {
+    float: right;
+  }
+
+  /* line 718, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion.active, button.accordion:hover {
+    background-color: #ccc;
+  }
+
+  /* line 722, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion.active i, button.accordion:hover i {
+    color: black;
+  }
+
+  /* line 726, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button.accordion i {
+    color: #dc2626;
+  }
+
+  /* line 730, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .info .panel {
+    padding: 0 18px;
+    text-align: left;
+    width: 90%;
+    overflow: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #d4d4d4;
+    transition: 0.4s;
+  }
+
+  /* line 744, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel {
+    text-align: center;
+  }
+
+  /* line 748, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel h3 {
+    font-size: 2.5vmax;
+  }
+
+  /* line 752, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .textopanel ul {
+    font-size: 20px;
+  }
+
+  /* line 756, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .galeria_princ {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  /* line 767, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .imagen_evento:nth-of-type(1) {
+    padding-top: 30px;
+  }
+
+  /* line 771, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .galeria iframe {
+    grid-column: 1;
+    width: 100%;
+    margin: auto;
+    padding: 0px;
+    min-height: 200px;
+  }
+
+  /* line 779, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imafreefall {
+    background-image: url(/assets/free_fall/free_fall13-6c4cb44734a306f4c45daa7a8cf6ba15381a7d2ebe6fa8094ed13804d15630cb.jpg);
+    display: none;
+  }
+
+  /* line 784, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  #imalacour {
+    background-image: url(/assets/la_cour/la_cour04-8f72564e3b8fe2605185562d928c9f9e38a4429d5439fda7c809ad7780e25f44.jpg);
+    display: none;
+  }
+
+  /* line 789, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .dosvert {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grit-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  /* line 803, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit {
+    height: 100%;
+    background-color: black;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  /* line 810, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    width: 100%;
+    font-size: 3em;
+    color: #cccccc;
+    padding: 50px 0px;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* line 824, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit_dos {
+    height: 100%;
+    background-color: black;
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  /* line 832, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .gal_tit_dos h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+    width: 100%;
+    font-size: 3em;
+    color: #cccccc;
+    padding: 3px 0px;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  /* line 844, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .galeria {
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (max-width: 640px) {
+  /* line 858, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .main_content {
+    margin-top: -13vh;
+  }
+}
+@media (max-width: 320px) {
+  /* line 864, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .main_content {
+    margin-top: -15vh;
+  }
+}
+/* line 870, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.galeria img {
+  width: 100%;
+}
+
+/* line 874, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.galeria_foto {
+  width: 100%;
+}
+
+/* line 878, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.galerynav {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+}
+
+/* line 884, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.afiche {
+  width: 100%;
+}
+
+/* line 887, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.aficheline {
+  margin-top: 50px;
+  width: 100%;
+}
+
+/* line 892, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.imagen_evento {
+  margin-top: 30px;
+  text-align: center;
+  color: #ADADAD;
+  font-family: 'fondamental', sans-serif;
+  font-size: 1.7rem;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.7s;
+}
+/* line 902, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.imagen_evento img {
+  opacity: 1;
+  transition: 0.5s;
+}
+/* line 906, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.imagen_evento h1 {
+  font-weight: normal;
+}
+/* line 910, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.imagen_evento:hover {
+  color: #E4E4E4;
+}
+/* line 915, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+.imagen_evento:hover img {
+  opacity: 0.5;
+}
+
+@media (min-width: 600px) {
+  /* line 922, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  .accordion span {
+    color: #58e5da;
+    font-size: 30px;
+  }
+
+  /* line 927, /Volumes/1T/fonda_mental/pagina/player/fonda_mental/app/assets/stylesheets/media.scss.erb */
+  button#accordion {
+    background: transparent;
+    color: #f2d989;
+    cursor: pointer;
+    padding: 18px;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+}
