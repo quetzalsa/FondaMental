@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'galery/cuartoscuro'
+
   get 'playlist/playseis'
 
   get 'playlist/playcinco'

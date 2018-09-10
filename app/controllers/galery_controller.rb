@@ -1,4 +1,4 @@
 class GaleryController < ApplicationController
-  def street_life_valpo
+  def cuartoscuro
   end
 end

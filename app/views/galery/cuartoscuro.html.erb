@@ -1,0 +1,151 @@
+<% @title = "Cuartoscuro" %>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+
+
+    <div id="imacuarto">
+    </div>
+
+    <div class="gal_tit">
+        <h1>Cuartoscuro</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/cuartoscuro.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>Es en la oscuridad donde los sentidos están más afinados 
+                <br>
+                Es sobre un “fondo” negro que la intensidad de las colores se distinguen mejor,
+            Es en las tinieblas que todo adopta una tinta de misterio y de enigma…
+                </p>
+            <h3>18/08/2018</h3>
+            <h3>Secret Spot, Santiago Centro</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Deniroster - Francia</p>
+                <p><%= render 'galery/vinilicon' %> Rodrigo Valdivia - Temuco, Chile</p>
+                <p><%= render 'galery/vinilicon' %> Diegors B2B Andrea Paz - Chile</p>
+                
+                <%= cl_image_tag("lineup/line_cuarto.jpg" , class: "aficheline") %>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+        <!-- <iframe width="90%" height="300px" src="https://www.youtube.com/embed/ob8vJJdOV-4" frameborder="0" allowfullscreen></iframe> -->
+    
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min01" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_01"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min02" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_02"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min03" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_03"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <div class="dosvert">
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min13" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_13"), class:"galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min04" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_04"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    </div>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min05" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_05"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min06" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_06"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min07" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_07"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min08" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_08"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min09" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_09"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min10" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_10"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min11" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_11"), class:"galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min12" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_12"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min14" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_14"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min16" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_16"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min17" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_17"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min18" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_18"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min15" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_15"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min19" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_19"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min20" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_20"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min21" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_21"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min22" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_22"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min23" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_23"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min24" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_24"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min25" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_25"), class:"galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min26" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_26"), class:"galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min27" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_27"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min28" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_28"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min29" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_29"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min30" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_30"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min31" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_31"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min32" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_32"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min33" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_33"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min34" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_34"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min35" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_35"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min44" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_44"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min36" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_36"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min37" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_37"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min38" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_38"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min39" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_39"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min40" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_40"), class:"galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min41" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_41"), class:"galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min43" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_43"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min42" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_42"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min44" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_44"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min45" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_45"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min46" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_46"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min47" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_47"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min48" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_48"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min49" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_49"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min50" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_50"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min51" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_51"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min52" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_52"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min53" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_53"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min54" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_54"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min55" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_55"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min56" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_56"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min57" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_57"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min58" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_58"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min59" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_59"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min60" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_60"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min62" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_62"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min61" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_61"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min63" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_63"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min64" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_43"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min65" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_65"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min66" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_66"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min67" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_67"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min68" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_68"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min69" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_69"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min70" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_70"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min71" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_71"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min72" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_72"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min74" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_74"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min73" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_73"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min75" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_75"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min76" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_76"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min77" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_77"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min78" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_78"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min79" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_79"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min80" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_80"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min83" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_83"), class:   "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min82" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_82"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+    <%= link_to cl_image_tag("cuartoscuro/cuartoscuro_min81" , class: "galeria_foto"), cl_image_path("cuartoscuro/cuartoscuro_81"), class: "galeria_foto swipebox", "rel" => "cuartoscuro-1" %>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
