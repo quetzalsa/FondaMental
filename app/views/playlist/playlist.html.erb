@@ -1,23 +1,39 @@
 <% @title = "Playlists" %>
 
 <div class="info playlink">
-    <%= link_to "Camilo Gil - Para bailar con tu sombra (quien mas te conoce)", musica_playlist_para_bailar_con_tu_sombra_quien_mas_te_conoce_path %>   
+    <%= link_to(musica_playlist_explorando_las_profundidades_path) do %>
+        <span style="color:#f2d989;">Quetzal</span> - Explorando las Profundidades
+    <% end %>
 </div>
 
 <div class="info playlink">
-    <%= link_to "Chand'l Moraless - Electronical Kind of Blues", musica_playlist_electronical_kind_of_blues_path %>   
+    <%= link_to(musica_playlist_para_bailar_con_tu_sombra_quien_mas_te_conoce_path) do %>
+        <span style="color:#f2d989;">Camilo Gil</span> - Para bailar con tu sombra (quien mas te conoce)
+    <% end %>
 </div>
 
 <div class="info playlink">
-    <%= link_to "Escobar Gallardo [Ojosbiencerraos] - Observatorio Pacifico de Drops", musica_playlist_observatorio_pacifico_de_drops_path %>   
+    <%= link_to(musica_playlist_electronical_kind_of_blues_path) do %>
+        <span style="color:#f2d989;">Chand'l Moraless</span> - Electronical Kind of Blues
+    <% end %>
 </div>
 
 <div class="info playlink">
-    <%= link_to "Theo Merca - Cuando Sale el Sol", musica_playlist_cuando_sale_el_sol_path %>   
+    <%= link_to(musica_playlist_observatorio_pacifico_de_drops_path) do %>
+        <span style="color:#f2d989;">Escobar Gallardo [Ojosbiencerraos]</span> - Observatorio Pacifico de Drops
+    <% end %>
 </div>
 
 <div class="info playlink">
-    <%= link_to "Inerte - Camino Porteño", musica_playlist_inerte_camino_porteno_path %>   
+    <%= link_to(musica_playlist_cuando_sale_el_sol_path) do %>
+        <span style="color:#f2d989;">Theo Merca</span> - Cuando Sale el Sol
+    <% end %>
+</div>
+
+<div class="info playlink">
+    <%= link_to(musica_playlist_inerte_camino_porteno_path) do %>
+        <span style="color:#f2d989;">Inerte</span> - Camino Porteño
+    <% end %>
 </div>
 
 
