@@ -38,6 +38,8 @@ Rails.application.routes.draw do
 
   get 'musica/playlist/fiesta_de_la_patria_grande' => 'playlist#playsiete'
 
+  get 'musica/playlist/angustia' => 'playlist#playocho'
+
   get 'musica/playlist' => 'playlist#playlist'
 
   get 'musica/podcast' => 'playlist#podcast'

@@ -1,4 +1,4 @@
 class PlaylistController < ApplicationController
-  def playsiete
+  def playocho
   end
 end
