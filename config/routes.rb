@@ -44,6 +44,8 @@ Rails.application.routes.draw do
   
   get 'musica/playlist/yo_tambien_escucho_pequenas_voces_en_mi_cabeza' => 'playlist#playdiez'
 
+  get 'musica/playlist/a_blast_from_the_past_musica_para_viajar_al_pasado' => 'playlist#playonce'
+
   get 'musica/playlist' => 'playlist#playlist'
 
   get 'musica/podcast' => 'playlist#podcast'
