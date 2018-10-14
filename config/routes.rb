@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'playlist/playtrece'
+
   get 'galery/cuartoscuro'
 
   get 'galery/street_life_valpo'
@@ -47,6 +49,8 @@ Rails.application.routes.draw do
   get 'musica/playlist/a_blast_from_the_past_musica_para_viajar_al_pasado' => 'playlist#playonce'
 
   get 'musica/playlist/la_caminata_nocturna_en_el_bosque' => 'playlist#playdoce'
+
+  get 'musica/playlist/dance_italiana_lover' => 'playlist#playtrece'
   
   get 'musica/playlist' => 'playlist#playlist'
 
