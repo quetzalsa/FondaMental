@@ -1,7 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'playlist/playcatorce'
-
   get 'playlist/playtrece'
 
   get 'galery/cuartoscuro'
@@ -55,6 +53,8 @@ Rails.application.routes.draw do
   get 'musica/playlist/dance_italiana_lover' => 'playlist#playtrece'
   
   get 'musica/playlist/funk_on_the_table' => 'playlist#playcatorce'
+
+  get 'musica/playlist/resultados_sexuales' => 'playlist#playquince'
 
   get 'musica/playlist' => 'playlist#playlist'
 
