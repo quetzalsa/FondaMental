@@ -56,6 +56,8 @@ Rails.application.routes.draw do
 
   get 'musica/playlist/resultados_sexuales' => 'playlist#playquince'
 
+  get 'musica/playlist/abya_yala' => 'playlist#playdiezyseis'
+
   get 'musica/playlist' => 'playlist#playlist'
 
   get 'musica/podcast' => 'playlist#podcast'
