@@ -1,8 +1,8 @@
 require 'test_helper'
 
 class PlaylistControllerTest < ActionDispatch::IntegrationTest
-  test "should get playdiezyseis" do
-    get playlist_playdiezyseis_url
+  test "should get playdiezysiete" do
+    get playlist_playdiezysiete_url
     assert_response :success
   end
 
