@@ -17,7 +17,7 @@
     }
 }
 .afichevalores.aficheprinc {
-    padding: 70px 0;
+    padding: 0 0;
     padding-top: 0px;
     margin-top: 0px;
     
@@ -32,7 +32,7 @@
     align-items: center;
     div {
         #contacto {
-            margin-top: -50px;
+            margin-top: 0px;
             font-size: 2vmax;
         }
     }
@@ -63,14 +63,15 @@
 }
 
 .aficheprinc {
-    margin-bottom: -80px;
+    margin-bottom: 20px;
     width: 100%;
 }
 .owl-carousel{
     position: relative;
   }
 .owl-carousel .afiche-slide{
-height: 450px;
+// height: 450px;
+height: 100%;
 }
 .owl-carousel div a img {
     display: block;
@@ -170,12 +171,14 @@ hr {
 }
 @media (max-width: 1200px) { 
     .owl-carousel .afiche-slide{
-        height: 450px;
+        // height: 450px;
+        height: 100%;
         }
 }
 @media (max-width: 960px) { 
     .owl-carousel .afiche-slide{
-        height: 400px;
+        // height: 400px;
+        height: 100%;
         }
     .imagen_home1 {
         margin-top: 40px;
@@ -190,12 +193,13 @@ hr {
 }
 @media (max-width: 700px) { 
     .owl-carousel .afiche-slide{
-        height: 300px;
+        // height: 300px;
+        height: 100%;
         }
 }
 @media (max-width: 600px) { 
     #valores {
-        margin-top: 30px;
+        // margin-top: 30px;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
@@ -208,29 +212,32 @@ hr {
                 font-size: 5vmax;
             }
             #contacto:nth-of-type(2) {
-                margin-top: -50px;
+                margin-top: 0px;
                 font-size: 5vmax;
             }
         }
     }
     .owl-carousel .afiche-slide{
-        height: 250px;
+        // height: 250px;
+        height: 100%;
         }
 }
 @media (max-width: 500px) { 
     .owl-carousel .afiche-slide{
-        height: 200px;
+        // height: 200px;
+        height: 100%;
         }
 }
 @media (max-width: 400px) { 
     .owl-carousel .afiche-slide{
-        height: 150px;
+        // height: 150px;
+        height: 100%;
         }
 }
 
 @media (min-width: 1500px) {
     #valores {
-        margin-top: 60px;
+        // margin-top: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
