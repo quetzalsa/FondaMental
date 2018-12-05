@@ -1,4 +1,4 @@
 class GaleryController < ApplicationController
-  def cuartoscuro
+  def traumer
   end
 end

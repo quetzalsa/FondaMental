@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'galery/traumer'
+
   get 'playlist/playdiezyocho'
 
   get 'playlist/playdiezysiete'
@@ -111,6 +113,8 @@ Rails.application.routes.draw do
   get '/galeria/street_life' => 'galery#street_life'
 
   get '/galeria/abracadabra' => 'galery#abracadabra'
+
+  get '/galeria/traumer_3_aniversario' => 'galery#traumer'
 
   get "/fotos" => "fonda_mental#fotos"
   get "/galeria" => "fonda_mental#media"

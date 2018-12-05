@@ -1,0 +1,210 @@
+<% @title = "Traumer - 3 Aniversario" %>
+
+<div class="main_content">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="galeriaside">
+<%= render 'galeriaprinc'%>
+</div>
+</div>
+
+
+
+    <div id="imatraumer">
+    </div>
+
+    <div class="gal_tit">
+        <h1 style="font-size:5vmax;">La Máquina que Sueña</h1>
+    </div>
+
+    <div class="galeria">
+
+        <div class="info">
+            <button class="accordion"><i class="fa fa-info" aria-hidden="true"></i> Fiesta<i class="fa fa-chevron-down" id="arrow" aria-hidden="true"></i>
+            </button>
+
+            
+            <div class="panel">
+            <%= cl_image_tag("afiches/lamaquinaquesuena.jpg" , class: "afiche") %>
+            <div class="textopanel">
+            <p>El acto de soñar es una de las acciones que distingue a los seres humanos de las máquinas.
+                <br>
+                Sin el humano, las máquinas quedan inertes, sin vida.
+Es el que le da la chispa de energía para prender el engranaje e iniciar el movimiento rutinario. 
+                <br>
+                Para el tercer aniversario de nuestra productora, hemos buscado al artista que mejor describe, según nosotros, esta transcendencia, esta transmisión de aspiración del hombre a la máquina.
+                </p>
+            <h3>19/10/2018</h3>
+            <h3>Secret Spot, Santiago Centro</h3>
+            <h3>Line Up</h3>
+                <p><%= render 'galery/vinilicon' %> Camilo Gil - Chile</p>
+                <p><%= render 'galery/vinilicon' %> Traumer - Getraum, Francia</p>
+            <h3>Colaborador: Club Mate</h3>
+            </div>
+            </div>
+        </div>
+        <!-- <iframe width="90%" height="300px" src="https://www.youtube.com/embed/ob8vJJdOV-4" frameborder="0" allowfullscreen></iframe> -->
+    
+    <%= link_to cl_image_tag("traumer/traumer_min001" , class: "galeria_foto"), cl_image_path("traumer/traumer_001"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min002" , class: "galeria_foto"), cl_image_path("traumer/traumer_002"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min003" , class: "galeria_foto"), cl_image_path("traumer/traumer_003"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min013" , class: "galeria_foto"), cl_image_path("traumer/traumer_013"), class:"galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min004" , class: "galeria_foto"), cl_image_path("traumer/traumer_004"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min005" , class: "galeria_foto"), cl_image_path("traumer/traumer_005"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min006" , class: "galeria_foto"), cl_image_path("traumer/traumer_006"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <div class="dosvert">
+    <%= link_to cl_image_tag("traumer/traumer_min007" , class: "galeria_foto"), cl_image_path("traumer/traumer_007"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min008" , class: "galeria_foto"), cl_image_path("traumer/traumer_008"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    </div>
+    <%= link_to cl_image_tag("traumer/traumer_min009" , class: "galeria_foto"), cl_image_path("traumer/traumer_009"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min010" , class: "galeria_foto"), cl_image_path("traumer/traumer_010"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min011" , class: "galeria_foto"), cl_image_path("traumer/traumer_011"), class:"galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min012" , class: "galeria_foto"), cl_image_path("traumer/traumer_012"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min014" , class: "galeria_foto"), cl_image_path("traumer/traumer_014"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min016" , class: "galeria_foto"), cl_image_path("traumer/traumer_016"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min017" , class: "galeria_foto"), cl_image_path("traumer/traumer_017"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min018" , class: "galeria_foto"), cl_image_path("traumer/traumer_018"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min015" , class: "galeria_foto"), cl_image_path("traumer/traumer_015"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min019" , class: "galeria_foto"), cl_image_path("traumer/traumer_019"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min020" , class: "galeria_foto"), cl_image_path("traumer/traumer_020"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min021" , class: "galeria_foto"), cl_image_path("traumer/traumer_021"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min022" , class: "galeria_foto"), cl_image_path("traumer/traumer_022"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min023" , class: "galeria_foto"), cl_image_path("traumer/traumer_023"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min024" , class: "galeria_foto"), cl_image_path("traumer/traumer_024"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min025" , class: "galeria_foto"), cl_image_path("traumer/traumer_025"), class:"galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min026" , class: "galeria_foto"), cl_image_path("traumer/traumer_026"), class:"galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min027" , class: "galeria_foto"), cl_image_path("traumer/traumer_027"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min028" , class: "galeria_foto"), cl_image_path("traumer/traumer_028"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min029" , class: "galeria_foto"), cl_image_path("traumer/traumer_029"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min030" , class: "galeria_foto"), cl_image_path("traumer/traumer_030"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min031" , class: "galeria_foto"), cl_image_path("traumer/traumer_031"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min032" , class: "galeria_foto"), cl_image_path("traumer/traumer_032"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min033" , class: "galeria_foto"), cl_image_path("traumer/traumer_033"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min034" , class: "galeria_foto"), cl_image_path("traumer/traumer_034"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min035" , class: "galeria_foto"), cl_image_path("traumer/traumer_035"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min044" , class: "galeria_foto"), cl_image_path("traumer/traumer_044"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min036" , class: "galeria_foto"), cl_image_path("traumer/traumer_036"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min037" , class: "galeria_foto"), cl_image_path("traumer/traumer_037"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min038" , class: "galeria_foto"), cl_image_path("traumer/traumer_038"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min039" , class: "galeria_foto"), cl_image_path("traumer/traumer_039"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min040" , class: "galeria_foto"), cl_image_path("traumer/traumer_040"), class:"galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min041" , class: "galeria_foto"), cl_image_path("traumer/traumer_041"), class:"galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min043" , class: "galeria_foto"), cl_image_path("traumer/traumer_043"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min042" , class: "galeria_foto"), cl_image_path("traumer/traumer_042"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min044" , class: "galeria_foto"), cl_image_path("traumer/traumer_044"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min045" , class: "galeria_foto"), cl_image_path("traumer/traumer_045"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <div class="dosvert">
+    <%= link_to cl_image_tag("traumer/traumer_min046" , class: "galeria_foto"), cl_image_path("traumer/traumer_046"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min047" , class: "galeria_foto"), cl_image_path("traumer/traumer_047"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    </div>
+    <%= link_to cl_image_tag("traumer/traumer_min048" , class: "galeria_foto"), cl_image_path("traumer/traumer_048"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min049" , class: "galeria_foto"), cl_image_path("traumer/traumer_049"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min050" , class: "galeria_foto"), cl_image_path("traumer/traumer050"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min051" , class: "galeria_foto"), cl_image_path("traumer/traumer051"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min052" , class: "galeria_foto"), cl_image_path("traumer/traumer052"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min053" , class: "galeria_foto"), cl_image_path("traumer/traumer053"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min054" , class: "galeria_foto"), cl_image_path("traumer/traumer054"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min055" , class: "galeria_foto"), cl_image_path("traumer/traumer055"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min056" , class: "galeria_foto"), cl_image_path("traumer/traumer056"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min057" , class: "galeria_foto"), cl_image_path("traumer/traumer057"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min058" , class: "galeria_foto"), cl_image_path("traumer/traumer058"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min059" , class: "galeria_foto"), cl_image_path("traumer/traumer059"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min060" , class: "galeria_foto"), cl_image_path("traumer/traumer060"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min062" , class: "galeria_foto"), cl_image_path("traumer/traumer062"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min061" , class: "galeria_foto"), cl_image_path("traumer/traumer061"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min063" , class: "galeria_foto"), cl_image_path("traumer/traumer063"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min064" , class: "galeria_foto"), cl_image_path("traumer/traumer043"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min065" , class: "galeria_foto"), cl_image_path("traumer/traumer065"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min066" , class: "galeria_foto"), cl_image_path("traumer/traumer066"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min067" , class: "galeria_foto"), cl_image_path("traumer/traumer067"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min068" , class: "galeria_foto"), cl_image_path("traumer/traumer068"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min069" , class: "galeria_foto"), cl_image_path("traumer/traumer069"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min070" , class: "galeria_foto"), cl_image_path("traumer/traumer070"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min071" , class: "galeria_foto"), cl_image_path("traumer/traumer071"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min072" , class: "galeria_foto"), cl_image_path("traumer/traumer072"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min074" , class: "galeria_foto"), cl_image_path("traumer/traumer074"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min073" , class: "galeria_foto"), cl_image_path("traumer/traumer073"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min075" , class: "galeria_foto"), cl_image_path("traumer/traumer075"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min076" , class: "galeria_foto"), cl_image_path("traumer/traumer076"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min077" , class: "galeria_foto"), cl_image_path("traumer/traumer077"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min078" , class: "galeria_foto"), cl_image_path("traumer/traumer078"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min079" , class: "galeria_foto"), cl_image_path("traumer/traumer079"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min080" , class: "galeria_foto"), cl_image_path("traumer/traumer080"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min083" , class: "galeria_foto"), cl_image_path("traumer/traumer083"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min082" , class: "galeria_foto"), cl_image_path("traumer/traumer082"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min081" , class: "galeria_foto"), cl_image_path("traumer/traumer081"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min084" , class: "galeria_foto"), cl_image_path("traumer/traumer084"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min085" , class: "galeria_foto"), cl_image_path("traumer/traumer085"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min086" , class: "galeria_foto"), cl_image_path("traumer/traumer086"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min087" , class: "galeria_foto"), cl_image_path("traumer/traumer087"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min088" , class: "galeria_foto"), cl_image_path("traumer/traumer088"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min089" , class: "galeria_foto"), cl_image_path("traumer/traumer089"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min090" , class: "galeria_foto"), cl_image_path("traumer/traumer090"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min091" , class: "galeria_foto"), cl_image_path("traumer/traumer091"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min092" , class: "galeria_foto"), cl_image_path("traumer/traumer092"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min093" , class: "galeria_foto"), cl_image_path("traumer/traumer093"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min094" , class: "galeria_foto"), cl_image_path("traumer/traumer094"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min095" , class: "galeria_foto"), cl_image_path("traumer/traumer095"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min096" , class: "galeria_foto"), cl_image_path("traumer/traumer096"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min097" , class: "galeria_foto"), cl_image_path("traumer/traumer097"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min098" , class: "galeria_foto"), cl_image_path("traumer/traumer098"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min099" , class: "galeria_foto"), cl_image_path("traumer/traumer099"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min090" , class: "galeria_foto"), cl_image_path("traumer/traumer090"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min091" , class: "galeria_foto"), cl_image_path("traumer/traumer091"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min092" , class: "galeria_foto"), cl_image_path("traumer/traumer092"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min093" , class: "galeria_foto"), cl_image_path("traumer/traumer093"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min094" , class: "galeria_foto"), cl_image_path("traumer/traumer094"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min095" , class: "galeria_foto"), cl_image_path("traumer/traumer095"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min096" , class: "galeria_foto"), cl_image_path("traumer/traumer096"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min097" , class: "galeria_foto"), cl_image_path("traumer/traumer097"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min098" , class: "galeria_foto"), cl_image_path("traumer/traumer098"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min099" , class: "galeria_foto"), cl_image_path("traumer/traumer099"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min100" , class: "galeria_foto"), cl_image_path("traumer/traumer100"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <div class="dosvert">
+    <%= link_to cl_image_tag("traumer/traumer_min101" , class: "galeria_foto"), cl_image_path("traumer/traumer101"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min102" , class: "galeria_foto"), cl_image_path("traumer/traumer102"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    </div>
+    <%= link_to cl_image_tag("traumer/traumer_min103" , class: "galeria_foto"), cl_image_path("traumer/traumer103"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min104" , class: "galeria_foto"), cl_image_path("traumer/traumer104"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min105" , class: "galeria_foto"), cl_image_path("traumer/traumer105"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min106" , class: "galeria_foto"), cl_image_path("traumer/traumer106"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min107" , class: "galeria_foto"), cl_image_path("traumer/traumer107"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min108" , class: "galeria_foto"), cl_image_path("traumer/traumer108"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min109" , class: "galeria_foto"), cl_image_path("traumer/traumer109"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min110" , class: "galeria_foto"), cl_image_path("traumer/traumer110"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min111" , class: "galeria_foto"), cl_image_path("traumer/traumer111"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min112" , class: "galeria_foto"), cl_image_path("traumer/traumer112"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min113" , class: "galeria_foto"), cl_image_path("traumer/traumer113"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min114" , class: "galeria_foto"), cl_image_path("traumer/traumer114"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min115" , class: "galeria_foto"), cl_image_path("traumer/traumer115"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min116" , class: "galeria_foto"), cl_image_path("traumer/traumer116"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min117" , class: "galeria_foto"), cl_image_path("traumer/traumer117"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min118" , class: "galeria_foto"), cl_image_path("traumer/traumer118"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min119" , class: "galeria_foto"), cl_image_path("traumer/traumer119"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min120" , class: "galeria_foto"), cl_image_path("traumer/traumer120"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min121" , class: "galeria_foto"), cl_image_path("traumer/traumer121"), class:   "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min122" , class: "galeria_foto"), cl_image_path("traumer/traumer122"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min123" , class: "galeria_foto"), cl_image_path("traumer/traumer123"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min124" , class: "galeria_foto"), cl_image_path("traumer/traumer124"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min125" , class: "galeria_foto"), cl_image_path("traumer/traumer125"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min126" , class: "galeria_foto"), cl_image_path("traumer/traumer126"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min127" , class: "galeria_foto"), cl_image_path("traumer/traumer127"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min128" , class: "galeria_foto"), cl_image_path("traumer/traumer128"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min129" , class: "galeria_foto"), cl_image_path("traumer/traumer129"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+    <%= link_to cl_image_tag("traumer/traumer_min130" , class: "galeria_foto"), cl_image_path("traumer/traumer130"), class: "galeria_foto swipebox", "rel" => "traumer-1" %>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
