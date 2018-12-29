@@ -25,15 +25,15 @@
 
 #valores {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     justify-items: center;
     align-content: center;
     align-items: center;
     div {
         #contacto {
-            margin-top: 0px;
-            font-size: 2vmax;
+            margin-top: 60px;
+            font-size: 5vmax;
         }
     }
 }
@@ -239,7 +239,7 @@ hr {
     #valores {
         // margin-top: 60px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         justify-content: center;
         justify-items: center;
         align-content: center;
