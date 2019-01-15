@@ -70,6 +70,8 @@ Rails.application.routes.draw do
 
   get 'musica/playlist/tausendundeine_nacht' => 'playlist#playdiezynueve'
 
+  get 'musica/playlist/si_te_he_visto_no_me_acuerdo' => 'playlist#playveinte'
+
   get 'musica/playlist' => 'playlist#playlist'
 
   get 'musica/podcast' => 'playlist#podcast'
