@@ -74,6 +74,8 @@ Rails.application.routes.draw do
 
   get 'musica/playlist/salgamos' => 'playlist#playveintiuno'
 
+  get 'musica/playlist/music_from_outer_space' => 'playlist#playveintydos'
+
   get 'musica/playlist' => 'playlist#playlist'
 
   get 'musica/podcast' => 'playlist#podcast'
